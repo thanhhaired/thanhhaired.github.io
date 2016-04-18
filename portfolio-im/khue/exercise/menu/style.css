@@ -1,0 +1,150 @@
+
+@import "reset.css";
+@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700,200";
+@import "https://fonts.googleapis.com/css?family=Satisfy";
+@import "https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200";
+@import "https://fonts.googleapis.com/css?family=Lobster";
+@import "https://fonts.googleapis.com/css?family=Slabo+27px";
+@import "https://fonts.googleapis.com/css?family=Bitter:400,700";
+body {
+    background: rgba(0, 0, 0, 0) url("img/stardust.png") repeat fixed center center;
+    color: #797979;
+    font-family: "Source Sans Pro",sans-serif;
+    font-weight: 300;
+}
+#wrapper {
+    background: #eeedeb none repeat scroll 0 0;
+    box-shadow: 0 0 0 1px #797979, 0 0 0 4px #eeedeb, 0 0 0 7px #797979, 0 0 0 27px #eeedeb, 0 0 0 28px #e9eae9, 0 0 5px 30px rgba(0, 0, 0, 0.1);
+    margin: 100px auto;
+    padding: 20px;
+    width: 800px;
+}
+#header {
+    border-bottom: 1px solid #bababa;
+    margin-bottom: 10px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+#header h1 {
+    background: rgba(0, 0, 0, 0) url("img/logo.png") no-repeat scroll center center / 350px 187px;
+    height: 187px;
+    margin: 0 auto;
+    text-indent: -9999px;
+    width: 350px;
+}
+#header h3 {
+    border-bottom: 1px solid #bababa;
+    border-top: 1px solid #bababa;
+    font-size: 40px;
+    font-weight: 200;
+    letter-spacing: 20px;
+    line-height: 1;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+#header p.intro {
+    font-size: 15px;
+    margin: 10px auto;
+    text-align: justify;
+    width: 700px;
+}
+#header p.hours {
+    font-family: "Bitter",serif;
+    line-height: 1.2;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+#header p.hours span.label {
+    color: #9c9c9c;
+    font-size: 12px;
+    letter-spacing: 0;
+}
+#header p.hours span.label::before {
+    content: "...";
+    margin-right: 6px;
+}
+#header p.hours span.time {
+    color: #797979;
+    font-size: 15px;
+    letter-spacing: 5px;
+}
+#appetizers {
+    border-right: 1px solid #bababa;
+    display: inline-block;
+    margin-right: 10px;
+    padding-right: 10px;
+    width: 380px;
+}
+#appetizers h2, #main h2 {
+    border-bottom: 1px solid #bababa;
+    font-family: "Yanone Kaffeesatz",sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    padding-bottom: 25px;
+    padding-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+#appetizers dl, #main dl {
+    padding-right: 60px;
+    text-align: center;
+}
+#appetizers dd, #main dd {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+#appetizers dt, #main dt {
+    font-family: "Slabo 27px",serif;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+#appetizers h5, #main h5 {
+    letter-spacing: 10px;
+    text-align: center;
+}
+#appetizers p {
+    font-family: "Satisfy",cursive;
+    font-size: 20px;
+    height: 90px;
+}
+#main {
+    display: inline-block;
+    vertical-align: top;
+    width: 390px;
+}
+#main p {
+    font-family: "Satisfy",cursive;
+    font-size: 18px;
+    height: 90px;
+}
+span.price {
+    display: block;
+    font-family: "Lobster",cursive;
+    text-align: right;
+}
+dt.newitem em {
+    color: red;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+#footer {
+    border-top: 1px solid #bababa;
+    margin-top: 40px;
+}
+#footer p.warning {
+    font-size: 12px;
+    letter-spacing: 5px;
+    margin-left: 15px;
+    word-spacing: 6px;
+}
+#footer p.warning sup {
+    color: #d50f25;
+    font-size: 30px;
+    margin-left: -17px;
+    top: 12.5px;
+}
