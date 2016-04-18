@@ -1,0 +1,171 @@
+/* General */
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    font-family: "Inconsolata", sans-serif;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+.tooltip {
+    font-family: "Inconsolata", sans-serif;
+    font-size: 14px;
+}
+
+
+.tooglefullscreen {
+    z-index: 1000;
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background: rgba(0, 0, 0, 0) url("../images/fullscreen.png") repeat scroll 0 0 / 35px 35px;
+    height: 35px;
+    width: 35px;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+}
+
+.tooglefullscreen:hover {
+    background: rgba(0, 0, 0, 0) url("../images/fullscreen-hover.png") repeat scroll 0 0 / 35px 35px;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+}
+
+.share {
+  text-align: center;
+  color: #333333;
+}
+.share .social-list {
+  margin-top: 1.375em;
+}
+.share .social-list li > a {
+  font-size: 1.375em;
+}
+
+/* Social List
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.social-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.social-list li {
+  display: inline-block;
+  margin: 0;
+  margin-right: 1em;
+}
+.social-list li:last-child {
+  margin-right: 0;
+}
+.social-list li > a {
+  display: block;
+  color: inherit;
+}
+
+/* Logo */
+
+.logo_container {
+    background: #A7ADAE url('../images/background.jpg') center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.logo {
+    width: 887px;
+    height: 150px;
+    background: url('../images/logo-white.png') center center no-repeat;
+    background-size: auto 120px;
+    display: block;
+}
+
+.intro_logo {
+    display: block;
+    text-align: center;
+}
+
+
+/* Navigation */
+
+.nav_container {
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: none;
+    color: white;
+    font-family: 'Inconsolata';
+    letter-spacing: 3px;
+}
+
+.nav_container a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav_container a:hover {
+    text-decoration: underline;
+}
+
+.mail_link {
+    width: 500px;
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -250px;
+}
+
+.about_link {
+    left: 30px;
+    position: fixed;
+    text-align: center;
+    top: 50vh;
+    transform: rotate(-90deg);
+    line-height: 1;
+    width: 100px;
+    text-align: center;
+}
+
+.contact_link {
+    right: 20px;
+    position: fixed;
+    text-align: center;
+    top: 50vh;
+    transform: rotate(90deg);
+    line-height: 1;
+    width: 100px;
+    text-align: center;
+}
+
+.portfolio_link {
+    width: 500px;
+    text-align: center;
+    position: absolute;
+    top: calc(100vh - 80px);
+    left: 50%;
+    margin-left: -250px;
+    transform: scale(1.2);
+}
+
+.portfolio_link a {
+    text-decoration: underline;
+}
+
+
+/* Footer */
+
+.footer {
+    margin-top: 100px;
+    margin-bottom: 30px;
+    text-align: center;
+}
