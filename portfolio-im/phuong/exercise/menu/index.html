@@ -1,93 +1,162 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+
 <html>
 
-<head>
-<meta http-equiv="content-type" content="text/html;charset=utf-8">
-<title>Black Goose Bistro Summer Menu</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-</head>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>MENU</title>
+	<link rel="icon" type="image/png" href="http://i.imgur.com/39bC9pB.png">
 
-<body>
-	<div id="wrapper" ><!-- start of main container -->
-	
-		<div id="header"><!--start of header section -->
-			<h1>Black Goose Bistro</h1>
-			<h3>Summer Menu</h3>
- 
-			<p class="intro">Located in the center of Paris, Black Goose Bistro offers unparalleled access to the sights, 
-			sounds and attractions of France's most vibrant city. 
-			Since the bistro is located at the 25th floor of  the tallest building in its area, 
-			each of its rooms features breathtaking views of the entire city.</p>
+<!-- START STYLESHEET -->
+	<link rel="stylesheet" type="text/css" href="assets/css-menu.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css-animated.css" />
 
-			<p class="hours">*** <br/>
-			Hours</span> <br/> 
-			<span class="label">Mon to Thurs ...</span><br/>
-			<span class="time">11 AM - 9 PM</span><br/>
-			<span class="label">Fri &amp; Sat ...</span> <br/>
-			<span class="time">11 AM - 12 PM</span><br/>
-			***
-			</p>
-		</div><!-- end of header section -->
- 
-	<div id="appetizers"><!-- start of appetizers section -->
-		<h2>Appetizers</h2>
-		<p>This season, we explore the spicy flavors of the south West region of france 
-		in our appetizer collection.
-		</p>
- 
-	<dl>
-		<dt>Rillettes</dt>
-		<dd>Coarsely shredded duck and pork paté with toasted sourdough bread, shallots and cornichons<br /> 
-  		<span class="price">$3.95</span>
-  		</dd>
- 
-		<dt class="newitem">Goats Cheese Tartine <em>- new item!</em></dt>
-		<dd>Chargrilled sourdough bread with soft goats cheese, roasted baby artichokes 
-		and black olive tapenade
-		<span class="price">$7.95</span>
-		</dd>
+<!-- END STYLESHEET -->
 
-		<dt>Calamari</dt>
-		<dd>Breadcrumbed squid sautéed in garlic, lemon, parsley and butter with tartare sauce
-		<span class="price">$8.95</span>
-		</dd>
+<!-- START GOOGLE FONTS -->
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,100&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=League+Script' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+<!-- END GOOGLE FONTS -->
 
-		<dt>Smoked Salmon</dt>
-		<dd>Sliced smoked scottish salmon with dill, shallots, baby capers and crème fraîche dressing
-		<span class="price">$8.95</span>
-		</dd>
-	</dl>
-	<h5>***</h5>
-	</div><!-- end of appetizers section -->
- 
-	<div id="main"><!-- start of  main Courses section -->
-		<h2>Main courses</h2>
-		<p>You may eat as many dishes from this menu as you wish (varies in November/December when our Christmas menu is available). This menu is available every day</p>
- 
-		<dl>
- 			<dt class="newitem">Risotto Vert <em>- new item!</em></dt>
-			<dd>Risotto with grilled asparagus, broad beans, spring onions, courgette, green beans, baby spinach, pesto and rocket
-			<span class="price">$12.95</span>
-			</dd>
- 
-			<dt>Goats Cheese Salad</dt>
-			<dd>Warm goats cheese and roasted vegetable salad with black olive tapenade crostini
- 			<span class="price">$12.95</span>
- 			</dd>
- 
-			<dt>Mushroom Crépes </dt>
-			<dd>Baked crépes with mushrooms, spinach and gruyère cheese<span class="price">$16.95</span>
-			</dd>
-			
-		</dl>
- <h5>***</h5>
-	</div><!-- end of  main Courses section -->
-	
-	<div id="footer">
-		<p class="warning"><sup>*</sup>Discretionary optional gratuity of 12.5% will be added to your bill<br/>
-This is a sample menu only and is subject to change</p>
-	</div><!-- end of  footer section -->
- 
-</div><!-- end of main container -->
-</body>
-</html> 
+<!-- START JQUERY -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js-scroll.js"></script> <!-- SMOOTH SCROLL -->	
+<!-- END JQUERY -->
+
+	</head>
+
+	<body class="unselectable">
+
+		<div id="one">
+			<div class="one-content">
+				<h1 class="animated bounceInDown">Black Goose Bistro</h1>
+				<h3 class="animated bounceInUp"><b>[ </b> Summer Menu <b> ]</b></h3>
+				<div class="intro animated bounceInUp">
+				Located in the center of Paris, Black Goose Bistro offers unparalleled access to the sights, sounds and attractions of France's most vibrant city.
+				<br /><br />
+				Since the bistro is located at the 25th floor of  the tallest building in its area, each of its rooms features breathtaking views of the entire city.
+				</div>
+				<div class="animated bounceInUp" style="display: block; margin: 0 auto; margin-top: 15px;">
+					<a href="#two" class="intro-button" style="margin-right: 10px;">Appertizers</a>
+					<a href="#three" class="intro-button" style="margin-right: 10px;">Main Courses</a>
+				<a href="#four" class="intro-button">Opening Hours</a>
+				</div>
+			</div>
+		</div>
+
+		<div id="two">
+			<div class="two-content">
+				<div class="appertizer">
+				<div class="appertizer-inner">
+					<div class="appertizer-ornamentup"></div>
+					<table border="0" style="border:0px; width:100%;" cellpadding="3" cellspacing="3">
+						<tr>
+							<td>
+								<div class="appertizer-name">Rillettes</div>
+								<div class="appertizer-dicsr">Coarsely shredded duck and pork paté with toasted sourdough bread, shallots and cornichons.</div>
+							</td>
+							<td valign="middle" width="100px" class="appertizer-price">$3.95</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="appertizer-name">Goats Cheese Tartine</div><div class="unselectable appertizer-new animated infinite flash">NEW !</div>
+								<div class="appertizer-dicsr">Chargrilled sourdough bread with soft goats cheese, roasted baby artichokes and black olive tapenade.</div>
+							</td>
+							<td valign="middle" width="100px" class="appertizer-price">$7.95</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="appertizer-name">Calamari</div>
+								<div class="appertizer-dicsr">Breadcrumbed squid sautéed in garlic, lemon, parsley and butter with tartare sauce.</div>
+							</td>
+							<td valign="middle" width="100px" class="appertizer-price">$8.95</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="appertizer-name">Smoked Salmon</div>
+								<div class="appertizer-dicsr">Sliced smoked scottish salmon with dill, shallots, baby capers and crème fraîche dressing.</div>
+							</td>
+							<td valign="middle" width="100px" class="appertizer-price">$8.95</td>
+						</tr>
+					</table>
+					<div class="appertizer-ornamentdown"></div>
+				</div>
+				</div>
+			</div>
+			<div class="two-title">
+				<h2>Appetizers</h2>
+				<div class="subtitle">This season, we explore the spicy flavors of the <br />South West region of France in our appetizer collection.</div>
+			</div>					
+		</div>
+
+		<div id="three">
+			<div class="three-content">
+				<div class="maincourses">
+				<div class="maincourses-inner">
+					<div class="maincourses-ornamentup"></div>
+					<table border="0" style="border:0px; width:100%;" cellpadding="3" cellspacing="3">
+						<tr>
+							<td>
+								<div class="maincourses-name">Risotto Vert</div><div class="unselectable maincourses-new animated infinite flash">NEW !</div>
+								<div class="maincourses-dicsr">Risotto with grilled asparagus, broad beans, spring onions, courgette, green beans, baby spinach, pesto and rocket.</div>
+							</td>
+							<td valign="middle" width="100px" class="maincourses-price">$12.95</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="maincourses-name">Goats Cheese Salad</div>
+								<div class="maincourses-dicsr">Warm goats cheese and roasted vegetable salad with black olive tapenade crostini.</div>
+							</td>
+							<td valign="middle" width="100px" class="maincourses-price">$12.95</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="maincourses-name">Mushroom Crépes</div>
+								<div class="maincourses-dicsr">Baked crépes with mushrooms, spinach and gruyère cheese.</div>
+							</td>
+							<td valign="middle" width="100px" class="maincourses-price">$16.95</td>
+						</tr>
+					</table>
+					<div class="maincourses-ornamentdown"></div>
+				</div>
+				</div>
+				<div style="text-align:center; margin-top: 20px;"><span class="maincourses-promotion">Discretionary optional gratuity of 12.5% will be added to your bill.</span></div>
+			</div>
+			<div class="three-title">
+				<h2>Main Courses</h2>
+				<div class="subtitle">You may eat as many dishes from this menu as you wish.<br />This menu is available every day.</div>
+			</div>									
+			</div>			
+		</div>
+
+		<div id="four">
+			<div class="four-content">
+				<div class="hourswrap">
+				<table border="0" width="100%" cellpadding="0" cellpadding="5">
+				  <tr>
+				    <td>
+				    	<div class="hours">11AM-09PM</div>
+				    	<div class="hours-text">Monday to Thursday</div>
+				    </td>
+				  </tr>
+				  <tr>
+				  	<td>
+				    	<div class="hours" style="margin-top: 100px;">11AM-12PM</div>
+				    	<div class="hours-text">Friday and Saturday</div>
+				    </td>
+				  </tr>
+				</table>
+				</div>
+			<div class="four-title">
+				<h2>Opening Hours</h2>
+				<div class="subtitle">We operate from Monday to Saturday.<br />Hover the cursor on the day to see what time we open.</div>
+			</div>					
+			</div>			
+		</div>
+
+		<a href="#one"><div class="homeslider"></div></a>
+	</body>
+
+</html>	

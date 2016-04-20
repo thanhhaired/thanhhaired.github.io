@@ -1,84 +1,42 @@
 @import "reset.css";
-@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700,200";
-@import "https://fonts.googleapis.com/css?family=Satisfy";
-@import "https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200";
-@import "https://fonts.googleapis.com/css?family=Lobster";
-@import "https://fonts.googleapis.com/css?family=Slabo+27px";
-@import "https://fonts.googleapis.com/css?family=Bitter:400,700";
 body {
-    background: rgba(0, 0, 0, 0) url("img/stardust.png") repeat fixed center center;
-    color: #797979;
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 300;
+    background: #FDFAF5;
+    color: #3E3E32;
+    font-family: 'Libre Baskerville', serif;
+}
+
+#overlay {
+    pointer-events: none;
+    width: 100%;
+    height: 800vh;
+    background: url('img/paper.jpg') repeat;
+    mix-blend-mode: multiply;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+
+#logo {
+    background: rgba(0, 0, 0, 0.0) url("img/logo.png") no-repeat scroll center center / 600px 400px;
+    height: 400px;
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 100px;
+    z-index: 10;
+    position: relative;
 }
 
 #wrapper {
-    background: #eeedeb none repeat scroll 0 0;
-    box-shadow: 0 0 0 1px #797979, 0 0 0 4px #eeedeb, 0 0 0 7px #797979, 0 0 0 27px #eeedeb, 0 0 0 28px #e9eae9, 0 0 5px 30px rgba(0, 0, 0, 0.1);
-    margin: 100px auto;
+    width: 1100px;
+    margin: 0px auto;
     padding: 20px;
-    width: 800px;
-}
-
-#header {
-    border-bottom: 1px solid #bababa;
-    margin-bottom: 10px;
-    padding-bottom: 50px;
-    text-align: center;
-}
-
-#header h1 {
-    background: rgba(0, 0, 0, 0) url("img/logo.png") no-repeat scroll center center / 350px 187px;
-    height: 187px;
-    margin: 0 auto;
-    text-indent: -9999px;
-    width: 350px;
-}
-
-#header h3 {
-    border-bottom: 1px solid #bababa;
-    border-top: 1px solid #bababa;
-    font-size: 40px;
-    font-weight: 200;
-    letter-spacing: 20px;
-    line-height: 1;
-    margin-bottom: 30px;
-    margin-top: 50px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-top: 20px;
-    text-transform: uppercase;
-}
-
-#header p.intro {
-    font-size: 15px;
-    margin: 10px auto;
-    text-align: justify;
-    width: 700px;
-}
-
-#header p.hours {
-    font-family: "Bitter", serif;
-    line-height: 1.2;
-    margin-top: 30px;
-    text-transform: uppercase;
-}
-
-#header p.hours span.label {
-    color: #9c9c9c;
-    font-size: 12px;
-    letter-spacing: 0;
-}
-
-#header p.hours span.label::before {
-    content: "...";
-    margin-right: 6px;
-}
-
-#header p.hours span.time {
-    color: #797979;
-    font-size: 15px;
-    letter-spacing: 5px;
+    background-size: 1200px auto;
+    padding-top: 200px;
+    box-shadow: 0 0 0 5px #DA2534;
+    z-index: 5;
+    margin-top: -200px;
+    margin-bottom: 100px;
 }
 
 #appetizers {
@@ -159,20 +117,6 @@ dt.newitem em {
 }
 
 #footer {
-    border-top: 1px solid #bababa;
-    margin-top: 40px;
-}
-
-#footer p.warning {
-    font-size: 12px;
-    letter-spacing: 5px;
-    margin-left: 15px;
-    word-spacing: 6px;
-}
-
-#footer p.warning sup {
-    color: #d50f25;
-    font-size: 30px;
-    margin-left: -17px;
-    top: 12.5px;
+    background: url('img/stripe.png') repeat-x center bottom / 40px;
+    padding-bottom: 35px;
 }

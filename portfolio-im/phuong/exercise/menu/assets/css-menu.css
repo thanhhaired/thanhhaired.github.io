@@ -1,0 +1,514 @@
+
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	overflow: hidden;
+}
+
+.unselectable {
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.homeslider {
+	display: block;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 80px;
+	background: rgba(0, 0, 0, 0.3) url('home-white.png') center center no-repeat;
+	background-size: 50px 50px;
+	height: 100vh;
+	line-height: 100vh;
+	-webkit-transition: all 0.5s; /* Safari */
+	transition: all 0.5s;
+	z-index: 1; 	
+}
+
+.homeslider:hover {
+	background: rgba(255, 255, 255, 0.8) url('home-black.png') center center no-repeat;
+	background-size: 50px 50px;	
+	-webkit-transition: all 0.5s; /* Safari */
+	transition: all 0.5s;  	
+}
+
+#one {
+    background: url('01.jpg') center top no-repeat fixed;
+    background-size: cover;
+    height: 100vh;
+	width: 100%;
+	display: table;
+	z-index: 99999999999;
+	position: relative; 	
+}
+
+#two {
+    background: url('02.jpg') center center no-repeat fixed;
+    background-size: cover;
+    height: 100vh;
+	width: 100%;
+	display: table;	
+}
+
+#three {
+    background: url('03.jpg') center center no-repeat fixed;
+    background-size: cover;
+    height: 100vh;
+	width: 100%;
+	display: table;	
+}
+
+#four {
+    background: url('04.jpg') center center no-repeat fixed;
+    background-size: cover;
+    height: 100vh;
+	width: 100%;
+	display: table;	
+}
+
+
+/* -- ONE CONTENT -- */
+
+.one-content {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.one-content .intro {
+	width: 500px;
+	margin: 0 auto;
+}
+
+.one-content h1 {
+	color: white;
+	text-transform: uppercase;
+	font-weight: 100;
+	display:inline-block;
+	font-size:4em;
+	margin:0;
+	word-spacing: 20px;
+	letter-spacing: 5px;
+	margin-bottom: 80px;
+}
+
+.one-content h3 {
+	color: white;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 1.5em;
+	margin: 0;
+	word-spacing: 20px;
+	letter-spacing: 5px;
+	margin-bottom: 30px;
+}
+
+.one-content .intro {
+	color: #fff;
+	border: 1px solid rgba(255,255,255, 1);
+	background: rgba(0,0,0,0.6);
+	position: relative;
+	width: 600px;
+	margin: auto;
+	padding: 25px 35px 25px 35px;
+	letter-spacing: 2px;
+	word-spacing: 5px;
+	font-weight: 300;
+	text-align: justify;
+	border-radius: 5px;	
+}
+
+.one-content .intro-button {
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: auto;
+    padding: 20px 10px 20px 10px;
+    position: relative;
+    text-align: center;
+    width: 194px;
+    text-decoration: none;
+	-webkit-transition: all 0.5s; /* Safari */
+	transition: all 0.5s;  
+	text-transform: uppercase;  
+}
+
+.one-content .intro-button:hover {
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(255, 255, 255, 1);
+    color: #272822;
+    text-decoration: none;
+	-webkit-transition: all 0.5s; /* Safari */
+	transition: all 0.5s;       
+}
+
+
+/* -- TWO CONTENT -- */
+
+.two-content {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.two-content .appertizer {
+	width: 600px;
+	margin: auto;
+	background:
+	repeating-linear-gradient(
+		transparent,
+		transparent 10px,
+		lightcoral 10px,
+		lightcoral 15px,
+		transparent 15px,
+		transparent 20px,
+		lightcoral 15px,
+		lightcoral 40px,
+		transparent 40px,
+		transparent 45px,
+		lightcoral 45px,
+		lightcoral 50px,
+		transparent 50px,
+		transparent 80px
+	),
+	repeating-linear-gradient(
+		90deg,
+		transparent,
+		transparent 10px,
+		lightcoral 10px,
+		lightcoral 15px,
+		transparent 15px,
+		transparent 20px,
+		lightcoral 15px,
+		lightcoral 40px,
+		transparent 40px,
+		transparent 45px,
+		lightcoral 45px,
+		lightcoral 50px,
+		transparent 50px,
+		transparent 80px
+	), floralwhite;
+	background-blend-mode: multiply;
+	padding: 10px;
+	border: 5px solid #000;
+}
+
+.two-content .appertizer-inner {
+	width: auto;
+	background: rgba(255,255,255,0.95);
+	padding: 20px;
+	border: 1px solid #000;
+}
+
+.two-content .appertizer-price {
+	text-align: right;
+	font-family: 'League Script', cursive;
+	font-size: 2em;	
+}
+
+.two-content .appertizer-name {
+	font-family: 'Cookie', cursive;
+	color: #d50f25;
+	font-size: 2.5em;
+	font-weight: 700;
+	display: inline-block;
+}
+
+.two-content .appertizer-new {
+	display: inline-block;
+	color: white;
+	font-size: 10px;
+	padding: 2px;
+	padding-right: 5px;
+	padding-left: 5px;
+	background: linear-gradient(limegreen,transparent),linear-gradient(90deg,skyblue,transparent),linear-gradient(-90deg,coral,transparent);
+	background-blend-mode: screen;
+	border-radius: 5px;
+	margin-left: 10px;
+}
+
+.two-content .appertizer-dicsr {
+	text-transform: uppercase;
+	font-size: 0.7em;
+	margin-bottom: 20px;
+	letter-spacing: 2px;
+}
+
+.two-content .appertizer-ornamentup {
+	display: block;
+	width: 100px;
+	height: 35px;
+	background: url(ornament.png) center top no-repeat;
+	background-size: 100px auto;
+	margin: 0 auto;
+	-webkit-transform:scaleY(-1);
+	-moz-transform:scaleY(-1);
+	-ms-transform:scaleY(-1);
+	-o-transform:scaleY(-1);
+	transform:scaleY(-1);
+	margin-bottom: 10px;
+}
+
+.two-content .appertizer-ornamentdown {
+	display: block;
+	width: 100px;
+	height: 35px;
+	background: url(ornament.png) center top no-repeat;
+	background-size: 100px auto;
+	margin: 0 auto;	
+}
+
+.two-title {
+	position: absolute;
+	top: 101vh;
+	left: 50px;
+}
+
+.two-title h2 {
+	color: white;
+	font-family: 'Lora', serif;
+	font-family: 'League Script', cursive;
+	font-size: 2.5em;
+	margin-bottom: 5px;
+}
+
+.two-title .subtitle {
+	color: white;
+	text-transform: uppercase;
+	font-size: 0.7em;
+	letter-spacing: 2px;
+	text-shadow: 0px 0px 10px #000000;
+}
+
+
+
+
+/* -- THREE CONTENT -- */
+
+.three-content {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.three-content .maincourses {
+	width: 600px;
+	margin: auto;
+	background:
+	repeating-linear-gradient(
+		45deg,
+		transparent,
+		transparent 1em,
+		moccasin 0,
+		moccasin 2em,
+		transparent 0,
+		transparent 3em,
+		powderblue 0,
+		powderblue 4em,
+		transparent 0,
+		transparent 5em,
+		lavender 0,
+		lavender 6em,
+		transparent 0,
+		transparent 7em,
+		beige 0,
+		beige 8em
+	),
+	repeating-linear-gradient(
+		-45deg,
+		transparent,
+		transparent 1em,
+		khaki 0,
+		khaki 2em,
+		transparent 0,
+		transparent 3em,
+		beige 0,
+		beige 4em,
+		transparent 0,
+		transparent 5em,
+		peachpuff 0,
+		peachpuff 6em
+	), whitesmoke;
+	background-blend-mode: multiply;
+	padding: 10px;
+	border: 5px solid #000;
+}
+
+.three-content .maincourses-inner {
+	width: auto;
+	background: rgba(255,255,255,0.95);
+	padding: 20px;
+	border: 1px solid #000;
+}
+
+.three-content .maincourses-price {
+	text-align: right;
+	font-family: 'League Script', cursive;
+	font-size: 2em;	
+}
+
+.three-content .maincourses-name {
+	font-family: 'Cookie', cursive;
+	color: #A86A39;
+	font-size: 2.5em;
+	font-weight: 700;
+	display: inline-block;
+}
+
+.three-content .maincourses-new {
+	display: inline-block;
+	color: white;
+	font-size: 10px;
+	padding: 2px;
+	padding-right: 5px;
+	padding-left: 5px;
+	background: linear-gradient(limegreen,transparent),linear-gradient(90deg,skyblue,transparent),linear-gradient(-90deg,coral,transparent);
+	background-blend-mode: screen;
+	border-radius: 5px;
+	margin-left: 10px;
+}
+
+.three-content .maincourses-promotion {
+	background: rgba(0,0,0,0.8);
+	color: white;
+	padding: 10px;
+	border-radius: 10px;
+	letter-spacing: 1px;
+}
+
+.three-content .maincourses-dicsr {
+	text-transform: uppercase;
+	font-size: 0.7em;
+	margin-bottom: 20px;
+	letter-spacing: 2px;
+}
+
+.three-content .maincourses-ornamentup {
+	display: block;
+	width: 100px;
+	height: 35px;
+	background: url(ornament.png) center top no-repeat;
+	background-size: 100px auto;
+	margin: 0 auto;
+	-webkit-transform:scaleY(-1);
+	-moz-transform:scaleY(-1);
+	-ms-transform:scaleY(-1);
+	-o-transform:scaleY(-1);
+	transform:scaleY(-1);
+	margin-bottom: 10px;
+}
+
+.three-content .maincourses-ornamentdown {
+	display: block;
+	width: 100px;
+	height: 35px;
+	background: url(ornament.png) center top no-repeat;
+	background-size: 100px auto;
+	margin: 0 auto;	
+}
+
+.three-title {
+	position: absolute;
+	top: 201vh;
+	left: 50px;
+}
+
+.three-title h2 {
+	color: white;
+	font-family: 'Lora', serif;
+	font-family: 'League Script', cursive;
+	font-size: 2.5em;
+	margin-bottom: 5px;
+}
+
+.three-title .subtitle {
+	color: white;
+	text-transform: uppercase;
+	font-size: 0.7em;
+	letter-spacing: 2px;
+	text-shadow: 0px 0px 10px #000000;
+}
+
+
+/* -- TWO CONTENT -- */
+
+.four-content {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.four-content .hourswrap {
+	width: 900px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.four-content .hours {
+	font-size:150px;
+	font-family: 'Anton', sans-serif;
+	z-index:99;
+	position: relative;
+	line-height: 200px;
+	display: block;
+	color: white;
+}
+
+.four-content .hours-text {
+	display: block;
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	background: url('04.jpg') center center fixed;
+    background-size: cover;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-weight: 500;
+	color: #d50f25;
+	text-transform: uppercase;
+	margin: 0 auto;
+	margin-top: -120px;
+	z-index: 999;
+	position: relative;
+	-webkit-transition: all 1s ease; /* Safari */
+	transition: all 1s ease;  	
+}
+
+.four-content .hours-text:hover {
+	background: none;
+	color: rgba(0,0,0,0);
+	-webkit-transition: all .2s ease; /* Safari */
+	transition: all .2s ease;  	
+}
+
+.four-title {
+	position: absolute;
+	top: 301vh;
+	left: 50px;
+}
+
+.four-title h2 {
+	color: white;
+	font-family: 'Lora', serif;
+	font-family: 'League Script', cursive;
+	font-size: 2.5em;
+	margin-bottom: 5px;
+}
+
+.four-title .subtitle {
+	color: white;
+	text-transform: uppercase;
+	font-size: 0.7em;
+	letter-spacing: 2px;
+	text-shadow: 0px 0px 10px #000000;
+}
+

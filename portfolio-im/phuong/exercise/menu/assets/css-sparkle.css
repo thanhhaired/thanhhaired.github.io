@@ -1,0 +1,11 @@
+.sparkle {
+	position:absolute;
+}
+.small-sparkle1 {
+	-webkit-transform:scale(0.7);
+	transform:scale(0.7);
+}
+.small-sparkle2 {
+	-webkit-transform:scale(0.6);
+	transform:scale(0.6);
+}
