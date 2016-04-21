@@ -153,6 +153,10 @@ a:active {
     top: 66.66%;
 }
 
+.grid.three .top-four {
+    top: 99.99%;
+}
+
 .grid.three .left-one {
     left: 0;
 }
