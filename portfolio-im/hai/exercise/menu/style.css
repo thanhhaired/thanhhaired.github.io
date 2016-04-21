@@ -1,133 +1,111 @@
-@import "reset.css";
 body {
-    background: #FFF;
-    color: #3E3E32;
-    font-family: 'Libre Baskerville', serif;
-    position: relative;
-}
-
-#overlay {
-    pointer-events: none;
-    width: 100%;
-    height: calc(100% + 200px);
-    background: url('img/paper.jpg') repeat;
-    mix-blend-mode: multiply;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 99999;
-    margin-top: -100px;
-    opacity: 0.5;
-}
-
-#logo {
-    background: rgba(0, 0, 0, 0.0) url("img/logo.png") no-repeat scroll center center / 600px 400px;
-    height: 400px;
-    width: 600px;
-    margin: 0 auto;
-    margin-top: 100px;
-    z-index: 10;
-    position: relative;
-}
-
-#header h1 {
-    display: none;
-}
-
-#header h3 {
-    display: none;
+    background: #D7C39C;
+    color: #CEB888;
+    font-family: 'Lora', serif;
 }
 
 #wrapper {
-    width: 1100px;
-    margin: 0px auto;
-    padding: 20px;
-    background-size: 1200px auto;
-    padding-top: 200px;
-    box-shadow: 0 0 0 5px #DA2534;
-    z-index: 5;
-    margin-top: -200px;
-    margin-bottom: 100px;
+    background: url('img/top.jpg') no-repeat top center, url('img/bottom.jpg') no-repeat bottom center, url('img/middle.jpg') repeat-y center center;
+    width: 1000px;
+    margin: 100px auto;
+    padding: 50px;
+    padding-top: 180px;
+    padding-bottom: 180px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-#appetizers {
-    border-right: 1px solid #bababa;
-    display: inline-block;
-    margin-right: 0px;
-    padding-right: 10px;
-    width: 540px;
-}
-
-#appetizers h2,
-#main h2 {
-    border-bottom: 1px solid #bababa;
-    font-family: "Yanone Kaffeesatz", sans-serif;
-    font-size: 25px;
-    font-weight: 300;
-    letter-spacing: 3px;
-    padding-bottom: 25px;
-    padding-top: 0;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-#appetizers dl,
-#main dl {
-    padding-right: 60px;
-    text-align: center;
-}
-
-#appetizers dd,
-#main dd {
-    margin-bottom: 20px;
-    text-align: justify;
-}
-
-#appetizers dt,
-#main dt {
-    font-family: "Slabo 27px", serif;
-    margin-left: 20px;
-    text-transform: uppercase;
-}
-
-#appetizers h5,
-#main h5 {
-    letter-spacing: 10px;
-    text-align: center;
-}
-
-#appetizers p {
-    font-family: "Satisfy", cursive;
-    font-weight: 400;
-    font-size: 20px;
-}
-
-#main {
-    display: inline-block;
-    vertical-align: top;
-    width: 540px;
-}
-
-#main p {
-    font-family: "Satisfy", cursive;
-    font-size: 18px;
-    height: 90px;
-    font-weight: 400;
-}
-
-span.price {
+#top-orn {
+    background: url('img/top-orn.png') no-repeat;
+    height: 75px;
+    width: 90px;
     display: block;
-    font-family: "Lobster", cursive;
-    text-align: right;
+    margin: 0 auto;
 }
 
-dt.newitem em {
-    color: red;
-    font-size: 10px;
-    letter-spacing: 1px;
+#bottom-orn {
+    background: url('img/bottom-orn.png') no-repeat;
+    height: 75px;
+    width: 90px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 70px;
 }
 
-#footer {
-    background: url('img/stripe.png') repeat-x center bottom / 40px;
-    padding-bottom: 35px;
+#logo {
+    background: url('img/logo.png') no-repeat;
+    background-size: 520px auto;
+    height: 340px;
+    width: 520px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+#five-stars {
+    background: url('img/five-stars.png') no-repeat center center;
+    height: 30px;
+    width: 570px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+#header p.intro {
+    width: 760px;
+    text-align: justify;
+    color: #4d4d4d;
+    margin: 0 auto;
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+#knife-fork {
+    background: url('img/knife-fork.png') no-repeat center center;
+    height: 70px;
+    width: 130px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+#menu-title {
+    background: url('img/menu-title.png') no-repeat center center;
+    height: 190px;
+    width: 260px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+#divider {
+    background: url('img/divider.png') no-repeat center center;
+    height: 10px;
+    width: 891px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+#footer p.note {
+    background: rgba(0, 0, 0, 0) url("img/flower.png") no-repeat scroll left 4px;
+    color: #333;
+    display: block;
+    margin: 0 auto;
+    letter-spacing: 4px;
+    font-size: 14px;
+    margin-top: 30px;
+    padding-left: 30px;
+    margin-left: 90px;
+    line-height: 20px;
+}
+
+#thankyou {
+    background: url('img/thankyou.png') no-repeat center center;
+    height: 135px;
+    width: 280px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 70px;
 }
