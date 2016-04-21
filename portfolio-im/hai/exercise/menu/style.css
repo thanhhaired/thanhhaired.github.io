@@ -1,6 +1,6 @@
 body {
     background: #D7C39C;
-    color: #CEB888;
+    color: #4d4d4d;
     font-family: 'Lora', serif;
 }
 
@@ -108,4 +108,73 @@ body {
     display: block;
     margin: 0 auto;
     margin-top: 70px;
+}
+
+#main-menu {
+    background: url('img/menu-divider.png') no-repeat center 20px;
+    margin-bottom: 50px;
+    width: 900px;
+}
+
+#appetizers,
+#main {}
+
+#appetizers h2,
+#main h2 {
+    background: rgba(0, 0, 0, 0) url("img/menu-bottom.png") no-repeat scroll center bottom;
+    color: #4d4d4d;
+    font-family: "steeltongs";
+    font-size: 40px;
+    height: 80px;
+    letter-spacing: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100;
+    padding-left: 20px;
+}
+
+#appetizers p.menu-intro,
+#main p.menu-intro {
+    width: 380px;
+    display: block;
+    margin: 20px auto;
+    text-align: justify;
+    font-size: 18px;
+    word-spacing: 3px;
+    background: url('img/menu-item-divider.png') no-repeat bottom center;
+    height: 120px;
+}
+
+#menu-item h3 {
+    text-align: center;
+    color: #b6944a;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+#menu-item p.description {
+    width: 360px;
+    margin: 0 auto;
+    text-align: justify;
+    font-style: italic;
+    color: #8d8d8d;
+    font-size: 14px;
+}
+
+#menu-item p.price {
+    width: 360px;
+    margin: 0 auto;
+    text-align: right;
+    font-style: italic;
+    color: #b6944a;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+
+#menu-item h3 em.new {
+    font-size: 8px;
+    color: #d50f25;
+    vertical-align: middle;
+    letter-spacing: 1px;
 }
