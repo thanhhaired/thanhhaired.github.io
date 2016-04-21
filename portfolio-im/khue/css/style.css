@@ -109,6 +109,10 @@ fieldset[disabled] .btn-gray.active {
     margin-top: 10px;
 }
 
+.header_quote {
+    letter-spacing: 10px;
+}
+
 
 /* ABOUT */
 
@@ -222,8 +226,6 @@ a.img-portfolio.active {
     height: 70px;
     transition: background-color .5s ease 0s;
 }
-
-
 
 .navbar-brand,
 .navbar-nav li a {

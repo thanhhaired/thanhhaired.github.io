@@ -1,0 +1,110 @@
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    height: 100%;
+    background: white url('images/pink.png') no-repeat top right scroll;
+    background-size: 300px auto;
+}
+body {
+    color: #333;
+    font-family: "Lora",serif;
+    font-weight: 300;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-align: center;
+    position: relative;
+}
+a {
+    color: #555;
+    text-decoration: none;
+}
+.main {
+    margin: 0 auto;
+    width: 1300px;
+}
+.inspiration {
+    color: #aaa;
+    margin: 30px auto;
+    width: 200px;
+}
+.no-js .inspiration {
+    width: auto;
+}
+.inspiration h4 {
+    border-bottom: 1px solid #f0f0f0;
+    color: #666;
+    font-size: 14px;
+    margin: 20px 3px 5px;
+    padding: 8px 10px 5px;
+}
+.inspiration p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 5px;
+    padding: 0 10px;
+}
+.inspiration ul.container li {
+    -moz-user-select: none;
+    border-radius: 10px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08) inset;
+    padding: 10px;
+}
+.inspiration li img {
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+}
+ul.container {
+    height: 310px;
+    list-style-type: none;
+    margin: 0 auto 30px;
+    padding: 0;
+    position: relative;
+    width: 200px;
+}
+ul.container li {
+    background: #fff none repeat scroll 0 0;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.no-js ul.container {
+    height: auto;
+    text-align: center;
+    width: auto;
+}
+.no-js ul.container li {
+    display: inline-block;
+    height: 580px;
+    line-height: 1.5;
+    margin: 10px 10px 30px;
+    padding-bottom: 20px;
+    position: relative;
+    text-align: left;
+    width: 350px;
+}
+.no-js ul.container li h4 {
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #DB3A46;
+}
+
+#logo {
+    width: 500px;
+    height: 500px;
+    background: url('images/logo.png') no-repeat center center;
+    background-size: 500px auto;
+    margin: 0 auto;
+
+}
