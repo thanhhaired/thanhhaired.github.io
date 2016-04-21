@@ -31,7 +31,7 @@
     position: absolute;
     top: calc(100vh + 100px);
     right: 100px;
-    }
+}
 
 #up {
     z-index: 1000;
@@ -113,6 +113,17 @@
     -webkit-border-radius: 1px;
     -moz-border-radius: 1px;
     border-radius: 1px;
+    filter: grayscale(100%);
+    -webkit-transition: filter 1s ease-in-out;
+    -moz-transition: filter 1s ease-in-out;
+    transition: filter 1s ease-in-out;
+}
+
+.figure:hover {
+    filter: grayscale(0%);
+    -webkit-transition: filter 0.5s ease-in-out;
+    -moz-transition: filter 0.5s ease-in-out;
+    transition: filter 0.5s ease-in-out;
 }
 
 .figure:hover .img-trigger,
