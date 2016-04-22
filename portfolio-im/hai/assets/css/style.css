@@ -73,13 +73,26 @@ a {
 /* Logo */
 
 .logo_container {
-    background: #C2BCBA url('../images/home-2050wt.jpg') center center no-repeat;
+    background: #D50F25;
     background-size: cover;
     background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
+}
+
+
+[data-slides] {
+    background-image: url(../images/home-2050wt.jpg); /* Default image. */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -ms-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;
+    transition: all 0.7s ease;
 }
 
 .logo {

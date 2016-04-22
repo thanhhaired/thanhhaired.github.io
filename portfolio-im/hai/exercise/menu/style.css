@@ -171,10 +171,39 @@ body {
     font-weight: 400;
 }
 
-
 #menu-item h3 em.new {
     font-size: 8px;
     color: #d50f25;
     vertical-align: middle;
     letter-spacing: 1px;
+}
+
+#hours {
+    width: 313px;
+    background: url('img/hours-top.jpg') no-repeat top center, url('img/hours-bottom.jpg') no-repeat bottom center;
+    margin: 10px auto;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    margin-top: 30px;
+}
+
+#hours h2 {
+    font-weight: 300;
+    color: #B59350;
+}
+
+#hours span.label {
+    color: #B59350;
+}
+
+#hours span.time {
+    letter-spacing: 5px;
+    font-size: 40px;
+    color: #4d4d4d;
+    font-family: "steeltongs";
 }
