@@ -86,6 +86,7 @@ a:active {
 #about div.about-right div.about-right-content {
     max-width: 70%;
     text-align: justify;
+    text-transform: uppercase;
 }
 
 #works {

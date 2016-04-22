@@ -1,0 +1,287 @@
+/*---------------------------------------
+---------  FOG:       #D4DDE1    --------
+---------  RUST:      #AA4B41    --------
+---------  CHARCOAL:  #2D3033   ---------
+---------------------------------------*/
+
+
+/*---------------------------------------
+-----------     @FONT-FACE    -----------
+---------------------------------------*/
+
+@font-face {
+	font-family: JosefinSans;
+	src: url(fonts/JosefinSans-Regular.ttf);
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: JosefinSans;
+	src: url(fonts/JosefinSans-Bold.ttf);
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: JosefinSans;
+	src: url(fonts/JosefinSans-Thin.ttf);
+	font-weight: 100;
+}
+
+
+/*---------------------------------------
+-----------       RESET       -----------
+---------------------------------------*/
+
+html,
+body,
+header,
+footer,
+main,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+p,
+a {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-family: JosefinSans, 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: 400;
+	list-style-type: none;
+	color: #020509;
+}
+
+
+/*---------------------------------------
+-----------    GRID SYSTEM    -----------
+---------------------------------------*/
+
+.container {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+
+/*-- clearfix -- */
+
+.row:before,
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+[class*='col-'] {
+	float: left;
+	min-height: 1px;
+	width: 78px;
+	/*-- gutter -- */
+	padding: 4px;
+}
+
+.col-1 {
+	width: 78px;
+}
+
+.col-2 {
+	width: 156px;
+}
+
+.col-3 {
+	width: 234px;
+}
+
+.col-4 {
+	width: 312px;
+}
+
+.col-5 {
+	width: 390px;
+}
+
+.col-6 {
+	width: 468px;
+}
+
+.col-8 {
+	width: 624px;
+}
+
+.col-12 {
+	width: 936px;
+}
+
+
+/*---------------------------------------
+-----------    HEADER CSS    ------------
+---------------------------------------*/
+
+header {
+	height: 700px;
+	position: relative;
+	background: url('img/bg-header.JPG');
+	background-size: cover;
+	background-position: center;
+}
+
+.jumbotron-text {
+	text-align: center;
+	border: 2px dashed #D4DDE1;
+	padding: 20px 0;
+	margin: 95px 60px;
+	color: #D4DDE1;
+}
+
+header h1 {
+	font-size: 7em;
+	font-weight: 400;
+	color: #D4DDE1;
+}
+
+header h3 {
+	font-size: 1.5em;
+	font-weight: 700;
+	color: #D4DDE1;
+}
+
+nav {
+	padding: 25px 0;
+	background: #fff;
+	text-align: center;
+	z-index: 3;
+}
+
+nav ul li {
+	display: inline;
+}
+
+nav ul li a {
+	padding: 2px 15px 0 20px;
+	text-decoration: none;
+	font-weight: 700;
+	color: #333;
+	background: url('img/icon-sprite.png') no-repeat;
+	background-size: 16px;
+	transition: background 0.2s;
+}
+
+nav ul li a:hover {
+	color: #AA4B41;
+	transition: background 0.2s;
+}
+
+nav ul li a.schedule {
+	background-position: 0 0;
+}
+
+nav ul li a.schedule:hover {
+	background-position: 0 -19px;
+}
+
+nav ul li a.register {
+	background-position: 0 -38px;
+}
+
+nav ul li a.register:hover {
+	background-position: 0 -57px;
+}
+
+nav ul li a.direction {
+	background-position: 0 -76px;
+}
+
+nav ul li a.direction:hover {
+	background-position: 0 -95px;
+}
+
+nav ul li a.hall {
+	background-position: 0 -114px;
+}
+
+nav ul li a.hall:hover {
+	background-position: 0 -133px;
+}
+
+nav ul li a.web {
+	background-position: 0 -152px;
+}
+
+nav ul li a.web:hover {
+	background-position: 0 -171px;
+}
+
+
+/*---------------------------------------
+-----------     MAIN CSS     ------------
+---------------------------------------*/
+
+body {
+	background: #D4DDE1;
+}
+
+main {
+	padding: 30px;
+	margin: 4px 0;
+}
+
+main [class*='col-'] > p {
+	text-align: justify;
+	padding: 10px 10px;
+}
+
+main .drop-cap {
+	float: left;
+	font-size: 145px;
+	line-height: 97px;
+	padding-top: 22px;
+	padding-right: 8px;
+	padding-left: 3px;
+	font-weight: 700;
+}
+
+.intro > p {
+	font-size: 1.68em;
+}
+
+.col-12 > p {
+	font-size: 1.68em;
+}
+
+
+/*---------------------------------------
+-----------    FOOTER CSS    ------------
+---------------------------------------*/
+
+footer {
+	height: 100px;
+}
+
+footer {
+	background: #2D3033;
+}
+
+footer ul {
+	text-align: right;
+	float: right;
+	padding-right: 40px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+footer a {
+	color: #D4DDE1;
+}
+
+footer a:hover {
+	color: #OOCFFA;
+}
