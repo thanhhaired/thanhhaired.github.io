@@ -14,50 +14,30 @@
 </head>
 
 <body>
-    <!-- Fixed navbar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top container">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Project name</a>
+    <div class="fixed-header-menu">
+        <div class="container container-fixed-menu">
+            <div class="row header-menu-row">
+                <div class="col-xs-3"><a class="header-menu-link" href="#about">[ABOUT]</a></div>
+                <div class="col-xs-3"><a class="header-menu-link" href="#places">[PLACES]</a></div>
+                <div class="col-xs-3"><a class="header-menu-link" href="#rooftopbars">[NIGHTLIFE]</a></div>
+                <div class="col-xs-3"><a class="header-menu-link" href="#events">[EVENTS]</a></div>
             </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li class="dropdown-header">Nav header</li>
-                            <li><a href="#">Separated link</a></li>
-                            <li><a href="#">One more separated link</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="../navbar/">Default</a></li>
-                    <li><a href="../navbar-static-top/">Static top</a></li>
-                </ul>
-            </div>
-            <!--/.nav-collapse -->
         </div>
-    </nav>
+    </div>
     <div class="container container-custom">
         <div id="header">
-            <!-- Carousel
-    ================================================== -->
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
+            <div class="header-menu">
+                <img width="250px" src="img/logo.png" />
+                <img class="img-responsive" style="margin: 0 auto;" src="img/divider.png" />
+                <div class="row header-menu-row">
+                    <div class="col-xs-3"><a class="header-menu-link" href="#about">[ABOUT]</a></div>
+                    <div class="col-xs-3"><a class="header-menu-link" href="#places">[PLACES]</a></div>
+                    <div class="col-xs-3"><a class="header-menu-link" href="#rooftopbars">[NIGHTLIFE]</a></div>
+                    <div class="col-xs-3"><a class="header-menu-link" href="#events">[EVENTS]</a></div>
+                </div>
+            </div>
+            <div class="header-shadow"></div>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" style="z-index: 99;position: relative;margin-top: -200px">
                 <ol class="carousel-indicators">
                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -83,7 +63,6 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-            <!-- /.carousel -->
         </div>
         <div id="about">
             <h1>ABOUT MIAMI</h1>
@@ -91,7 +70,7 @@
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
-                    <div class="row" style="color: #BB9656">
+                    <div class="row" style="color: #D21C5C">
                         <div class="col-xs-4"><i class="fa fa-arrows-alt fa-4x" aria-hidden="true"></i>
                             <h3>143 KM2</h3>
                             <h4>AREA</h4></div>
@@ -170,7 +149,7 @@
                 <div class="col-xs-1"></div>
             </div>
         </div>
-        <div id="rooptopbars">
+        <div id="rooftopbars">
             <div class="rooftopbars-head">
                 <div class="rooftopbars-bg">
                     <div class="rooftopbars-bg-content">
@@ -246,6 +225,7 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/mainxs.js"></script>
 </body>
 
 </html>

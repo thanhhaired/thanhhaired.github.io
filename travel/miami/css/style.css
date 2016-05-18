@@ -10,12 +10,13 @@ body {
     letter-spacing: 1px;
 }
 
-    .container-custom {
-        background: #111111;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-    }
+.container-custom {
+    background: #111111;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 .container-menu {
     width: 80%;
@@ -23,9 +24,87 @@ body {
 
 h1 {
     letter-spacing: 20px;
-    color: #BB9656;
+    color: #D21C5C;
     font-weight: 400;
     font-family: 'Josefin Sans', sans-serif;
+}
+
+
+/* -- HEADER -- */
+
+#header {}
+
+#header .header-menu {
+    text-align: center;
+    padding: 60px 0;
+    padding-bottom: 50px;
+    background: #111111;
+    position: relative;
+    z-index: 100;
+}
+
+#header .header-menu-row {
+    margin-top: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#header .header-menu-row a {
+    color: white;
+    font-size: 140%;
+    text-decoration: none;
+    transition: color 0.4s ease;
+    -webkit-transition: color 0.4s ease;
+    -moz-transition: color 0.4s ease;
+}
+
+#header .header-menu-row a:hover {
+    color: #D21C5C;
+}
+
+#header .header-shadow {
+    height: 200px;
+    background: -moz-linear-gradient(top, rgba(17, 17, 17, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    background: -webkit-linear-gradient(top, rgba(17, 17, 17, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to bottom, rgba(17, 17, 17, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#111111', endColorstr='#00000000', GradientType=0);
+    position: relative;
+    z-index: 100;
+}
+
+.fixed-header-menu {
+    height: 80px;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    line-height: 80px;
+}
+
+.container-fixed-menu {
+    background: rgba(0, 0, 0, 0.7);
+    transition: background 0.4s ease;
+    -webkit-transition: background 0.4s ease;
+    -moz-transition: background 0.4s ease;
+}
+
+.container-fixed-menu:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.fixed-header-menu a {
+    color: white;
+    font-size: 140%;
+    text-decoration: none;
+    transition: color 0.4s ease;
+    -webkit-transition: color 0.4s ease;
+    -moz-transition: color 0.4s ease;
+}
+
+.fixed-header-menu a:hover {
+    color: #D21C5C;
 }
 
 
@@ -60,7 +139,7 @@ h1 {
 #places .places-header-img {
     background: #111111;
     padding: 5px;
-    border: 1px solid #BB9656;
+    border: 1px solid #D21C5C;
 }
 
 #places .featurette-heading {
@@ -72,25 +151,25 @@ h1 {
 
 /* -- ROOFTOPBARS -- */
 
-#rooptopbars .rooftopbars-head {
+#rooftopbars .rooftopbars-head {
     text-align: center;
     background: #111111 url('../img/rooftopbars.jpg') center center no-repeat;
     background-size: cover;
     padding: 150px 10px;
 }
 
-#rooptopbars .rooftopbars-bg {
+#rooftopbars .rooftopbars-bg {
     display: inline-block;
     background: rgba(0, 0, 0, 0.8);
     padding: 10px;
 }
 
-#rooptopbars .rooftopbars-bg-content {
-    border: 1px solid #BB9656;
+#rooftopbars .rooftopbars-bg-content {
+    border: 1px solid #D21C5C;
     padding: 40px;
 }
 
-#rooptopbars .rooftopbars-content {
+#rooftopbars .rooftopbars-content {
     text-align: center;
     padding: 50px 15px;
 }
@@ -106,13 +185,13 @@ h1 {
 #events .events-img {
     background: #111111;
     padding: 15px;
-    border: 1px solid #BB9656;
+    border: 1px solid #D21C5C;
     margin-bottom: 20px;
 }
 
 #events h2 {
     text-transform: uppercase;
-    color: #BB9656;
+    color: #D21C5C;
 }
 
 #events p {
@@ -136,13 +215,18 @@ h1 {
 
 #numbers .numbers-right {
     text-align: left;
-    color: #BB9656;
+    color: #D21C5C;
 }
 
 
 /* -- RESPONSIVE CSS -- */
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+	container {
+		background: red;
+	}
+
+}
 
 @media (min-width: 640px) {
     .container-custom {
