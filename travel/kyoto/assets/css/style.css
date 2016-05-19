@@ -4,6 +4,7 @@ body {
     background: #d50f25;
     margin: 0;
     font-family: 'Source Code Pro';
+    overflow-x: hidden;
 }
 
 a,
@@ -19,6 +20,11 @@ a:active {
 .img-border {
     box-shadow: 0 0 0 2px #ffffff, 0 0 0 8px #d50f25, 0 0 0 9px #ffffff;
     margin: 50px auto;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right: 0;
+    padding-left: 0;
 }
 
 
@@ -372,7 +378,22 @@ a:active {
     transform-origin: 100%;
 }
 
+#gourmet h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 350%;
+    text-align: center;
+    letter-spacing: -2px;
+}
 
+#gourmet p {
+    text-align: justify;
+    letter-spacing: 2px;
+}
+
+#gourmet .gourmet-intro {
+    text-align: justify;
+    margin: 50px auto 0;
+}
 
 
 /* -- FOOTER -- */
@@ -403,27 +424,29 @@ a:active {
 /* -- FOOTER -- */
 
 #footer {
-  position: relative;
-  z-index: 1;
-  background: #ffffff;
+    position: relative;
+    z-index: 1;
+    background: #ffffff;
 }
+
 #footer:before {
-  background: inherit;
-  content: '';
-  display: block;
-  height: 50%;
-  left: 0;
-  position: absolute;
-  right: 0;
-  z-index: -1;
-  -webkit-backface-visibility: hidden;
+    background: inherit;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden;
 }
+
 #footer:before {
-  top: 0;
-  -webkit-transform: skewY(4deg);
-          transform: skewY(4deg);
-  -webkit-transform-origin: 100% 0;
-          transform-origin: 100% 0;
+    top: 0;
+    -webkit-transform: skewY(4deg);
+    transform: skewY(4deg);
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
 }
 
 #footer .footer-landscape {
