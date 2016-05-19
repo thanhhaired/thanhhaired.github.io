@@ -16,6 +16,13 @@ a:active {
     outline: 0;
 }
 
+.img-border {
+    box-shadow: 
+    0 0 0 2px #ffffff,
+    0 0 0 8px #d50f25,
+    0 0 0 9px #ffffff;
+    margin: 50px auto;
+}
 
 /* -- NAVBAR -- */
 
@@ -307,7 +314,26 @@ a:active {
 /* -- FOOTER -- */
 
 #activity {
-    padding: 20vh;
+    padding: 5vh 0 20vh;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+#activity h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 7rem;
+}
+
+#activity h2 {
+    font-size: 1.3rem;
+    letter-spacing: 4px;
+    line-height: 0;
+    text-transform: uppercase;
+}
+
+#activity p {
+    text-align: justify;
 }
 
 /* -- FOOTER -- */
