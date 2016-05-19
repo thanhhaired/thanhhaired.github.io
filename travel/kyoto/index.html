@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/buttons.css">
     <link rel="stylesheet" href="assets/css/fontawesome/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
@@ -22,11 +23,11 @@
         <div class="container">
             <a class="nav-link one" href="#places">places to go</a>
             <p class="divider-point">♦</p>
-            <a class="nav-link two" href="index.html">things to do</a>
+            <a class="nav-link two" href="#activity">things to do</a>
             <p class="divider-point">♦</p>
-            <a class="nav-link three" href="index.html">food to eat</a>
+            <a class="nav-link three" href="#gourmet">food to eat</a>
             <p class="divider-point">♦</p>
-            <a class="nav-link four" href="index.html">goods to buy</a>
+            <a class="nav-link four" href="#shopping">goods to buy</a>
         </div>
     </div>
     <!-- HEADER -->
@@ -54,8 +55,10 @@
                     <p>Kyoto (京都, Kyōto) served as Japan's capital and the emperor's residence from 794 until 1868. It is now the country's seventh largest city with a population of 1.4 million people and a modern face.</p>
                     <p>Over the centuries, Kyoto was destroyed by many wars and fires, but due to its historic value, the city was dropped from the list of target cities for the atomic bomb and spared from air raids during World War II. Countless temples, shrines and other historically priceless structures survive in the city today.</p>
                     <p>So now you know where you'll be this year holiday !</p>
-                    <button class="btn btn-1 btn-1e ">Book A Flight</button>
-                    <button class="btn btn-1 btn-1e ">Plan A Trip</button>
+                    <br>
+                    <br>
+                    <button class="btn-white">Book A Flight</button>
+                    <button class="btn-white">Plan A Trip</button>
                 </div>
                 <div class="col-md-2 col-xs-1"></div>
             </div>
@@ -64,6 +67,7 @@
     <!-- PLACES -->
     <div id="places">
         <div class="container">
+            <!-- PLACES LOGO -->
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
@@ -71,6 +75,7 @@
                 </div>
                 <div class="col-md-2"></div>
             </div>
+            <!-- PLACES INTRO -->
             <div class="row">
                 <div class="col-md-2 col-xs-1"></div>
                 <div class="places-intro col-md-8 col-xs-10">
@@ -80,13 +85,14 @@
                 </div>
                 <div class="col-md-2 col-xs-1"></div>
             </div>
+            <!-- PLACES GALLERY -->
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-10" style="text-align: center;">
                     <!-- START ITEM 1 -->
                     <div class="col-sm-6 col-md-4">
                         <div class="places-item">
-                            <div class="places-item-img" style="background: url(assets/img/places/toji-temple.jpg) no-repeat top 120px center; background-size: cover;"></div>
+                            <div class="places-item-img" style="background: url(assets/img/places/toji-temple.jpg) no-repeat top 100px center; background-size: cover;"></div>
                             <div class="places-item-overlay"></div>
                             <div class="places-item-disc">
                                 <h2>TOJI TEMPLE</h2>
@@ -108,54 +114,69 @@
                     <!-- START ITEM 3 -->
                     <div class="col-sm-6 col-md-4">
                         <div class="places-item">
-                            <div class="places-item-img" style="background: url(assets/img/places/toji-temple.jpg) no-repeat top 120px center; background-size: cover;"></div>
+                            <div class="places-item-img" style="background: url(assets/img/places/sento-palace.jpg) no-repeat top 120px center; background-size: cover;"></div>
                             <div class="places-item-overlay"></div>
                             <div class="places-item-disc">
-                                <h2>TOJI TEMPLE</h2>
-                                <p>Toji is an old temple with Japan's tallest wooden tower.</p>
+                                <h2>SENTO IMPERIAL PALACE</h2>
+                                <p>Sento Palace is a beautiful residence with a mesmerizing garden.</p>
                             </div>
                         </div>
                     </div>
                     <!-- START ITEM 4 -->
                     <div class="col-sm-6 col-md-4">
                         <div class="places-item">
-                            <div class="places-item-img" style="background: url(assets/img/places/toji-temple.jpg) no-repeat top 120px center; background-size: cover;"></div>
+                            <div class="places-item-img" style="background: url(assets/img/places/toei-eigamura.jpg) no-repeat bottom -80px center; background-size: cover;"></div>
                             <div class="places-item-overlay"></div>
                             <div class="places-item-disc">
-                                <h2>TOJI TEMPLE</h2>
-                                <p>Toji is an old temple with Japan's tallest wooden tower.</p>
+                                <h2>TOEI EIGAMURA</h2>
+                                <p>Toei Eigamura is a drama film set and also a theme park.</p>
                             </div>
                         </div>
                     </div>
                     <!-- START ITEM 5 -->
                     <div class="col-sm-6 col-md-4">
                         <div class="places-item">
-                            <div class="places-item-img" style="background: url(assets/img/places/toji-temple.jpg) no-repeat top 120px center; background-size: cover;"></div>
+                            <div class="places-item-img" style="background: url(assets/img/places/aquarium.jpg) no-repeat bottom center; background-size: cover;"></div>
                             <div class="places-item-overlay"></div>
                             <div class="places-item-disc">
-                                <h2>TOJI TEMPLE</h2>
-                                <p>Toji is an old temple with Japan's tallest wooden tower.</p>
+                                <h2>KYOTO AQUARIUM</h2>
+                                <p>Kyoto Aquarium is a modern aquarium located in the west of Kyoto Station.</p>
                             </div>
                         </div>
                     </div>
                     <!-- START ITEM 6 -->
                     <div class="col-sm-6 col-md-4">
                         <div class="places-item">
-                            <div class="places-item-img" style="background: url(assets/img/places/toji-temple.jpg) no-repeat top 120px center; background-size: cover;"></div>
+                            <div class="places-item-img" style="background: #FFFFFF url(assets/img/places/museum.jpg) no-repeat bottom -100px center; background-size: cover;"></div>
                             <div class="places-item-overlay"></div>
                             <div class="places-item-disc">
-                                <h2>TOJI TEMPLE</h2>
-                                <p>Toji is an old temple with Japan's tallest wooden tower.</p>
+                                <h2>NATIONAL MUSEUM</h2>
+                                <p>The National Museum present exhibitions on history and art.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-1"></div>
             </div>
+            <div style="text-align: center;">
+                <button class="btn-red">VIEW MORE »</button>
+            </div>
+        </div>
+    </div>
+    <!-- ACTIVITY -->
+    <div id="activity">
+        <div class="container">
+            <!-- ACTIVITY LOGO -->
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <img src="assets/img/thingstodo.png" class="img-responsive">
+                </div>
+                <div class="col-md-2"></div>
+            </div>
         </div>
     </div>
     <!-- FOOTER -->
-    <div style="height: 500px; "></div>
     <div id="footer">
         <div class="footer-landscape">
             <p>Kyoto City Online Travel Guide.</p>

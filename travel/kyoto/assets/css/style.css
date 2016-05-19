@@ -1,7 +1,7 @@
 /* -- GENERAL -- */
 
 body {
-    background: #111;
+    background: #d50f25;
     margin: 0;
     font-family: 'Source Code Pro';
 }
@@ -124,7 +124,7 @@ a:active {
 #about {
     text-align: center;
     color: #ffffff;
-    padding: 10vh 0 20vh;
+    padding: 10vh 0 15vh;
     position: relative;
     z-index: 1;
     background: #d50f25;
@@ -166,53 +166,6 @@ a:active {
     text-align: justify;
 }
 
-.btn {
-    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    border: 1px solid white;
-    color: white;
-    cursor: pointer;
-    display: inline-block;
-    font-weight: 400;
-    letter-spacing: 10px;
-    margin: 15px 30px;
-    outline: medium none;
-    padding: 20px 40px;
-    position: relative;
-    text-transform: uppercase;
-    transition: all 0.3s ease 0s;
-    border-radius: 0;
-    overflow: hidden;
-}
-
-.btn::after {
-    content: "";
-    position: absolute;
-    transition: all 0.3s ease 0s;
-    z-index: -1;
-    background: #fff none repeat scroll 0 0;
-    height: 0;
-    left: 50%;
-    opacity: 0;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%) rotate(45deg);
-    width: 100%;
-}
-
-.btn:hover,
-.btn:active {
-    color: #d50f25;
-}
-
-.btn:hover::after {
-    height: 350%;
-    opacity: 1;
-}
-
-.btn:active::after {
-    height: 400%;
-    opacity: 1;
-}
-
 
 /* -- PLACES -- */
 
@@ -220,7 +173,7 @@ a:active {
     position: relative;
     z-index: 1;
     background: #ffffff;
-    padding: 5vh 0 10vh;
+    padding: 5vh 0 5vh;
 }
 
 #places:before,
@@ -341,6 +294,7 @@ a:active {
     text-align: center;
     border-bottom: 1px solid #d50f25;
     display: inline-block;
+    font-size: 140%;
 }
 
 #places .places-item-disc p {
@@ -349,6 +303,12 @@ a:active {
     margin: 0 auto;
 }
 
+
+/* -- FOOTER -- */
+
+#activity {
+    padding: 20vh;
+}
 
 /* -- FOOTER -- */
 
