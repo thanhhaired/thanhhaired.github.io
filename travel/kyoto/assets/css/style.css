@@ -94,6 +94,130 @@ a:active {
 }
 
 
+/* -- NAVBAR -- */
+
+#navbar {
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    top: 30px;
+    font-family: 'Source Code Pro';
+    font-weight: 400;
+}
+
+#navbar {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#navbar a {
+    color: #d50f25;
+    background: rgba(0, 0, 0, 0.0);
+    text-decoration: none;
+    letter-spacing: 5px;
+    margin-right: 20px;
+    vertical-align: middle;
+    display: inline-block;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 0px;
+    line-height: 40px;
+    background: url('../img/blank.png') no-repeat center bottom/45px auto;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.0);
+    transition: border 0.8s ease, background 0.4s ease-out;
+    -webkit-transition: border 0.8s ease, background 0.4s ease-out;
+    -moz-transition: border 0.8s ease, background 0.4s ease-out;
+}
+
+#navbar a:hover {
+    border-bottom: 4px solid #d50f25;
+    background: url('../img/menu-1.png') no-repeat top center;
+    background-size: 45px auto;
+}
+
+#navbar a.two:hover {
+    background: url('../img/menu-2.png') no-repeat top center/45px auto;
+}
+
+#navbar a.three:hover {
+    background: url('../img/menu-3.png') no-repeat top center/45px auto;
+}
+
+#navbar a.four:hover {
+    background: url('../img/menu-4.png') no-repeat top center/45px auto;
+}
+
+#navbar a.four {
+    margin-right: 0px;
+}
+
+#navbar p.divider-point {
+    display: inline-block;
+    margin-right: 25px;
+    vertical-align: bottom;
+    color: #BE0D1D;
+    padding-bottom: 5px;
+}
+
+.nav-bot-link {
+    border-right: 1px solid #d50f25;
+}
+
+
+/* -- NAVBAR TOP FIXED -- */
+
+#navbar-top-fixed {
+    position: fixed;
+    z-index: 9995;
+    width: 100%;
+    top: 0px;
+    font-family: 'Source Code Pro';
+    font-weight: 400;
+    background: white;
+    text-align: center;
+}
+
+#navbar-top-fixed a {
+    color: #d50f25;
+    background: rgba(0, 0, 0, 0.0);
+    text-decoration: none;
+    letter-spacing: 5px;
+    margin-right: 20px;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 60px;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.0);
+    transition: border 0.8s ease, background 0.4s ease-out;
+    -webkit-transition: border 0.8s ease, background 0.4s ease-out;
+    -moz-transition: border 0.8s ease, background 0.4s ease-out;
+}
+
+#navbar-top-fixed a:hover {
+    border-bottom: 4px solid #d50f25;
+}
+
+#navbar-top-fixed p.divider-point {
+    display: inline-block;
+    margin-right: 25px;
+    vertical-align: bottom;
+    color: #BE0D1D;
+    padding-bottom: 12px;
+}
+
+#navbar-bottom {
+    display: block;
+    position: fixed;
+    background: #ffffff;
+    bottom: 0;
+    z-index: 999999;
+    width: 100%;
+    height: 60px;
+    border-top: 1px solid #d50f25;
+    padding-top: 7.5px;
+    display: none;
+}
+
+
 /* -- HEADER -- */
 
 #header {
@@ -109,6 +233,7 @@ a:active {
     padding-top: 350px;
     padding-bottom: 12vh;
     text-align: center;
+    z-index: 9997;
 }
 
 #header .header-content {
@@ -420,8 +545,6 @@ a:active {
     text-align: justify;
 }
 
-
-
 #shopping .shopping-intro {
     text-align: justify;
     margin: 50px auto 0;
@@ -437,7 +560,8 @@ a:active {
     text-align: center;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;}
+    box-sizing: border-box;
+}
 
 #footer:before {
     background: inherit;
@@ -458,7 +582,6 @@ a:active {
     -webkit-transform-origin: 100% 0;
     transform-origin: 100% 0;
 }
-
 
 #footer .footer-content {
     padding-top: 5vh;
