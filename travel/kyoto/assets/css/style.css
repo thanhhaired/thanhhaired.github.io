@@ -421,13 +421,23 @@ a:active {
 }
 
 
+
+#shopping .shopping-intro {
+    text-align: justify;
+    margin: 50px auto 0;
+}
+
+
 /* -- FOOTER -- */
 
 #footer {
     position: relative;
     z-index: 1;
     background: #ffffff;
-}
+    text-align: center;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;}
 
 #footer:before {
     background: inherit;
@@ -447,6 +457,27 @@ a:active {
     transform: skewY(4deg);
     -webkit-transform-origin: 100% 0;
     transform-origin: 100% 0;
+}
+
+
+#footer .footer-content {
+    padding-top: 5vh;
+}
+
+#footer .footer-content h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 4rem;
+}
+
+#footer .footer-content h2 {
+    font-size: 1.3rem;
+    letter-spacing: 4px;
+    line-height: 0;
+    text-transform: uppercase;
+}
+
+#footer .footer-content p {
+    text-align: center;
 }
 
 #footer .footer-landscape {
