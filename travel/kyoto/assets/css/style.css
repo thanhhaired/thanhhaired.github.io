@@ -300,7 +300,7 @@ a:active {
 }
 
 #about .about-intro p {
-    text-align: justify;
+    text-align: left;
 }
 
 
@@ -343,7 +343,7 @@ a:active {
 }
 
 #places .places-intro {
-    text-align: justify;
+    text-align: left;
     margin: 50px auto 0;
 }
 
@@ -462,7 +462,7 @@ a:active {
 }
 
 #activity p {
-    text-align: justify;
+    text-align: left;
 }
 
 
@@ -512,12 +512,12 @@ a:active {
 }
 
 #gourmet p {
-    text-align: justify;
+    text-align: left;
     letter-spacing: 2px;
 }
 
 #gourmet .gourmet-intro {
-    text-align: justify;
+    text-align: left;
     margin: 50px auto 0;
 }
 
@@ -543,11 +543,11 @@ a:active {
 }
 
 #shopping p {
-    text-align: justify;
+    text-align: left;
 }
 
 #shopping .shopping-intro {
-    text-align: justify;
+    text-align: left;
     margin: 50px auto 0;
 }
 
