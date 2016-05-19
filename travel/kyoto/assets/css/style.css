@@ -303,9 +303,9 @@ a:active {
 }
 
 #places .places-item-disc p {
-    text-align: justify;
-    width: 90%;
-    margin: 0 auto;
+    text-align: left;
+    width: 85%;
+    margin: 20px auto 0px;
 }
 
 
