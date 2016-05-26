@@ -1,10 +1,6 @@
 /* -- RESPONSIVE CSS -- */
 
-
-
-
 @media (max-width: 1601px) {
-
     #header {
         height: auto;
         width: 100%;
@@ -20,8 +16,6 @@
         text-align: center;
     }
 }
-
-
 
 @media (max-width: 1023px) {
     #navbar a {
@@ -86,7 +80,8 @@
 @media (max-width: 766px) {
     #navbar {
         display: none;
-    }    #navbar-top-fixed {
+    }
+    #navbar-top-fixed {
         display: none;
     }
     #header {
@@ -120,11 +115,12 @@
     #navbar-bottom {
         display: block;
     }
-
-
-#footer .footer-landscape {
-padding-bottom: 140px;
-}
+    #footer .footer-landscape {
+        padding-bottom: 140px;
+    }
+    #shopping, #places, #gourmet, #activity {
+        padding-top: 5vh;
+    }
 }
 
 @media (max-width: 361px) {

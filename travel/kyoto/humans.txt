@@ -1,5 +1,32 @@
+/* TEAM */
+	Designer: Phan Thanh Hai.
+	RMIT Student ID: s3516553
+	Site: https://thanhhai.red/
+	Location: Ho Chi Minh City, Vietnam.
+
+/* THANKS */
+	Source Code Pro Fonts: https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Source+Code+Pro
+	Cinzel Fonts: https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Cinzel
+	Permanents Marker Fonts: https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Permanent+Marker
+	Lato Fonts: https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Lato:400,300,100
+	Kyoto's Official Flag: https://en.wikipedia.org/wiki/Kyoto
+	Scroll Icon: http://www.flaticon.com/free-icon/scroll_64250
+	Arrow Down Icon: http://www.flaticon.com/free-icon/arrow-down-sign-to-navigate_32195
+	Sumo Fighter Free Icon: http://www.flaticon.com/free-icon/sumo-fighter_12654
+	Lucky Cat Toy Icon: http://www.flaticon.com/free-icon/lucky-cat-toy_13166
+	Japanese Drawing Icon: http://www.flaticon.com/free-icon/japanese-drawing_12729
+	Japanese Architecture With Cherry Tree Background: http://www.freepik.com/free-vector/japanese-architecture-with-cherry-tree-background_852608.htm
+	Japanese Icon Set: http://www.freepik.com/free-vector/japanese-icons-collection_795189.htm
+	Japanese Flag In Watercolor Style: http://www.freepik.com/free-vector/japanese-flag-in-watercolor-style_766474.htm
+	Sushi: http://www.pngall.com/sushi-png
+	Ramen: http://www.stockvault.net/free-photos/ramen
+	Tempura: https://pixabay.com/en/photos/?q=tempura
+	Japanese Festival: http://regex.info/blog/2013-05-30/2264
+
+                               
 /* SITE */
-	Last update:2016/05/15
+	Last update: 2016/05/26
 	Language: English
-	Doctype:HTML5
+	Standards: HTML, CSS3, JS
+	Components: Bootstrap, FontAwesome
 	IDE: Sublime Text, Photoshop, Illustrator
