@@ -38,9 +38,17 @@ body {
     padding: 10vh 0;
 }
 
+#places {
+    padding: 10vh 0;
+}
+
 #places h2 {
     font-family: 'Montserrat', sans-serif;
     color: #60308A;
+}
+
+#map {
+    padding: 10vh 0;
 }
 
 #footer {
