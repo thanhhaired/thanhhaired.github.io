@@ -1,0 +1,28 @@
+@font-face {
+	font-family: 'carnaslig';
+	src: url('font/carnaslig/carnas-lig.eot');
+	src: local('☺'), url('font/carnaslig/carnas-lig.woff') format('woff'), url('font/carnaslig/carnas-lig.ttf') format('truetype'), url('font/carnaslig/carnas-lig.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'kelsonrg';
+	src: url('font/kelsonrg/kelson_rg.eot');
+	src: local('☺'), url('font/kelsonrg/kelson_rg.woff') format('woff'), url('font/kelsonrg/kelson_rg.ttf') format('truetype'), url('font/kelsonrg/kelson_rg.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'kelsonmd';
+	src: url('font/kelsonmd/kelson_md.eot');
+	src: local('☺'), url('font/kelsonmd/kelson_md.woff') format('woff'), url('font/kelsonmd/kelson_md.ttf') format('truetype'), url('font/kelsonmd/kelson_md.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'trump';
+	src: url('font/trump-town-pro/trump-town-pro.eot');
+	src: local('☺'), url('font/trump-town-pro/trump-town-pro.woff') format('woff'), url('font/trump-town-pro/trump-town-pro.ttf') format('truetype'), url('font/trump-town-pro/trump-town-pro.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
