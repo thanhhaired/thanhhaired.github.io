@@ -107,7 +107,7 @@ body {
 }
 
 .overlay {
-    background: #C7A578 url('https://i.imgur.com/tGUnFGk.jpg') no-repeat center top;
+    background: white url('../images/bg.jpg') no-repeat center top;
     background-size: 100% auto;
     display: block;
     position: absolute;
