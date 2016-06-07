@@ -19,6 +19,81 @@ body {
     margin: 0 auto;
 }
 
+.navbar {
+    display: none;
+}
+
+.navbar-hoian {
+    background: #9A2424 none repeat scroll 0 0;
+    border: medium none;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.navbar-hoian .navbar-brand {
+    color: #fff;
+}
+
+.navbar-hoian .navbar-brand:focus,
+.navbar-hoian .navbar-brand:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.navbar-hoian .navbar-text {
+    color: #fff;
+}
+
+.navbar-hoian .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-hoian .navbar-nav > li > a:focus,
+.navbar-hoian .navbar-nav > li > a:hover {
+    background-color: transparent;
+    color: #C7A578;
+}
+
+.navbar-hoian .navbar-nav > .active > a,
+.navbar-hoian .navbar-nav > .active > a:focus,
+.navbar-hoian .navbar-nav > .active > a:hover {
+    background-color: #fff;
+    color: #fff;
+}
+
+.navbar-hoian .navbar-nav > .disabled > a,
+.navbar-hoian .navbar-nav > .disabled > a:focus,
+.navbar-hoian .navbar-nav > .disabled > a:hover {
+    background-color: transparent;
+    color: #444;
+}
+
+.navbar-hoian .navbar-toggle {
+    border-color: #fff;
+}
+
+.navbar-hoian .navbar-toggle:focus,
+.navbar-hoian .navbar-toggle:hover {
+    background-color: #fff;
+}
+
+.navbar-hoian .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-hoian .navbar-collapse,
+.navbar-hoian .navbar-form {
+    border-color: #fff;
+}
+
+.navbar-hoian .navbar-nav > .open > a,
+.navbar-hoian .navbar-nav > .open > a:focus,
+.navbar-hoian .navbar-nav > .open > a:hover {
+    background-color: #9A2424;
+    color: #fff;
+}
+
 #menu {
     display: none;
     position: fixed;
@@ -124,12 +199,14 @@ h1 {
     font-family: 'kelsonbold';
     text-transform: uppercase;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 h2 {
     font-family: 'kelsonbold';
     text-transform: uppercase;
     margin-top: 100px;
+    text-align: center;
 }
 
 #whoweare {
@@ -150,7 +227,9 @@ h2 {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.0) 100%);
 }
 
-.carousel-control, .carousel-control:focus, .carousel-control:hover {
+.carousel-control,
+.carousel-control:focus,
+.carousel-control:hover {
     color: #000;
 }
 
@@ -176,4 +255,41 @@ h2 {
 
 #footer .footer-right {
     text-align: right;
+}
+
+@media (max-width: 640px) {
+    #menu {
+        opacity: 0;
+    }
+    .nav-header {
+        opacity: 0;
+        margin-top: -150px;
+    }
+    .navbar {
+        display: block;
+    }
+    #footer .footer-left {
+        text-align: center;
+    }
+    #footer .footer-right {
+        text-align: center;
+    }
+    #whoweare {
+        padding: 0px 0 50px;
+        text-align: left;
+    }
+    #whattodo {
+        text-align: left;
+    }
+    #whybringus {
+        padding: 0 0 100px;
+        text-align: left;
+    }
+    #whybringus .map-disc {
+        text-align: center;
+        font-size: 18px;
+    }
+    h2 {
+        margin-top: 10px;
+    }
 }
