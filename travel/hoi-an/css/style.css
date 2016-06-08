@@ -233,6 +233,14 @@ h2 {
     color: #000;
 }
 
+.carousel-indicators li {
+    border: 1px solid #000;
+}
+
+.carousel-indicators .active {
+    background-color: #000;
+}
+
 #whybringus {
     padding: 0 0 100px;
     text-align: center;
