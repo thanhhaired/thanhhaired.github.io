@@ -1,67 +1,65 @@
-
 .btn-white {
-    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    border: 1px solid #ffffff;
-    color: #ffffff;
-    cursor: pointer;
-    display: inline-block;
     font-weight: 400;
-    letter-spacing: 10px;
-    margin: 15px 30px;
-    outline: none;
-    padding: 20px 40px;
     position: relative;
-    text-transform: uppercase;
-    transition: all 0.3s ease 0s;
-    border-radius: 0;
+    display: inline-block;
     overflow: hidden;
-    -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
+    margin: 15px 30px;
+    padding: 20px 40px;
+    cursor: pointer;
+    transition: all .3s ease 0s;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 0;
+    outline: none;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
 }
 
 .btn-white:hover,
 .btn-white:active {
     color: #d50f25;
-    background: #ffffff;
+    background: #fff;
 }
 
 .btn-red {
-    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    border: 1px solid #d50f25;
-    color: #d50f25;
-    cursor: pointer;
-    display: inline-block;
     font-weight: 400;
-    letter-spacing: 10px;
-    margin: 15px 30px;
-    outline: none;
-    padding: 20px 40px;
     position: relative;
-    text-transform: uppercase;
-    transition: all 0.3s ease 0s;
-    border-radius: 0;
+    display: inline-block;
     overflow: hidden;
-    -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
+    margin: 15px 30px;
+    padding: 20px 40px;
+    cursor: pointer;
+    transition: all .3s ease 0s;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: #d50f25;
+    border: 1px solid #d50f25;
+    border-radius: 0;
+    outline: none;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
 }
 
 .btn-red:hover,
 .btn-red:active {
-    color: #ffffff;
+    color: #fff;
     background: #d50f25;
 }
 
 
 /* -- RESPONSIVE CSS -- */
 
-
 @media (max-width: 1200px) {
-    .btn-red, .btn-white {
-        width: 85%;
+    .btn-red,
+    .btn-white {
         display: block;
+        width: 85%;
         margin: 15px auto;
     }
-
 }
