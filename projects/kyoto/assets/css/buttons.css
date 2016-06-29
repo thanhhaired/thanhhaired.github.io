@@ -1,13 +1,14 @@
+
 .btn-white {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    border: 1px solid white;
-    color: white;
+    border: 1px solid #ffffff;
+    color: #ffffff;
     cursor: pointer;
     display: inline-block;
     font-weight: 400;
     letter-spacing: 10px;
     margin: 15px 30px;
-    outline: medium none;
+    outline: none;
     padding: 20px 40px;
     position: relative;
     text-transform: uppercase;
@@ -19,33 +20,10 @@
     box-sizing: border-box;
 }
 
-.btn-white::after {
-    content: "";
-    position: absolute;
-    transition: all 0.3s ease 0s;
-    z-index: -1;
-    background: #fff none repeat scroll 0 0;
-    height: 0;
-    left: 50%;
-    opacity: 0;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%) rotate(45deg);
-    width: 100%;
-}
-
 .btn-white:hover,
 .btn-white:active {
     color: #d50f25;
-}
-
-.btn-white:hover::after {
-    height: 350%;
-    opacity: 1;
-}
-
-.btn-white:active::after {
-    height: 400%;
-    opacity: 1;
+    background: #ffffff;
 }
 
 .btn-red {
