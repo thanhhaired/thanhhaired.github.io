@@ -1,5 +1,5 @@
 body {
-	background: url(logo.png) fixed no-repeat center center/150px 150px, #d50f25;
+	background: url(logo.png) fixed no-repeat center center/auto 30%, #d50f25;
 	height: 100vh;
 	widows: 100%;
 	padding: 0;
