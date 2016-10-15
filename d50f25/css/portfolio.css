@@ -1,0 +1,232 @@
+/*--- PORTFOLIO ---*/
+
+.d50f25-intro {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.d50f25-intro h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #d50f25;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 1.2;
+    margin: 0 0 0.5em 0;
+}
+
+.d50f25-intro h3 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #191919;
+    letter-spacing: 0px;
+    line-height: 1.2;
+}
+
+.d50f25-intro h3::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 4px;
+    margin-top: 1em;
+    left: 0;
+    background-color: #d50f25;
+    -webkit-transition: .5s;
+    -moz-transition: 0.5s;
+    transition: .5s;
+}
+
+.d50f25-intro:hover h3::after {
+    width: 300px;
+}
+
+.grid {
+    margin: 0 -25px;
+}
+
+@media screen and (min-width: 992px) {
+    .grid .grid-sizer {
+        width: 33.3333%;
+    }
+    .grid .grid-item {
+        width: 33.3333%;
+        position: relative;
+    }
+    .grid .grid-item.in-view {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    .grid .grid-item:before {
+        content: '';
+        display: block;
+        padding-top: 75.001%;
+    }
+    .grid .grid-item.wide {
+        width: 66.65%;
+    }
+    .grid .grid-item.wide:before {
+        padding-top: 37.6%;
+    }
+    .grid .grid-item.tall:before {
+        padding-top: 150%;
+    }
+    .grid .grid-item.large {
+        width: 66.65%;
+    }
+    .grid .grid-item.large:before {
+        padding-top: 75.00%;
+    }
+    .grid .grid-item.square:before {
+        padding-top: 100%;
+    }
+    .grid .grid-item .thumb,
+    .grid .grid-item .caption {
+        position: absolute;
+        left: 25px;
+        right: 25px;
+        bottom: 25px;
+    }
+    .grid .grid-item .thumb {
+        top: 25px;
+        overflow: hidden;
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+    }
+    .grid .grid-item .caption {
+        background: rgba(0, 0, 0, 0.8);
+        -webkit-transition: all .4s;
+        transition: all .4s;
+        overflow: hidden;
+        top: 50px;
+        opacity: 0;
+    }
+    .grid .grid-item .caption .type,
+    .grid .grid-item .caption .description,
+    .grid .grid-item .caption .inner {
+        position: absolute;
+        left: 40px;
+        right: 40px;
+    }
+    .grid .grid-item .caption .type {
+        top: 40px;
+        font-size: 11px;
+        letter-spacing: 1px;
+        color: #fff;
+        text-transform: uppercase;
+        opacity: 0;
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+        -webkit-transition: all .3s .3s;
+        transition: all .3s .3s;
+    }
+    .grid .grid-item .caption .description,
+    .grid .grid-item .caption .inner {
+        bottom: 40px;
+        color: #fff;
+    }
+    .grid .grid-item .caption .description h4,
+    .grid .grid-item .caption .description p,
+    .grid .grid-item .caption .inner h4,
+    .grid .grid-item .caption .inner p {
+        opacity: 0;
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+    .grid .grid-item .caption .description h4,
+    .grid .grid-item .caption .inner h4 {
+        -webkit-transition: all .3s;
+        transition: all .3s;
+    }
+    .grid .grid-item .caption .description p,
+    .grid .grid-item .caption .inner p {
+        -webkit-transition: all .3s;
+        transition: all .3s;
+        color: rgba(255, 255, 255, 0.7);
+    }
+    .grid .grid-item .caption .description p:last-child,
+    .grid .grid-item .caption .inner p:last-child {
+        margin-bottom: 0;
+    }
+    .grid .grid-item .caption .description .btn-hollow,
+    .grid .grid-item .caption .inner .btn-hollow {
+        margin-top: 17px;
+        border-color: #fff;
+        color: #fff;
+        float: left;
+    }
+    .grid .grid-item .caption .description .btn-hollow:hover,
+    .grid .grid-item .caption .description .btn-hollow:active,
+    .grid .grid-item .caption .inner .btn-hollow:hover,
+    .grid .grid-item .caption .inner .btn-hollow:active {
+        border-color: rgba(255, 255, 255, 0.5);
+    }
+    .grid .grid-item:hover .sale {
+        background: rgba(255, 255, 255, 0.1);
+        -webkit-transition: all .3s;
+        transition: all .3s;
+    }
+    .grid .grid-item:hover .caption {
+        top: 25px;
+        opacity: 1;
+    }
+    .grid .grid-item:hover .caption .type {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    .grid .grid-item:hover .caption h4,
+    .grid .grid-item:hover .caption p {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-transition: all .3s;
+        transition: all .3s;
+    }
+    .grid .grid-item:hover .caption h4 {
+        -webkit-transition: opacity .5s .2s, -webkit-transform .3s .1s;
+        transition: opacity .5s .2s, -webkit-transform .3s .1s;
+        transition: opacity .5s .2s, transform .3s .1s;
+        transition: opacity .5s .2s, transform .3s .1s, -webkit-transform .3s .1s;
+    }
+    .grid .grid-item:hover .caption p {
+        -webkit-transition: opacity .5s .4s, -webkit-transform .3s .3s;
+        transition: opacity .5s .4s, -webkit-transform .3s .3s;
+        transition: opacity .5s .4s, transform .3s .3s;
+        transition: opacity .5s .4s, transform .3s .3s, -webkit-transform .3s .3s;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .grid .grid-sizer {
+        width: 90%;
+    }
+    .grid .grid-item {
+        margin: 25px 25px 10px;
+        width: 90%;
+        display: inline-block;
+        box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.4);
+    }
+    .grid .grid-item .thumb {
+        background-size: cover;
+        background-position: center center;
+    }
+    .grid .grid-item .thumb:before {
+        padding-top: 100%;
+        content: '';
+        display: block;
+    }
+    .grid .grid-item .caption {
+        margin: 0;
+        padding: 25px;
+        color: #2E2E2E;
+    }
+    .grid .grid-item .caption p {
+        margin-bottom: 0;
+    }
+    .grid .grid-item:hover {
+        text-decoration: none;
+    }
+}

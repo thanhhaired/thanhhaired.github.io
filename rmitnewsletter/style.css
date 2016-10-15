@@ -1,24 +1,24 @@
 body {
-    background: url("bg-top.svg") top -500px center no-repeat, #C7C6C1 url("bg-bottom.svg") bottom -450px center no-repeat;
+    background: url("bg-top.svg") top center no-repeat, #C7C6C1 url("bg-bottom.svg") bottom center no-repeat;
     font-size: 12px;
     font-family: 'Open Sans', sans-serif;
 }
 
 .top-section {
-	font-family: museo;
-	margin-top: 30px;
-	font-weight: 500;
-	letter-spacing: 2px;
+    font-family: museo;
+    margin-top: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
 }
 
 .top-section .date {
-	color: #dc291e;
+    color: #dc291e;
 }
 
 .top-section .browser {
-	text-align: right;
-	color: #666666;
-	text-decoration: underline;
+    text-align: right;
+    color: #666666;
+    text-decoration: underline;
 }
 
 .main {
@@ -29,30 +29,13 @@ body {
 }
 
 #banner {
-    background: #dc291e;
+    background-image: url(rmitstudent.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-color: #dc291e;
     padding: 20px;
     position: relative;
-    z-index: 1;
-}
-
-#banner:after {
-    background: inherit;
-    content: '';
-    display: block;
-    height: 50%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    z-index: -1;
-    -webkit-backface-visibility: hidden;
-}
-
-#banner:after {
-    bottom: 0;
-    -webkit-transform: skewY(7deg);
-    transform: skewY(7deg);
-    -webkit-transform-origin: 0 100%;
-    transform-origin: 0 100%;
+    background-blend-mode: overlay;
 }
 
 #banner .logo {
@@ -86,6 +69,120 @@ body {
     width: 140px;
     background: white;
 }
+
+#content {
+    background: #ffffff;
+    padding: 10px 50px;
+    color: #242424;
+    position: relative;
+    z-index: 1;
+}
+
+#content:before {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden;
+}
+
+#content:before {
+    top: 0;
+    -webkit-transform: skewY(-7deg);
+    transform: skewY(-7deg);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+#content h2 {
+    text-align: center;
+    font-family: museo;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+#content h2:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100px;
+    background-color: #242424;
+    margin: 10px auto;
+}
+
+#content .alerts {
+    width: 500px;
+    margin: 5px auto;
+    background: #F1DDDE;
+    padding: 10px 15px;
+    color: #191919;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 5px 0px 0px #F1B7BF;
+    -moz-box-shadow: 0px 5px 0px 0px #F1B7BF;
+    box-shadow: 0px 5px 0px 0px #F1B7BF;
+    margin-bottom: 15px;
+}
+
+#content .alerts h3 {
+    color: #de4c4c;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+}
+
+#content .blue {
+    background: #DAEDF6;
+    -webkit-box-shadow: 0px 5px 0px 0px #9CD9E9;
+    -moz-box-shadow: 0px 5px 0px 0px #9CD9E9;
+    box-shadow: 0px 5px 0px 0px #9CD9E9;
+}
+
+#content .blue h3 {
+    color: #239ec6;
+}
+
+#content .yellow {
+    background: #F0F2CA;
+    -webkit-box-shadow: 0px 5px 0px 0px #F6E0BD;
+    -moz-box-shadow: 0px 5px 0px 0px #F6E0BD;
+    box-shadow: 0px 5px 0px 0px #F6E0BD;
+}
+
+#content .yellow h3 {
+    color: #d0800e;
+}
+
+#content .alerts p {
+    margin: 0;
+    font-size: ;
+}
+
+#content .vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+#content .big-news {}
+
+#content .big-news-image {
+    display: block;
+    max-width: 700px !important;
+    max-height: 350px !important;
+    width: auto;
+    height: auto;
+}
+
+#content .big-news-description {}
 
 #footer {
     background: #dc291e;
