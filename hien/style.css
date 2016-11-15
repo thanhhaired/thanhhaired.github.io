@@ -1,0 +1,241 @@
+body {
+    width: 2560px;
+    height: 1440px;
+    position: relative;
+    background: url(img/bird.png) no-repeat, url(img/rectangles.png) no-repeat, url(img/splash.png) no-repeat, #e7e7e7 url(img/circle.png) no-repeat;
+}
+
+* {}
+
+.overlay {
+    width: 2560px;
+    height: 1440px;
+    background: url(img/overlay.png) no-repeat;
+    z-index: 1;
+    position: absolute;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+.t01 {
+    color: #e26b3c;
+    font-family: forte;
+    font-size: 92px;
+    position: absolute;
+    top: 490px;
+    left: 1284px;
+    transform: rotate(4.5deg);
+}
+
+.t02 {
+    position: absolute;
+    color: #e26b3c;
+    top: 590px;
+    font-family: matura;
+    left: 1562px;
+    font-size: 74px;
+}
+
+.t03 {
+    position: absolute;
+    top: 1210px;
+    font-family: forte;
+    font-size: 8px;
+    left: 708px;
+    transform: rotate(47deg);
+}
+
+.t04 {
+    position: absolute;
+    top: 666px;
+    transform: rotate(-4deg);
+    left: 1540px;
+    text-align: right;
+    font-family: forte;
+    font-size: 12px;
+}
+
+.t05 {
+    position: absolute;
+    font-family: forte;
+    font-size: 13.5px;
+    top: 358px;
+    left: 302px;
+    transform: rotate(30deg);
+    text-align: right;
+}
+.t06 {
+    color: #e26b3c;
+    font-family: hello;
+    font-size: 90px;
+    left: 463px;
+    position: absolute;
+    top: 374px;
+    transform: rotate(15deg);
+}
+.t07 {
+    color: #727272;
+    font-family: frankl;
+    left: 404px;
+    position: absolute;
+    top: 320px;
+    font-size: 100px;
+    transform: rotate(10deg);
+}
+.t08 {
+    position: absolute;
+    font-family: frankl;
+    font-size: 55px;
+    top: 276px;
+    left: 439px;
+    color: #727272;
+    transform: rotate(31deg);
+}
+.t09 {
+    position: absolute;
+    color: #e26b3c;
+    font-size: 127px;
+    font-family: frankl;
+    top: 183px;
+    left: 383px;
+    transform: rotate(-58deg);
+}
+.t10 {
+    position: absolute;
+    color: #e26b3c;
+    font-family: frankl;
+    font-size: 100px;
+    top: 317px;
+    left: 416px;
+    transform: rotate(19deg);
+}
+
+.t11 {
+    position: absolute;
+    font-size: 100px;
+    font-family: matura;
+    top: 436px;
+    left: 570px;
+    transform: rotate(16deg);
+    color: #727272;
+}
+.t12 {
+    position: absolute;
+    font-family: forte;
+    font-size: 140px;
+    color: #f4ae53;
+    top: 466px;
+    left: 673px;
+    transform: rotate(-50deg);
+}
+
+.t13 {
+    position: absolute;
+    top: 1051px;
+    left: 852px;
+    font-family: frankl;
+    font-size: 60px;
+    color: #727272;
+    transform: rotate(68deg);
+}
+
+.t14 {
+    position: absolute;
+    top: 521px;
+    left: 395px;
+    transform: rotate(-20deg);
+}
+.t15 {
+    position: absolute;
+    font-family: hello;
+    font-size: 45px;
+    color: #e26b3c;
+    top: 194px;
+    left: 346px;
+    transform: rotate(32deg);
+}
+.t16 {
+    position: absolute;
+    font-family: hello;
+    font-size: 45px;
+    transform: rotate(32deg);
+    color: #727272;
+    top: 234px;
+    left: 492px;
+}
+.t17 {
+    position: absolute;
+    color: #f4ae53;
+    font-family: frankl;
+    font-size: 40px;
+    top: 703px;
+    left: 445px;
+    transform: rotate(-21deg);
+}
+.t18 {
+    position: absolute;
+    color: #f4ae53;
+    font-family: frankl;
+    font-size: 40px;
+    top: 750px;
+    left: 470px;
+    transform: rotate(127deg);
+}
+.t19 {
+    position: absolute;
+    color: #f4ae53;
+    font-size: 270px;
+    font-family: nabila;
+    top: 330px;
+    left: 1255px;
+    transform: rotate(39deg);
+}
+.t20 {
+    color: #000;
+    font-family: nabila;
+    font-size: 270px;
+    left: 1255px;
+    position: absolute;
+    top: 324px;
+    transform: rotate(39deg);
+}
+.t21 {
+    position: absolute;
+    font-family: forte;
+    font-size: 161px;
+    top: 556px;
+    left: 1452px;
+    transform: rotate(39deg);
+}
+
+.t22 {
+    position: absolute;
+}
+
+.t23 {
+    position: absolute;
+}
+
+.t24 {
+    position: absolute;
+}
+
+.t25 {
+    position: absolute;
+}
+
+.t26 {
+    position: absolute;
+}
+
+.t27 {
+    position: absolute;
+}
+
+.t28 {
+    position: absolute;
+}
+
+.t29 {
+    position: absolute;
+}
