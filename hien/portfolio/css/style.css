@@ -1,0 +1,235 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divider {
+    display: block;
+    width: 50px;
+    height: 4px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background: #cecece;
+}
+
+.divider-light {
+    display: block;
+    width: 50px;
+    height: 4px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background: #f8f8f8;
+}
+
+.btn-gray {
+    color: #333;
+    border-color: #333;
+    background-color: #fff;
+}
+
+.btn-gray:hover,
+.btn-gray:focus,
+.btn-gray:active,
+.btn-gray.active,
+.open .dropdown-toggle.btn-gray {
+    color: #333;
+    border-color: #333;
+    background-color: #eee;
+}
+
+.btn-gray:active,
+.btn-gray.active,
+.open .dropdown-toggle.btn-gray {
+    background-image: none;
+}
+
+.btn-gray.disabled,
+.btn-gray[disabled],
+fieldset[disabled] .btn-gray,
+.btn-gray.disabled:hover,
+.btn-gray[disabled]:hover,
+fieldset[disabled] .btn-gray:hover,
+.btn-gray.disabled:focus,
+.btn-gray[disabled]:focus,
+fieldset[disabled] .btn-gray:focus,
+.btn-gray.disabled:active,
+.btn-gray[disabled]:active,
+fieldset[disabled] .btn-gray:active,
+.btn-gray.disabled.active,
+.btn-gray[disabled].active,
+fieldset[disabled] .btn-gray.active {
+    border-color: #333;
+    background-color: #fff;
+}
+
+.btn-gray .badge {
+    color: #fff;
+    background-color: #333;
+}
+
+
+/* HEADER */
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background: url('../img/header.jpg') center -100px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.header_text {
+    line-height: 1;
+    display: inline-block;
+    color: white;
+    align-self: flex-end;
+}
+
+.header_title {
+    font-size: 90px;
+}
+
+.header_intro {
+    display: inline-block;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-right: 5px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    letter-spacing: 24.2px;
+    border-top: 1px solid #d2d2d2;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.header_quote {
+    letter-spacing: 10px;
+}
+
+
+/* ABOUT */
+
+#about {
+    display: block;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    background: white url('../img/white-bg-flip.png') no-repeat left center/ auto 100%;
+}
+
+#about p {
+    text-align: justify;
+}
+
+.progress-bar-gray {
+    background-color: #898989;
+}
+
+
+/* PORTFOLIO */
+
+#portfolio {
+    display: block;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    color: white;
+    background: url('../img/dark-bg.png') no-repeat top right/ 350px auto, url('../img/dark-bg-flip.png') no-repeat bottom left/ 350px auto;
+    background-color: #494949;
+}
+
+.img-portfolio {
+    display: block;
+    margin-bottom: 20px;
+    padding: 4px;
+    -webkit-transition: border .5s ease-in-out;
+    -o-transition: border .5s ease-in-out;
+    transition: border .5s ease-in-out;
+    border: 1px solid #c6c6c6;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.img-portfolio > img,
+.img-portfolio a > img {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+a.img-portfolio:hover,
+a.img-portfolio:focus,
+a.img-portfolio.active {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+.img-portfolio .caption {
+    padding: 9px;
+    color: #333;
+}
+
+.featherlight .featherlight-content {
+    padding: 10px;
+    border-bottom: none;
+}
+
+.featherlight .featherlight-close-icon {
+    top: 10px;
+    right: 10px;
+}
+
+
+/* CONTACT */
+
+#contact {
+    display: block;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    background: white url('../img/white-bg.png') no-repeat right center/ auto 100%;
+}
+
+
+/* FOOTER */
+
+#footer {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: white;
+    background: #494949;
+}
+
+
+/****************************************************
+  * Custom CSS for this website 
+  *****************************************************/
+
+.custom-navbar {
+    height: 70px;
+    transition: background-color .5s ease 0s;
+    border-bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.custom-navbar.opaque {
+    height: 70px;
+    transition: background-color .5s ease 0s;
+    border-bottom: 1px solid #ddd;
+    background-color: white;
+}
+
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 70px;
+    height: 70px;
+    padding-top: 0;
+}

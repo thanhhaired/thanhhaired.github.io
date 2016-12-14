@@ -1,0 +1,67 @@
+body {
+    background: #514438;
+    font-family: se;
+    font-size: 18px;
+    color: #353535;
+}
+
+#main-container {
+    width: 900px;
+    height: auto;
+    background: url(background.jpg) repeat center top;
+    margin: 50px auto;
+    padding: 70px 20px 100px;
+}
+
+.summermenu-title {
+    font-family: pl;
+    color: #e65540;
+    font-size: 120px;
+    margin: 100px 0 20px;
+}
+
+.summermenu-intro {
+    width: 840px;
+    margin: 10px auto 50px;
+}
+
+.menu-title {
+    font-family: ms;
+    color: #e65540;
+    font-size: 80px;
+    margin: 20px 0 40px;
+}
+
+.oh-day {
+    font-family: ee;
+    color: #79896e;
+    font-size: 35px;
+    margin: 0 auto 15px;
+}
+
+.oh-time {
+    font-family: nx;
+    color: #66a8a6;
+    font-size: 50px;
+    margin: 0 auto 30px;
+}
+
+.food-name {
+    font-family: pl;
+    color: #66a8a6;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.food-info {
+    font-family: vi;
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: #565656;
+}
+
+.price {
+	font-family: nx;
+	color: #79896e;
+	font-size: 22px;
+}

@@ -1,0 +1,44 @@
+body {
+    background: #0d0d0d url(images/bg.png) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    color: white;
+}
+
+#menu {
+    font-family: imagine;
+    font-size: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin: 50px 0 0;
+}
+
+#menu li {
+    display: inline;
+}
+
+#menu a {
+    display: inline-block;
+    padding: 10px 50px;
+    color: white;
+    text-decoration: none;
+}
+
+#logo {
+    text-align: center;
+    padding: 200px 0 200px;
+}
+
+#logo h1 {
+    font-family: blacklist;
+    font-size: 90px;
+    margin: 30px auto 30px;
+}
+
+#logo h2 {
+    font-family: imagine;
+    font-size: 30px;
+}
