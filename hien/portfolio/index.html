@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/featherlight.css" rel="stylesheet">
+    <link href="css/ekko-lightbox.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
 </head>
@@ -86,25 +86,29 @@
                             <h1>brand identity designs</h1></div>
                     </div>
                     <div class="row">
-                        <div class="col-md-3"><img class="img-responsive" src="img/p01.png" /></div>
-                        <div class="col-md-3"><img class="img-responsive" src="img/p02.png" /></div>
-                        <div class="col-md-6"><img class="img-responsive" src="img/p03.jpg" /></div>
+                        <div class="col-md-3">
+                            <a href="exercise/menu/index.html"><img class="img-responsive" src="img/p01.png" /></a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="exercise/inspiration/index.html"><img class="img-responsive" src="img/p02.png" /></a>
+                        </div>
+                        <div class="col-md-6"><a href="img/p03.jpg" data-toggle="lightbox" data-title="BRAND IDENTITY DESIGN" data-footer="..."><img class="img-responsive" src="img/p03.jpg" /></a></div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
                             <h1>poster designs</h1></div>
                     </div>
                     <div class="row">
-                        <div class="col-md-4"><img class="img-responsive" src="img/p04.png" /></div>
-                        <div class="col-md-4"><img class="img-responsive" src="img/p05.jpg" /></div>
-                        <div class="col-md-4"><img class="img-responsive" src="img/p06.jpg" /></div>
+                        <div class="col-md-4"><a href="img/p04.png" data-toggle="lightbox" data-title="POSTER DESIGN" data-footer="..."><img class="img-responsive" src="img/p04.png" /></a></div>
+                        <div class="col-md-4"><a href="img/p05.jpg" data-toggle="lightbox" data-title="POSTER DESIGN" data-footer="..."><img class="img-responsive" src="img/p05.jpg" /></a></div>
+                        <div class="col-md-4"><a href="img/p06.jpg" data-toggle="lightbox" data-title="POSTER DESIGN" data-footer="..."><img class="img-responsive" src="img/p06.jpg" /></a></div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
                             <h1>check out my issuu</h1></div>
                     </div>
                     <div class="row">
-                        <div class="col-md-9"><img class="img-responsive" src="img/p07.jpg" /></div>
+                        <div class="col-md-9"><a href="img/p07.jpg" data-toggle="lightbox" data-title="ISSUU" data-footer="..."><img class="img-responsive" src="img/p07.jpg" /></a></div>
                         <div class="col-md-3"></div>
                     </div>
                     <div class="row">
@@ -112,9 +116,20 @@
                             <h1>sketches</h1></div>
                     </div>
                     <div class="row">
-                        <div class="col-md-4"><img class="img-responsive" src="img/p08.jpg" /><img class="img-responsive" src="img/p09.jpg" /><img class="img-responsive" src="img/p10.jpg" /></div>
-                        <div class="col-md-4"><img class="img-responsive" src="img/p11.jpg" /><img class="img-responsive" src="img/p12.jpg" /><img class="img-responsive" src="img/p13.jpg" /></div>
-                        <div class="col-md-4"><img class="img-responsive" src="img/p14.jpg" /><img class="img-responsive" src="img/p15.jpg" /></div>
+                        <div class="col-md-4">
+                        <a href="img/p08.jpg" data-toggle="lightbox" data-title="SKETCHES" data-footer="..."><img class="img-responsive" src="img/p08.jpg" /></a>
+                        <a href="img/p09.jpg" data-toggle="lightbox" data-title="SKETCHES" data-footer="..."><img class="img-responsive" src="img/p09.jpg" /></a>
+                        <a href="img/p10.jpg" data-toggle="lightbox" data-title="SKETCHES" data-footer="..."><img class="img-responsive" src="img/p10.jpg" /></a>
+                        </div>
+                        <div class="col-md-4">
+                        <a href="img/p11.jpg" data-toggle="lightbox" data-title="SKETCHES" data-footer="..."><img class="img-responsive" src="img/p11.jpg" /></a>
+                        <a href="img/p12.jpg" data-toggle="lightbox" data-title="SKETCHES" data-footer="..."><img class="img-responsive" src="img/p12.jpg" /></a>
+                        <a href="img/p13.jpg" data-toggle="lightbox" data-title="SKETCHES" data-footer="..."><img class="img-responsive" src="img/p13.jpg" /></a>
+                        </div>
+                        <div class="col-md-4">
+                        <a href="img/p14.jpg" data-toggle="lightbox" data-title="SKETCHES" data-footer="..."><img class="img-responsive" src="img/p14.jpg" /></a>
+                        <a href="img/p15.jpg" data-toggle="lightbox" data-title="SKETCHES" data-footer="..."><img class="img-responsive" src="img/p15.jpg" /></a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-2"></div>
@@ -147,6 +162,13 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/featherlight.js"></script>
+    <script src="js/ekko-lightbox.js"></script>
+    <script type="text/javascript">
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });
+    </script>
 </body>
 
 </html>
