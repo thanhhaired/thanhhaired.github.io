@@ -125,7 +125,7 @@ img {
     height: 80px;
     transition: background-color .5s ease 0s;
     border-bottom: 0;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .custom-navbar.opaque {
