@@ -1,14 +1,28 @@
 body {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
+    font-family: rv;
+    font-weight: 100;
     position: relative;
     letter-spacing: 1px;
+    font-size: 15px;
+    color: white;
 }
 
-.flex {
+.Aligner {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.Aligner-item {
+    max-width: 50%;
+}
+
+.Aligner-item--top {
+    align-self: flex-start;
+}
+
+.Aligner-item--bottom {
+    align-self: flex-end;
 }
 
 .divider {
@@ -84,33 +98,23 @@ fieldset[disabled] .btn-gray.active {
     background: url('../img/header.jpg') center -100px;
     background-attachment: fixed;
     background-size: cover;
+    text-align: center;
 }
 
-.header_text {
-    line-height: 1;
-    display: inline-block;
+.page-title {
+    font-family: bl;
+    color: #ffba00;
+    font-size: 70px;
+    margin-top: 30px;
+}
+
+.page-intro {
     color: white;
-    align-self: flex-end;
-}
-
-.header_title {
-    font-size: 90px;
-}
-
-.header_intro {
-    display: inline-block;
-    margin-top: 10px;
-    padding-top: 20px;
-    padding-right: 5px;
-    padding-bottom: 20px;
-    padding-left: 5px;
-    letter-spacing: 24.2px;
-    border-top: 1px solid #d2d2d2;
-    border-bottom: 1px solid #d2d2d2;
-}
-
-.header_quote {
-    letter-spacing: 10px;
+    font-family: rb;
+    font-size: 30px;
+    border-top: 1px solid #ffba00;
+    padding: 5px 50px;
+    margin-top: -15px;
 }
 
 
@@ -118,14 +122,20 @@ fieldset[disabled] .btn-gray.active {
 
 #about {
     display: block;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 150px 0 100px;
     text-align: center;
-    background: white url('../img/white-bg-flip.png') no-repeat left center/ auto 100%;
+    background: url('../img/bg-about.jpg') center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: left;
 }
 
-#about p {
-    text-align: justify;
+#about p {}
+
+#about h1 {
+    font-family: si;
+    color: #ffba00;
+    font-size: 50px;
 }
 
 .progress-bar-gray {
@@ -191,21 +201,12 @@ a.img-portfolio.active {
 #contact {
     display: block;
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
+    background: url('../img/bg-contact.jpg') center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: left;
     text-align: center;
-    background: white url('../img/white-bg.png') no-repeat right center/ auto 100%;
-}
-
-
-/* FOOTER */
-
-#footer {
-    display: block;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    text-align: center;
-    color: white;
-    background: #494949;
 }
 
 
@@ -214,22 +215,34 @@ a.img-portfolio.active {
   *****************************************************/
 
 .custom-navbar {
-    height: 70px;
+    height: 80px;
     transition: background-color .5s ease 0s;
     border-bottom: 0;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .custom-navbar.opaque {
-    height: 70px;
+    height: 80px;
     transition: background-color .5s ease 0s;
-    border-bottom: 1px solid #ddd;
-    background-color: white;
+    border-bottom: 0px solid #ddd;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .navbar-brand,
 .navbar-nav li a {
-    line-height: 70px;
-    height: 70px;
+    line-height: 80px;
+    height: 80px;
     padding-top: 0;
+    font-size: 15px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
 }
