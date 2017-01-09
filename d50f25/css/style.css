@@ -24,7 +24,7 @@ ol {
 
 body {
     font-family: 'Roboto Mono', monospace;
-    line-height: 1.4;
+    line-height: 1.5;
     padding: 0;
     color: #292929;
     background: white;
@@ -174,7 +174,6 @@ a:visited {
 
 #intro {
     display: block;
-    padding: 50px 0;
     text-align: center;
 }
 
@@ -198,6 +197,7 @@ a:visited {
     margin-left: -60px;
     height: 70px;
     background: url(../images/cropmarks-1.png) no-repeat top left/35px auto, url(../images/cropmarks-2.png) no-repeat top right/35px auto;
+    margin-bottom: -60px;
 }
 
 .cropmarks-bottom {
@@ -210,6 +210,8 @@ a:visited {
     -ms-transform: scaleY(-1);
     -o-transform: scaleY(-1);
     transform: scaleY(-1);
+    margin-top: -20px;
+    margin-bottom: 40px;
 }
 
 
@@ -219,4 +221,103 @@ a:visited {
     margin-top: -150px;
     padding: 200px 0 20px;
     background: #eee;
+}
+
+
+/*-- CONTACT --*/
+
+.form-d50f25-button {
+    background: #292929;
+    color: #fff;
+    border-radius: 0;
+    border: 2px solid #fff;
+    padding: 15px 0;
+}
+
+.form-d50f25-button:hover,
+.form-d50f25-button:active {
+    background: #d50f25;
+    border: 2px solid #d50f25;
+    color: #fff;
+}
+
+.form-d50f25 {
+    background-color: #292929;
+    background-image: none;
+    border: none;
+    border-bottom: 2px solid white;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    height: 34px;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%;
+}
+
+.form-d50f25:focus {
+    border-color: #fff;
+    outline: 0 none;
+}
+
+.form-d50f25:required {
+    box-shadow: none;
+}
+
+.form-d50f25::-moz-placeholder {
+    color: #999;
+    opacity: 1;
+}
+
+.form-d50f25[disabled],
+.form-d50f25[readonly],
+fieldset[disabled] .form-d50f25 {
+    background-color: #eee;
+    opacity: 1;
+}
+
+.form-d50f25[disabled],
+fieldset[disabled] .form-d50f25 {
+    cursor: not-allowed;
+}
+
+textarea.form-d50f25 {
+    height: auto;
+}
+
+input[type="search"] {}
+
+@media not all {
+    input.form-d50f25[type="date"],
+    input.form-d50f25[type="time"],
+    input.form-d50f25[type="datetime-local"],
+    input.form-d50f25[type="month"] {
+        line-height: 34px;
+    }
+    .input-group-sm input[type="date"],
+    .input-group-sm input[type="time"],
+    .input-group-sm input[type="datetime-local"],
+    .input-group-sm input[type="month"],
+    input.input-sm[type="date"],
+    input.input-sm[type="time"],
+    input.input-sm[type="datetime-local"],
+    input.input-sm[type="month"] {
+        line-height: 30px;
+    }
+    .input-group-lg input[type="date"],
+    .input-group-lg input[type="time"],
+    .input-group-lg input[type="datetime-local"],
+    .input-group-lg input[type="month"],
+    input.input-lg[type="date"],
+    input.input-lg[type="time"],
+    input.input-lg[type="datetime-local"],
+    input.input-lg[type="month"] {
+        line-height: 46px;
+    }
+}
+
+.hashtag {
+    font-size: 10px;
+    letter-spacing: 2px;
 }

@@ -1,0 +1,70 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0 0 125px;
+    padding: 25px;
+    background: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer {
+    background: orange url(images/footer-bg.png) repeat-x center bottom;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 140px;
+    width: 100%;
+}
+
+#container {
+    width: 1200px;
+    margin: 80px auto 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+.menu {
+    margin-top: 10px;
+    margin-bottom: 70px;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 0 10px;
+}
+
+.portfolio a {
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.portfolio h2 {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.content {
+	width: 700px;
+	margin: 0px auto 100px;
+}
+
+.content h1 {
+	font-size: 40px;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+
+.content p {
+	margin-bottom: 30px;
+}
