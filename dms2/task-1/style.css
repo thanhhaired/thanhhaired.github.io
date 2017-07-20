@@ -2,7 +2,8 @@ body {
     background-color: #d50f25;
     color: #555;
     height: 100vh;
-    font-size: 16px;
+    font-size: 14px;
+    transition: all 0.2s ease;
 }
 
 .container {
@@ -19,4 +20,9 @@ a {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+pre span.line {
+    display: block;
+    line-height: 30px;
 }

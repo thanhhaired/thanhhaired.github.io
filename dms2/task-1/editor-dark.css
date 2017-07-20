@@ -7,11 +7,7 @@ pre {
     padding-right: 40px;
     background: #292929;
     color: #fff;
-}
-
-pre span.line {
-    display: block;
-    line-height: 2rem;
+    transition: all 0.2s ease;
 }
 
 pre span.line:before {
@@ -26,6 +22,7 @@ pre span.line:before {
     width: 20px;
     text-align: right;
     background: #171717;
+    transition: all 0.2s ease;
 }
 
 pre span.line:first-child:before {

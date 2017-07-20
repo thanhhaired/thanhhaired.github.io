@@ -12,12 +12,12 @@
     // button 2 : random background color
 
     function randombackground() {
-        document.body.style.backgroundColor = randomColors();
+        document.body.style.backgroundColor = rancomhexcolor();
     }
 
     // http://www.paulirish.com/2009/random-hex-color-code-snippets/
 
-    function randomColors() {
+    function rancomhexcolor() {
         return '#' + Math.floor(Math.random() * 16777215).toString(16);
     }
 
