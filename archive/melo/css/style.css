@@ -1,0 +1,94 @@
+    body {
+        position: relative;
+        background: #d70f26;
+        background: -moz-linear-gradient(-45deg, #d70f26 0%, #d85564 100%);
+        background: -webkit-gradient(left top, right bottom, color-stop(0%, #d70f26), color-stop(100%, #d85564));
+        background: -webkit-linear-gradient(-45deg, #d70f26 0%, #d85564 100%);
+        background: -o-linear-gradient(-45deg, #d70f26 0%, #d85564 100%);
+        background: -ms-linear-gradient(-45deg, #d70f26 0%, #d85564 100%);
+        background: linear-gradient(135deg, #d70f26 0%, #d85564 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#d70f26', endColorstr='#d85564', GradientType=1);
+        background-attachment: fixed;
+    }
+    
+    .navbar-melose {
+        background: none;
+        border: none;
+        top: 40px;
+        right: 50px;
+        font-weight: 400;
+        text-transform: lowercase;
+        letter-spacing: 2px;
+    }
+    
+    .navbar-melose .navbar-nav > li > a {
+        color: #fff;
+        padding: 10px 25px;
+    }
+    
+    .navbar-melose .navbar-nav > li > a:focus,
+    .navbar-melose .navbar-nav > li > a:hover {
+        background-color: transparent;
+        color: #fff;
+    }
+    
+    .navbar-melose .navbar-nav > .active > a,
+    .navbar-melose .navbar-nav > .active > a:focus,
+    .navbar-melose .navbar-nav > .active > a:hover {
+        background-color: #ffffff;
+        color: #d50f25;
+        border-radius: 100px;
+    }
+    
+    .logo {
+        display: block;
+        position: fixed;
+        width: 200px;
+        height: 200px;
+        background: url(../images/logo.png);
+        background-size: 200px auto;
+        top: 25px;
+        left: 100px;
+    }
+    
+    .section {
+        height: 100vh;
+    }
+    
+    #home {
+        background: url(../images/home.png) no-repeat center center;
+    }
+    
+    #features {
+        background: url(../images/features.png) no-repeat center center;
+    }
+    
+    #screens {
+        background: url(../images/screens.png) no-repeat center center;
+    }
+    
+    #about {
+        background: url(../images/about.png) no-repeat center center;
+    }
+    
+    #getapp {
+        background: url(../images/getapp.png) no-repeat center center;
+    }
+    
+    #getapp {
+        background: url(../images/getapp.png) no-repeat center center;
+    }
+    
+    #review {
+        background: url(../images/review.png) no-repeat center center;
+    }
+    
+    #support {
+        background: url(../images/support.png) no-repeat center center;
+    }
+    
+    #demo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }

@@ -1,0 +1,142 @@
+body {
+    font-family: 'Inconsolata', monospace;
+    position: relative;
+    padding: 0;
+}
+
+.content a, .content a:hover, .content a:visited {
+	color: #e2011b;
+}
+
+#body-border {
+	position: relative;
+	padding: 0;
+	width: 100%;
+	border: 10px solid #e2011b;
+}
+#body-border-outer {
+	position: relative;
+	padding: 0;
+	width: 100%;
+	border: 50px solid #fff;
+}
+
+#dostudio-link {
+	display: inline-block;
+	background: #e2011b;
+	color: #fff;
+	padding: 10px 30px 20px 20px;
+}
+
+#dostudio-link a {
+	color: #fff;
+}
+
+
+#overlay-n {
+    background: rgba(0, 0, 0, 0) url("../images/overlay.jpg");
+    background-size: 100% auto;
+    mix-blend-mode: multiply;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 99999;
+}
+
+h1 {
+    color: #0f3283;
+    letter-spacing: 15px;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-right: -15px;
+    margin-top: 50px;
+}
+
+.divider {
+    display: block;
+    height: 5px;
+    width: 80px;
+    background: #e2011b;
+    margin: 20px auto 40px;
+}
+
+#main-container {
+    width: 700px;
+    margin: 0 auto;
+}
+
+#rebot-nav {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #e2011b;
+    font-size: 20px;
+}
+
+#rebot-nav a {
+    color: #e2011b;
+}
+
+.content {}
+
+.content p {
+    width: 80%;
+    margin: 20px auto 0;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.content img.post-img {
+	max-width: 60%;
+	display: block;
+	margin: 20px auto 0;
+}
+
+.about-fi {
+    width: 60%;
+    margin: 0 auto 50px;
+    display: block;
+}
+
+.post-fi {
+    width: 100%;
+    box-shadow: 0 0 0 15px white, 0 0 0 20px #e2011b;
+    margin: 20px auto 30px;
+}
+
+.panel {
+    box-shadow: none;
+}
+
+.panel-group .panel-heading + .panel-collapse > .list-group,
+.panel-group .panel-heading + .panel-collapse > .panel-body {
+    border-top: 0px solid #ddd;
+    padding: 10px 0 50px;
+}
+
+.panel-heading {
+    padding-left: 0;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 0px;
+}
+
+.panel-title {
+    text-transform: uppercase;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+#footer {
+    background: #e2011b;
+    display: block;
+    width: 200px;
+    color: white;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 50px auto -5px;
+}
