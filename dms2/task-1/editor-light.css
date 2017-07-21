@@ -1,3 +1,8 @@
+.editor, .folder-tree {
+    background: #eeeeee;
+    color: #292929;
+}
+
 pre {
     background: #ffffff;
     color: #292929;
