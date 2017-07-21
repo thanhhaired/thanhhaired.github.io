@@ -1,41 +1,14 @@
 pre {
-    font-family: monospace;
-    margin: 4em auto;
-    border-radius: 10px;
-    line-height: 0;
-    counter-reset: line;
-    padding-right: 40px;
     background: #292929;
-    color: #fff;
-    transition: all 0.2s ease;
+    color: #ffffff;
 }
 
 pre span.line:before {
-    counter-increment: line;
-    content: counter(line);
-    display: inline-block;
-    border-right: 1px solid #3f3f3f;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-right: 10px;
     color: #3f3f3f;
-    width: 20px;
-    text-align: right;
+    border-right: 1px solid #3f3f3f;
     background: #171717;
-    transition: all 0.2s ease;
-}
-
-pre span.line:first-child:before {
-    padding-top: 20px;
-    border-top-left-radius: 10px;
-}
-
-pre span.line:last-child:before {
-    padding-bottom: 20px;
-    border-bottom-left-radius: 10px;
 }
 
 pre span.bracket {
-    font-weight: 700;
     color: #d50f25;
 }

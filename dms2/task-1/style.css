@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
+
 body {
     background-color: #d50f25;
     color: #555;
     height: 100vh;
     font-size: 14px;
     transition: all 0.2s ease;
+    font-family: Inconsolata, monospace;
 }
 
 .container {
@@ -12,6 +15,16 @@ body {
     justify-content: center;
     height: 100vh;
 }
+
+.copyright {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
 
 a {
     -webkit-touch-callout: none;
@@ -22,7 +35,126 @@ a {
     user-select: none;
 }
 
+
+
+/*-- EDITOR --*/
+
+.editor {
+    -webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+}
+
+.title-bar {
+    line-height: 30px;
+    background: url(top-bar.jpg) no-repeat top left;
+    background-size: auto 30px;
+    border-radius: 5px 5px 0px 0px;
+    text-align: center;
+    width: 100%;
+    height: 30xpx;
+}
+
+pre {
+    font-family: monospace;
+    margin: 0 auto;
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    line-height: 0;
+    counter-reset: line;
+    padding-right: 40px;
+    transition: all 0.25s ease;
+}
+
 pre span.line {
     display: block;
     line-height: 30px;
+}
+
+pre span.line:before {
+    counter-increment: line;
+    content: counter(line);
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 20px;
+    width: 20px;
+    text-align: right;
+    transition: all 0.25s ease;
+}
+
+pre span.line:first-child:before {
+    padding-top: 20px;
+    border-top-left-radius: 0px;
+}
+
+pre span.line:last-child:before {
+    padding-bottom: 20px;
+    border-bottom-left-radius: 5px;
+}
+
+pre span.bracket {
+    font-weight: 700;
+}
+
+
+
+/*-- BLINKING TEXT --*/
+
+.blink_me {
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@-moz-keyframes blinker {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@-webkit-keyframes blinker {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@keyframes blinker {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
 }
