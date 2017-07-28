@@ -1,92 +1,99 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
 
 body {
-    background-color: #d50f25;
-    color: #555;
-    height: 100vh;
-    font-size: 14px;
-    transition: all 0.2s ease;
     font-family: Inconsolata, monospace;
+    font-size: 14px;
+    height: 100vh;
+    transition: all .2s ease;
+    color: #555;
+    background-color: #f26f70;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
-    -webkit-touch-callout: none;
     -webkit-user-select: none;
-    -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    text-decoration: none;
+    color: inherit;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
 }
 
 .container {
     display: flex;
+    height: 100vh;
+
     align-items: center;
     justify-content: center;
-    height: 100vh;
 }
 
 .copyright {
-    display: block;
     position: absolute;
     bottom: 10px;
-    color: white;
+    display: block;
     width: 100%;
     text-align: center;
+    color: white;
+}
+
+.editor-wrapper {
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 50px 0 rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 0 50px 0 rgba(0, 0, 0, .3);
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, .3);
 }
 
 .editor {
-    -webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.4);
-    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.4);
-    border-radius: 5px;
-    padding: 0;
     display: flex;
+    padding: 0;
+    transition: all .25s ease-in-out;
+    border-radius: 5px;
+
     align-items: center;
     justify-content: top;
-    transition: all 0.25s ease-in-out;
 }
 
 .title-bar {
     line-height: 25px;
-    background: url(top-bar.jpg) no-repeat top left;
-    background-size: auto 25px;
-    border-radius: 5px 5px 0px 0px;
-    text-align: center;
     width: 100%;
     height: 25xpx;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    background: url(top-bar.jpg) no-repeat top left;
+    background-size: auto 25px;
 }
 
 .folder-tree {
     display: block;
     width: auto;
-    align-self: flex-start;
     padding: 30px;
-    transition: all 0.25s ease-in-out;
+    transition: all .25s ease-in-out;
+
+    align-self: flex-start;
 }
 
 .folder-tree p {
-    margin-left: 20px;
     margin-bottom: 10px;
+    margin-left: 20px;
 }
 
 .folder-tree p:before {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    margin-bottom: -3px;
+    content: '';
     background: url(file.png) no-repeat center center;
     background-size: 12px 12px;
-    height: 15px;
-    width: 15px;
-    display: inline-block;
-    margin-bottom: -3px;
-    margin-right: 5px;
-    content: "";
 }
 
 .folder-tree p:first-child {
+    font-size: 15px;
     font-weight: 700;
     margin-bottom: 15px;
     margin-left: 0;
-    font-size: 15px;
 }
 
 .folder-tree p:first-child:before {
@@ -94,38 +101,43 @@ a {
     background-size: 15px 15px;
 }
 
+#comment {
+    transition: all .25s ease-in-out;
+    color: purple;
+}
+
 pre {
-    display: block;
     font-family: monospace;
-    margin: 0 auto;
-    border-radius: 5px;
-    border-top-right-radius: 0px;
     line-height: 0;
-    counter-reset: line;
+    display: block;
+    margin: 0 auto;
     padding-right: 40px;
-    transition: all 0.25s ease-in-out;
+    counter-reset: line;
+    transition: all .25s ease-in-out;
+    border-radius: 5px;
+    border-top-right-radius: 0;
 }
 
 pre span.line {
-    display: block;
     line-height: 30px;
+    display: block;
 }
 
 pre span.line:before {
-    counter-increment: line;
-    content: counter(line);
     display: inline-block;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-right: 20px;
     width: 20px;
+    margin-right: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    content: counter(line);
+    counter-increment: line;
+    transition: all .25s ease-in-out;
     text-align: right;
-    transition: all 0.25s ease-in-out;
 }
 
 pre span.line:first-child:before {
     padding-top: 20px;
-    border-top-left-radius: 0px;
+    border-top-left-radius: 0;
 }
 
 pre span.line:last-child:before {
@@ -138,27 +150,30 @@ pre span.bracket {
 }
 
 
+
+
 /*-- BLINKING TEXT --*/
 
 .blink_me {
-    -webkit-animation-name: blinker;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-name: blinker;
-    -moz-animation-duration: 1s;
-    -moz-animation-timing-function: linear;
-    -moz-animation-iteration-count: infinite;
-    animation-name: blinker;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    -webkit-touch-callout: none;
     -webkit-user-select: none;
-    -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    -webkit-animation-name: blinker;
+    -moz-animation-name: blinker;
+    animation-name: blinker;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
 }
 
 @-moz-keyframes blinker {
@@ -166,7 +181,7 @@ pre span.bracket {
         opacity: 1.0;
     }
     50% {
-        opacity: 0.0;
+        opacity: .0;
     }
     100% {
         opacity: 1.0;
@@ -178,7 +193,7 @@ pre span.bracket {
         opacity: 1.0;
     }
     50% {
-        opacity: 0.0;
+        opacity: .0;
     }
     100% {
         opacity: 1.0;
@@ -190,7 +205,7 @@ pre span.bracket {
         opacity: 1.0;
     }
     50% {
-        opacity: 0.0;
+        opacity: .0;
     }
     100% {
         opacity: 1.0;

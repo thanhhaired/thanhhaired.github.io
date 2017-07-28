@@ -1,23 +1,31 @@
     // button 1 : toggle css file
 
     function togglecss() {
-        var el = document.getElementById("editor");
-        if (el.href.match("editor-light.css")) {
-            el.href = "editor-dark.css";
+        var e = document.getElementById("editor");
+        if (e.href.match("editor-light.css")) {
+            e.href = "editor-dark.css";
         } else {
-            el.href = "editor-light.css";
+            e.href = "editor-light.css";
         }
     };
 
     // button 2 : random background color
 
     function randombackground() {
-        document.body.style.backgroundColor = rancomhexcolor();
+        document.body.style.backgroundColor = rancomhexcolor1();
+    }
+
+    function randomgradientbackground() {
+        document.body.style.background = "linear-gradient(" + rancomhexcolor1() + ", " + rancomhexcolor2() + ")";
     }
 
     // http://www.paulirish.com/2009/random-hex-color-code-snippets/
 
-    function rancomhexcolor() {
+    function rancomhexcolor1() {
+        return '#' + Math.floor(Math.random() * 16777215).toString(16);
+    }
+
+    function rancomhexcolor2() {
         return '#' + Math.floor(Math.random() * 16777215).toString(16);
     }
 
@@ -25,4 +33,11 @@
 
     function alertlink() {
         alert("hi, I am an alert box!");
+    }
+
+    //button 4 : title task plus one
+
+    function taskplus() {
+        document.getElementById("titletext").innerHTML = (parseInt(document.getElementById("titletext").innerHTML) + 1);
+        document.getElementById("comment").style.opacity = "1";
     }

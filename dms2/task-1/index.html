@@ -14,12 +14,12 @@
 <body>
     <div class="container">
         <!-- EDITOR -->
-        <div>
-            <div class="title-bar">task-1.html</div>
+        <div class="editor-wrapper">
+            <div class="title-bar">index.html</div>
             <div class="editor">
                 <div class="folder-tree">
                     <p>dm-spec-2</p>
-                    <p>task-1.html</p>
+                    <p>index.html</p>
                     <p><a href="style.css">style.css</a></p>
                     <p><a href="function.js">function.js</a></p>
                 </div>
@@ -27,7 +27,7 @@
 				<span class="line"><span class="bracket">&#60;!DOCTYPE</span> html<span class="bracket">&#62;</span></span>
 				<span class="line"><span class="bracket">&#60;html&#62;</span></span>
 				<span class="line">	<span class="bracket">&#60;head&#62;</span></span>
-				<span class="line">		<span class="bracket">&#60;title&#62;</span>task-1.html<span class="bracket">&#60;/title&#62;</span></span>
+				<span class="line">		<span class="bracket">&#60;title&#62;</span>task-<span id="titletext">1</span><span class="bracket">&#60;/title&#62;</span><span id="comment" style="opacity: 0; transition: 1s ease opacity;display: inline;"> &#60;!-- look at this&#62;</span></span>
 				<span class="line">		<span class="bracket">&#60;meta name="</span>author<span class="bracket">" content="</span>s3516553<span class="bracket">"&#62;</span></span>
 				<span class="line">		<span class="bracket">&#60;link rel="</span>stylesheet<span class="bracket">" href="</span>style.css<span class="bracket">"&#62;</span></span>
 				<span class="line">	<span class="bracket">&#60;/head&#62;</span></span>
@@ -41,7 +41,7 @@
 				<span class="line">		<span class="bracket">&#60;div id="</span>button<span class="bracket">"&#62;</span></span>
 				<span class="line">			<a type="button" onclick="togglecss()"><span class="bracket">&#60;button id="</span>#button-1<span class="bracket">"&#62;</span>change editor theme<span id="theme"></span><span class="bracket">&#60;/button&#62;</span></a></span>
 				<span class="line">			<a type="button" onclick="randombackground()"><span class="bracket">&#60;button id="</span>#button-2<span class="bracket">"&#62;</span>change background color<span class="bracket">&#60;/button&#62;</span></a></span>
-				<span class="line">			<a type="button" onclick="alertlink()"><span class="bracket">&#60;button id="</span>#button-3<span class="bracket">"&#62;</span>make an alert box<span class="bracket">&#60;/button&#62;</span></a></span>
+				<span class="line">			<a type="button" onclick="taskplus()"><span class="bracket">&#60;button id="</span>#button-3<span class="bracket">"&#62;</span>title task-(+1)<span class="bracket">&#60;/button&#62;</span></a></span>
 				<span class="line">		<span class="bracket">&#60;/div&#62;</span></span>
 				<span class="line">		<span class="bracket">&#60;script src="</span>jquery.js<span class="bracket">"&#62;&#60;/script&#62;</span></span>
 				<span class="line">		<span class="bracket">&#60;script src="</span>function.js<span class="bracket">"&#62;&#60;/script&#62;</span></span>
