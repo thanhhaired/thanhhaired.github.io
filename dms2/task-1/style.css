@@ -70,7 +70,6 @@ a {
     width: auto;
     padding: 30px;
     transition: all .25s ease-in-out;
-    width: 130px;
     align-self: flex-start;
 }
 
