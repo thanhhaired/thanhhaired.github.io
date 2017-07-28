@@ -5,7 +5,8 @@ body {
 	font-size: 14px;
 	overflow-y: hidden;
 	transition: all .2s ease;
-	background: url(images/bg.jpg);
+	background: linear-gradient(135deg, rgba(109,255,255,1) 0%, rgba(255,167,254,1) 100%);
+	background-color: #fda9fc;
 	background-size: cover;
 }
 
