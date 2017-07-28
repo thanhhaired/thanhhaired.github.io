@@ -25,7 +25,6 @@
     		overlay.style.opacity = "0." + a;
     		brightness.style.opacity = "1";
     		bbar.src = "images/bar/" + a + ".jpg";
-
     		window.setTimeout(brightnesshide, 1500);
     	} else if (a = 0) {
     		overlay.style.opacity = "0";

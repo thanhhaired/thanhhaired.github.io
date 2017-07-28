@@ -4,9 +4,10 @@ body {
     font-family: Inconsolata, monospace;
     font-size: 14px;
     height: 100vh;
-    transition: all .2s ease;
+    transition: all .3s ease;
     color: #555;
-    background-color: #f26f70;
+    /* background-color: #8795E8; */
+    background-color: #d50f25;
 }
 
 a {
@@ -69,7 +70,7 @@ a {
     width: auto;
     padding: 30px;
     transition: all .25s ease-in-out;
-
+    width: 130px;
     align-self: flex-start;
 }
 

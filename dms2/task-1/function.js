@@ -9,10 +9,21 @@
         }
     };
 
+    // automatic loop random background
+
+    window.setTimeout(loopbg, 10000);
+
+    function loopbg() {
+        document.body.style.backgroundColor = rancomhexcolor1();
+        document.getElementById("backgroundvalue").innerHTML = rancomhexcolor1();
+        window.setTimeout(loopbg, 10000);
+    }
+
     // button 2 : random background color
 
     function randombackground() {
         document.body.style.backgroundColor = rancomhexcolor1();
+        document.getElementById("backgroundvalue").innerHTML = rancomhexcolor1();
     }
 
     function randomgradientbackground() {
@@ -38,6 +49,18 @@
     //button 4 : title task plus one
 
     function taskplus() {
-        document.getElementById("titletext").innerHTML = (parseInt(document.getElementById("titletext").innerHTML) + 1);
+        document.getElementById("titletexta").innerHTML = (parseInt(document.getElementById("titletexta").innerHTML) + 1);
+        document.getElementById("titletextb").innerHTML = (parseInt(document.getElementById("titletextb").innerHTML) + 1);
+        document.getElementById("titletextc").innerHTML = (parseInt(document.getElementById("titletextc").innerHTML) + 1);
         document.getElementById("comment").style.opacity = "1";
     }
+
+    // loop - file list
+
+    var filename = ["reset.css", "style.css", "function.js", "bg.jpg", "logo.jpg"];
+    var filetext = "";
+    var i;
+    for (i = 0; i < filename.length; i++) {
+        filetext += "<p>" + filename[i] + "</p>";
+    }
+    document.getElementById("filelist").outerHTML = filetext;
