@@ -1,0 +1,19 @@
+.editor-wrapper, .folder-tree {
+    background: #171717;
+    color: #eee;
+}
+
+pre {
+    background: #292929;
+    color: #ffffff;
+}
+
+pre span.line:before {
+    color: #3f3f3f;
+    border-right: 1px solid #3f3f3f;
+    background: #171717;
+}
+
+pre span.bracket {
+    color: #d50f25;
+}

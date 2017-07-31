@@ -1,0 +1,159 @@
+#editor .editor-wrapper {
+    display: flex;
+    padding: 0;
+    transition: all .25s ease-in-out;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: top;
+}
+
+#editor .editor-wrapper .folder-tree {
+    display: block;
+    width: 150px;
+    padding: 15px;
+    transition: all .25s ease-in-out;
+    align-self: flex-start;
+    font-family: 'Inconsolata', monospace;
+
+}
+
+#editor .editor-wrapper .folder-tree p {
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+#editor .editor-wrapper .folder-tree p:before {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    margin-bottom: -3px;
+    content: '';
+    background: url('../images/icon/file.png') no-repeat center center;
+    background-size: 12px 12px;
+}
+
+#editor .editor-wrapper .folder-tree p:first-child {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+
+#editor .editor-wrapper .folder-tree p:first-child:before {
+    background: url('../images/icon/folder.png') no-repeat center center;
+    background-size: 15px 15px;
+}
+
+#comment {
+    transition: all .25s ease-in-out;
+    color: purple;
+}
+
+#editor .editor-wrapper .editor-content pre {
+    font-family: monospace;
+    line-height: 0;
+    display: block;
+    margin: 0 auto;
+    padding-right: 40px;
+    counter-reset: line;
+    transition: all .25s ease-in-out;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+}
+
+#editor .editor-wrapper .editor-content pre span.line {
+    line-height: 30px;
+    display: block;
+}
+
+#editor .editor-wrapper .editor-content pre span.line:before {
+    display: inline-block;
+    width: 20px;
+    margin-right: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    content: counter(line);
+    counter-increment: line;
+    transition: all .25s ease-in-out;
+    text-align: right;
+}
+
+#editor .editor-wrapper .editor-content pre span.line:first-child:before {
+    padding-top: 10px;
+    border-top-left-radius: 0;
+}
+
+#editor .editor-wrapper .editor-content pre span.line:last-child:before {
+    padding-bottom: 10px;
+    border-bottom-left-radius: 5px;
+}
+
+#editor .editor-wrapper .editor-content pre span.bracket {
+    font-weight: 700;
+}
+
+
+
+
+
+
+/*-- BLINKING TEXT --*/
+
+.blink_me {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-animation-name: blinker;
+    -moz-animation-name: blinker;
+    animation-name: blinker;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+}
+
+@-moz-keyframes blinker {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: .0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@-webkit-keyframes blinker {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: .0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@keyframes blinker {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: .0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
