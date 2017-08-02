@@ -11,7 +11,8 @@ body {
 }
 
 #container {
-    background: linear-gradient(135deg, #ee0979 0%, #ff6a00 100%);
+    background: url("../images/bg.jpg") center center;
+    background-size: cover;
     width: calc(100vw - 100px);
     height: calc(100vh - 100px);
     border-radius: 5px;
