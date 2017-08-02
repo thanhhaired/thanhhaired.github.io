@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
+
+html {
+    overflow: hidden;	
+}
+
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #00c3ff 0%, #ffff1c 100%);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#container {
+    height: calc(100vh - 200px);
+    width: calc(100vw - 400px);
+    background: #eee;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, .3);
+    overflow: hidden;
+}
+
+#container iframe {
+    width: 100%;
+    height: calc(100vh - 260px);
+}
+
+.title-bar {
+    line-height: 25px;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    border-bottom: 1px solid #979597;
+    background: linear-gradient(180deg, #edebed 0%, #d6d4d6 100%);
+    transition: 1s ease background;
+    border-radius: 5px 5px 0px 0px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+.title-bar .control {
+    position: absolute;
+    margin-left: 7px;
+}
+
+.title-bar .control span {
+    display: inline-block;
+    border-radius: 50%;
+    background: #ff6158;
+    height: 11px;
+    width: 11px;
+    margin-right: 3px;
+}
+
+.title-bar .control .cyellow {
+    background: #ffbd2e;
+}
+
+.title-bar .control .cgreen {
+    background: #28c940;
+}
+
+.title-bar p {
+    height 25px;
+    background: white;
+    display: block;
+    width: 500px;
+    margin: 8px auto;
+    border-radius: 5px;
+    border: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+
+.title-bar .tab {
+    width: calc((100vw - 400px) / 2);
+    height: 25px;
+    background: #eee;
+    display: inline-block;
+    margin: 0;
+    background: linear-gradient(180deg, #c2c0c2 0%, #bbb9bb 100%);
+    border-top: 1px solid #979597;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    transition: .5s ease;
+}
+
+.title-bar .selected {
+    background: linear-gradient(180deg, #dddbdd 0%, #d7d5d7 100%);
+}
+
+.copyright {
+    font-family: 'Inconsolata', monospace;
+    position: absolute;
+    bottom: 10px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: white;
+    z-index: 3;
+    left: 0;
+    right: 0;
+}
+
+#taskbar {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    background: rgba(255, 255, 255, .6);
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, .2);
+    padding-left: 10px;
+    top: 0;
+}
+
+#taskbar .right {
+    float: right;
+    margin-right: 20px;
+}
+
+#taskbar .wifi {
+    height: 20px;
+    width: 20px;
+    background: url('../images/wifi.png') center center no-repeat;
+    background-size: 18px 18px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#taskbar .battery {
+    height: 20px;
+    line-height: 20px;
+    padding-right: 25px;
+    background: url('../images/battery.png') center right no-repeat;
+    background-size: 20px 20px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+}
+
+#taskbar .search {
+    height: 20px;
+    width: 20px;
+    background: url('../images/search.png') center center no-repeat;
+    background-size: 12px 12px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+}
+
+#taskbar .apple {
+    height: 20px;
+    width: 20px;
+    background: url('../images/apple.png') center center no-repeat;
+    background-size: 15px 15px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#taskbar .left {
+    display: inline-block;
+}
+
+#taskbar .left span {
+    margin: 0 10px;
+}
+
+#taskbar .title {
+    font-weight: 700;
+}
+
+#taskbar .apple:hover {
+    cursor: pointer;
+}

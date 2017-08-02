@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
+
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    height: 100vh;
+    transition: all .3s ease;
+    /* background-color: #8795E8; */
+    background-color: #d50f25;
+}
+
+a {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-decoration: none;
+    color: inherit;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.editor-wrapper {
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 50px 0 rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 0 50px 0 rgba(0, 0, 0, .3);
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, .3);
+}
+
+.editor {
+    display: flex;
+    padding: 0;
+    transition: all .25s ease-in-out;
+    border-radius: 5px;
+    font-family: 'Inconsolata', monospace;
+
+    align-items: center;
+    justify-content: top;
+}
+
+.folder-tree {
+    display: block;
+    width: auto;
+    padding: 15px;
+    transition: all .25s ease-in-out;
+    align-self: flex-start;
+}
+
+.folder-tree p {
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.folder-tree p:before {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    margin-bottom: -3px;
+    content: '';
+    background: url(../images/file.png) no-repeat center center;
+    background-size: 12px 12px;
+}
+
+.folder-tree p:first-child {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-left: 0;
+}
+
+.folder-tree p:first-child:before {
+    background: url(../images/folder.png) no-repeat center center;
+    background-size: 15px 15px;
+}
+
+#comment {
+    transition: all .25s ease-in-out;
+    color: purple;
+}
+
+pre {
+    font-family: monospace;
+    line-height: 0;
+    display: block;
+    margin: 0 auto;
+    padding-right: 40px;
+    counter-reset: line;
+    transition: all .25s ease-in-out;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+}
+
+pre span.line {
+    line-height: 30px;
+    display: block;
+}
+
+pre span.line:before {
+    display: inline-block;
+    width: 20px;
+    margin-right: 20px;
+    padding-right: 30px;
+    padding-left: 20px;
+    content: counter(line);
+    counter-increment: line;
+    transition: all .25s ease-in-out;
+    text-align: right;
+}
+
+pre span.line:first-child:before {
+    padding-top: 5px;
+    border-top-left-radius: 0;
+}
+
+pre span.line:last-child:before {
+    padding-bottom: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+pre span.bracket {
+    font-weight: 700;
+}
+
+
+
+
+
+/*-- BLINKING TEXT --*/
+
+.blink_me {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-animation-name: blinker;
+    -moz-animation-name: blinker;
+    animation-name: blinker;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+}
+
+@-moz-keyframes blinker {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: .0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@-webkit-keyframes blinker {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: .0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@keyframes blinker {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: .0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+.title-bar {
+    line-height: 25px;
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    border-bottom: 1px solid #979597;
+    background: linear-gradient(180deg, #edebed 0%, #d6d4d6 100%);
+    transition: 1s ease background;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.title-bar .control {
+    position: absolute;
+    margin-left: 7px;
+}
+
+.title-bar .control span {
+    display: inline-block;
+    border-radius: 50%;
+    background: #ff6158;
+    height: 11px;
+    width: 11px;
+    margin-right: 3px;
+}
+
+.title-bar .control .cyellow {
+    background: #ffbd2e;
+}
+
+.title-bar .control .cgreen {
+    background: #28c940;
+}
+
+
+.copyright {
+    font-family: 'Inconsolata', monospace;
+    position: absolute;
+    bottom: 10px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: white;
+    z-index: 3;
+    left: 0;
+    right: 0;
+}
+
+#taskbar {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    background: rgba(255, 255, 255, .6);
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, .2);
+    padding-left: 10px;
+    top: 0;
+}
+
+#taskbar .right {
+    float: right;
+    margin-right: 20px;
+}
+
+#taskbar .wifi {
+    height: 20px;
+    width: 20px;
+    background: url('../images/wifi.png') center center no-repeat;
+    background-size: 18px 18px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#taskbar .battery {
+    height: 20px;
+    line-height: 20px;
+    padding-right: 25px;
+    background: url('../images/battery.png') center right no-repeat;
+    background-size: 20px 20px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+}
+
+#taskbar .search {
+    height: 20px;
+    width: 20px;
+    background: url('../images/search.png') center center no-repeat;
+    background-size: 12px 12px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+}
+
+#taskbar .apple {
+    height: 20px;
+    width: 20px;
+    background: url('../images/apple.png') center center no-repeat;
+    background-size: 15px 15px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#taskbar .left {
+    display: inline-block;
+}
+
+#taskbar .left span {
+    margin: 0 10px;
+}
+
+#taskbar .title {
+    font-weight: 700;
+}
+
+#taskbar .apple:hover {
+    cursor: pointer;
+}

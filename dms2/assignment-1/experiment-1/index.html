@@ -3,57 +3,78 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>t a s k - 1</title>
+    <title>e x p e r i m e n t - 1</title>
     <!-- STYLESHEET -->
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="editor-dark.css">
-    <link id="editor" rel="stylesheet" href="editor-light.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/editor-light.css" id="editor">
 </head>
 
 <body>
+    <div id="taskbar">
+        <div class="left">
+            <a href="../"><span class="apple"></span></a>
+            <span class="title">Text Editor</span>
+            <a href="../experiment-1/"><span>Experiment #1</span></a>
+            <a href="../experiment-2/"><span>Experiment #2</span></a>
+            <a href="../experiment-3/"><span>Experiment #3</span></a>
+        </div>
+        <div class="right">
+            <span class="wifi"></span>
+            <span class="battery">100%</span>
+            <span id="date"></span>
+            <span class="search"></span>
+        </div>
+    </div>
     <div class="container">
         <!-- EDITOR -->
         <div class="editor-wrapper">
-            <div class="title-bar">task-<span id="titletexta">1</span>.html</div>
+            <div class="title-bar">
+                <div class="control">
+                    <span class="cred"></span>
+                    <span class="cyellow"></span>
+                    <span class="cgreen"></span>
+                </div>
+                <p>experiment-<span id="titletexta">1</span>.html</p>
+            </div>
             <div class="editor">
                 <div class="folder-tree">
                     <p>dm-spec-2</p>
-                    <p>task-<span id="titletextb">1</span>.html</p>
+                    <p>experiment-<span id="titletextb">1</span>.html</p>
                     <p id="filelist"></p>
                 </div>
                 <pre>
-				<span class="line"><span class="bracket">&#60;!DOCTYPE</span> html<span class="bracket">&#62;</span></span>
-				<span class="line"><span class="bracket">&#60;html&#62;</span></span>
-				<span class="line">	<span class="bracket">&#60;head&#62;</span></span>
-				<span class="line">		<span class="bracket">&#60;title&#62;</span>task-<span id="titletextc">1</span>.html<span class="bracket">&#60;/title&#62;</span><span id="comment" style="opacity: 0; transition: 1s ease opacity;display: inline;"> &#60;!-- look at this&#62;</span></span>
-				<span class="line">		<span class="bracket">&#60;meta name="</span>author<span class="bracket">" content="</span>s3516553<span class="bracket">"&#62;</span></span>
-				<span class="line">		<a href="style.css"><span class="bracket">&#60;link rel="</span>stylesheet<span class="bracket">" href="</span>style.css<span class="bracket">"&#62;</span></a></span>
-				<span class="line">	<span class="bracket">&#60;/head&#62;</span></span>
-				<span class="line"></span>
-				<span class="line">	<span class="bracket">&#60;body style="</span>background: <span id="backgroundvalue" style="border-bottom: 1px solid black; padding-bottom: 1px;">#d50f25</span>;<span class="bracket">"&#62;</span></span>
-				<span class="line">		<span class="bracket">&#60;div id="</span>paragraph<span class="bracket">"&#62;</span></span>
-				<span class="line">			<span class="bracket">&#60;h1&#62;</span>heading<span class="bracket">&#60;/h1&#62;</span></span>
-				<span class="line">			<span class="bracket">&#60;p&#62;</span>lorem ipsum dolor sit amet, consectetur adipiscing elit.<span class="bracket">&#60;/p&#62;</span></span>
-				<span class="line">			<span class="bracket">&#60;p&#62;</span>pellentesque finibus urna finibus, mattis nibh sed, ultrices risus.<span class="bracket">&#60;/p&#62;</span></span>
-				<span class="line">		<span class="bracket">&#60;/div&#62;</span></span>
-				<span class="line">		<span class="bracket">&#60;div id="</span>button<span class="bracket">"&#62;</span></span>
-				<span class="line">			<a type="button" onclick="togglecss()"><span class="bracket">&#60;button id="</span>#button-1<span class="bracket">"&#62;</span>change editor theme<span id="theme"></span><span class="bracket">&#60;/button&#62;</span></a></span>
-				<span class="line">			<a type="button" onclick="randombackground()"><span class="bracket">&#60;button id="</span>#button-2<span class="bracket">"&#62;</span>change background color<span class="bracket">&#60;/button&#62;</span></a></span>
-				<span class="line">			<a type="button" onclick="taskplus()"><span class="bracket">&#60;button id="</span>#button-3<span class="bracket">"&#62;</span>title task-(+1)<span class="bracket">&#60;/button&#62;</span></a></span>
-				<span class="line">		<span class="bracket">&#60;/div&#62;</span></span>
-				<span class="line">		<span class="bracket">&#60;script src="</span>jquery.js<span class="bracket">"&#62;&#60;/script&#62;</span></span>
-				<span class="line">		<a href="function.js"><span class="bracket">&#60;script src="</span>function.js<span class="bracket">"&#62;&#60;/script&#62;</span></a></span>
-				<span class="line">	<span class="bracket">&#60;/body&#62;</span></span>
-				<span class="line"><span class="bracket">&#60;/html&#62; <span class="blink_me">_</span></span></span>
-			</pre>
+                <span class="line"><span class="bracket">&#60;!DOCTYPE</span> html<span class="bracket">&#62;</span></span>
+                <span class="line"><span class="bracket">&#60;html&#62;</span></span>
+                <span class="line"> <span class="bracket">&#60;head&#62;</span></span>
+                <span class="line">     <span class="bracket">&#60;title&#62;</span>experiment-<span id="titletextc">1</span>.html<span class="bracket">&#60;/title&#62;</span><span id="comment" style="opacity: 0; transition: 1s ease opacity;display: inline;"> &#60;!-- look at this&#62;</span></span>
+                <span class="line">     <span class="bracket">&#60;meta name="</span>author<span class="bracket">" content="</span>s3516553<span class="bracket">"&#62;</span></span>
+                <span class="line">     <span class="bracket">&#60;link rel="</span>stylesheet<span class="bracket">" href="</span>style.css<span class="bracket">"&#62;</span></span>
+                <span class="line"> <span class="bracket">&#60;/head&#62;</span></span>
+                <span class="line"></span>
+                <span class="line"> <span class="bracket">&#60;body style="</span>background: <span id="backgroundvalue" style="border-bottom: 1px solid black; padding-bottom: 1px;">#d50f25</span>;<span class="bracket">"&#62;</span></span>
+                <span class="line">     <span class="bracket">&#60;div id="</span>paragraph<span class="bracket">"&#62;</span></span>
+                <span class="line">         <span class="bracket">&#60;h1&#62;</span>heading<span class="bracket">&#60;/h1&#62;</span></span>
+                <span class="line">         <span class="bracket">&#60;p&#62;</span>lorem ipsum dolor sit amet, consectetur adipiscing elit.<span class="bracket">&#60;/p&#62;</span></span>
+                <span class="line">         <span class="bracket">&#60;p&#62;</span>pellentesque finibus urna finibus, mattis nibh sed, ultrices risus.<span class="bracket">&#60;/p&#62;</span></span>
+                <span class="line">     <span class="bracket">&#60;/div&#62;</span></span>
+                <span class="line">     <span class="bracket">&#60;div id="</span>button<span class="bracket">"&#62;</span></span>
+                <span class="line">         <a type="button" onclick="togglecss()"><span class="bracket">&#60;button id="</span>#button-1<span class="bracket">"&#62;</span>change editor theme<span id="theme"></span><span class="bracket">&#60;/button&#62;</span></a></span>
+                <span class="line">         <a type="button" onclick="randombackground()"><span class="bracket">&#60;button id="</span>#button-2<span class="bracket">"&#62;</span>change background color<span class="bracket">&#60;/button&#62;</span></a></span>
+                <span class="line">         <a type="button" onclick="taskplus()"><span class="bracket">&#60;button id="</span>#button-3<span class="bracket">"&#62;</span>title experiment-(+1)<span class="bracket">&#60;/button&#62;</span></a></span>
+                <span class="line">     <span class="bracket">&#60;/div&#62;</span></span>
+                <span class="line">     <span class="bracket">&#60;script src="</span>jquery.js<span class="bracket">"&#62;&#60;/script&#62;</span></span>
+                <span class="line">     <span class="bracket">&#60;script src="</span>function.js<span class="bracket">"&#62;&#60;/script&#62;</span></span>
+                <span class="line"> <span class="bracket">&#60;/body&#62;</span></span>
+                <span class="line"><span class="bracket">&#60;/html&#62; <span class="blink_me">_</span></span></span>
+            </pre>
             </div>
         </div>
     </div>
     <div class="copyright">『 2017 © thanhhai・red 』</div>
     <!-- JAVASCRIPT -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="function.js"></script>
+    <script src="js/function.js"></script>
 </body>
 
 </html>

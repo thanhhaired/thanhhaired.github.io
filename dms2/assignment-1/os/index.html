@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>o s</title>
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/editor-light.css" id="editor-style">
+</head>
+
+<body>
+    <div id="touchbar">
+        <a type="button" class="button bdown" onclick="bdown()"></a>
+        <a type="button" class="button bup" onclick="bup()"></a>
+        <a type="button" class="button bshowall" onclick="bshowall()"></a>
+        <a type="button" class="button bplay" onclick="bplay()"></a>
+        <a type="button" class="button bpause" onclick="bpause()"></a>
+        <a type="button" class="button bsound" onclick="bmute()" id="bm"></a>
+        <a type="button" class="button breset" onclick="breset()"></a>
+        <a type="button" class="button bfullscreen" onclick="bfullscreen()"></a>
+        <a type="button" class="button block" onclick="block()"></a>
+    </div>
+    <div id="brightness">
+        <div>
+            <img height="120px" width="120px" src="images/sun.png" />
+            <img height="6px" width="140px" id="bbar" src="images/bar/0.jpg" />
+        </div>
+    </div>
+    <div id="container">
+        <div id="lockscreen">
+            <div class="login">
+                <div class="avatar"></div>
+                <p>Assignment One</p>
+                <input id="password" type="password" onkeypress="return searchKeyPress(event);" value="" />
+                <a id="passwordcheck" type="button" onclick="passwordcheck()"></a>
+                <p id="passwordhint">password : <a type="button" onclick="passwordfill()">rmit</a></p>
+            </div>
+        </div>
+        <div id="overlay"></div>
+        <div id="taskbar">
+            <div class="left">
+                <a type="button" onclick="hideallwindows()"><span class="apple"></span></a>
+                <span class="title">Digital Media Specialization 2</span>
+                <span>Interactive Design</span>
+            </div>
+            <div class="right">
+                <span class="wifi"></span>
+                <span class="battery">100%</span>
+                <span id="date"></span>
+                <span class="search"></span>
+            </div>
+        </div>
+        <div id="dock">
+            <div>
+                <a type="buttom" onclick="docksample()" class="icon textedit" id="testb"><span class="tooltiptext">Textedit</span></a>
+                <a type="buttom" onclick="dockeditor()" class="icon editor"><span class="tooltiptext">Sublime Text 3</span></a>
+                <a type="buttom" onclick="dockvlc()" class="icon vlc"><span class="tooltiptext">VLC Player</span></a>
+                <a type="buttom" onclick="docksafari()" class="icon safari"><span class="tooltiptext">Safari</span></a>
+            </div>
+        </div>
+        <div id="main">
+            <!-- SAMPLE -->
+            <div id="sample" class="wrapper resizable">
+                <div class="title-bar">
+                    <div class="control">
+                        <a type="button" onclick="sampleclose()"><span class="cred"></span></a>
+                        <span class="cyellow"></span>
+                        <span class="cgreen"></span>
+                    </div>
+                    <p>untitled</p>
+                </div>
+                <div class="content">
+                    <p>this is a text-editor but i won't let you type on it lul <span class="blink_me">|</span></p>
+                </div>
+            </div>
+            <!-- TEXT EDITOR -->
+            <div id="editor" class="wrapper">
+                <div class="title-bar">
+                    <div class="control">
+                        <a type="button" onclick="editorclose()"><span class="cred"></span></a>
+                        <span class="cyellow"></span>
+                        <span class="cgreen"></span>
+                    </div>
+                    <p>task-<span id="titletexta">1</span>.html</p>
+                </div>
+                <div class="editor-wrapper">
+                    <div class="folder-tree">
+                        <p>dm-spec-2</p>
+                        <p>task-<span id="titletextb">1</span>.html</p>
+                        <p id="filelist"></p>
+                    </div>
+                    <div class="editor-content">
+                        <pre>
+                            <span class="line"><span class="bracket">&#60;!DOCTYPE</span> html<span class="bracket">&#62;</span></span>
+                            <span class="line"><span class="bracket">&#60;html&#62;</span></span>
+                            <span class="line"> <span class="bracket">&#60;head&#62;</span></span>
+                            <span class="line">     <span class="bracket">&#60;title&#62;</span>task-<span id="titletextc">1</span>.html<span class="bracket">&#60;/title&#62;</span><span id="comment" style="opacity: 0; transition: 1s ease opacity;display: inline;"> &#60;!-- look at this&#62;</span></span>
+                            <span class="line">     <span class="bracket">&#60;meta name="</span>author<span class="bracket">" content="</span>s3516553<span class="bracket">"&#62;</span></span>
+                            <span class="line">     <span class="bracket">&#60;link rel="</span>stylesheet<span class="bracket">" href="</span>style.css<span class="bracket">"&#62;</span></span>
+                            <span class="line"> <span class="bracket">&#60;/head&#62;</span></span>
+                            <span class="line"></span>
+                            <span class="line"> <span class="bracket">&#60;body style="</span>background: <span id="backgroundvalue" style="border-bottom: 1px solid black; padding-bottom: 1px;">#d50f25</span>;<span class="bracket">"&#62;</span></span>
+                            <span class="line">     <span class="bracket">&#60;div id="</span>paragraph<span class="bracket">"&#62;</span></span>
+                            <span class="line">         <span class="bracket">&#60;h1&#62;</span>heading<span class="bracket">&#60;/h1&#62;</span></span>
+                            <span class="line">         <span class="bracket">&#60;p&#62;</span>lorem ipsum dolor sit amet, consectetur adipiscing elit.<span class="bracket">&#60;/p&#62;          </span></span>
+                            <span class="line">         <span class="bracket">&#60;p&#62;</span>pellentesque finibus urna finibus, mattis nibh sed, ultrices risus.<span class="bracket">&#60;/p&#62;</span></span>
+                            <span class="line">     <span class="bracket">&#60;/div&#62;</span></span>
+                            <span class="line">     <span class="bracket">&#60;div id="</span>button<span class="bracket">"&#62;</span></span>
+                            <span class="line">         <a type="button" onclick="togglecss()"><span class="bracket">&#60;button id="</span>#button-1<span class="bracket">"&#62;</span>change editor theme<span id="theme"></span><span class="bracket">&#60;/button&#62;</span></a></span>
+                            <span class="line">         <a type="button" onclick="randombackground()"><span class="bracket">&#60;button id="</span>#button-2<span class="bracket">"&#62;</span>change background color<span class="bracket">&#60;/button&#62;</span></a></span>
+                            <span class="line">         <a type="button" onclick="taskplus()"><span class="bracket">&#60;button id="</span>#button-3<span class="bracket">"&#62;</span>title task-(+1)<span class="bracket">&#60;/button&#62;</span></a></span>
+                            <span class="line">     <span class="bracket">&#60;/div&#62;</span></span>
+                            <span class="line">     <span class="bracket">&#60;script src="</span>jquery.js<span class="bracket">"&#62;&#60;/script&#62;</span></span>
+                            <span class="line">     <span class="bracket">&#60;script src="</span>function.js<span class="bracket">"&#62;&#60;/script&#62;</span></span>
+                            <span class="line"> <span class="bracket">&#60;/body&#62;</span></span>
+                            <span class="line"><span class="bracket">&#60;/html&#62; <span class="blink_me">_</span></span></span>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+            <!-- VIDEO PLAYER -->
+            <div id="vlc" class="wrapper">
+                <div class="title-bar">
+                    <div class="control">
+                        <a type="button" onclick="vlcclose()"><span class="cred"></span></a>
+                        <span class="cyellow"></span>
+                        <span class="cgreen"></span>
+                    </div>
+                    <p>justice-league-comiccon-sneakpeak.mp4</p>
+                </div>
+                <div class="video-wrapper">
+                    <div class="video-overlay">&nbsp;</div>
+                    <div id="video-placeholder"></div>
+                </div>
+            </div>
+            <!-- SAFARI -->
+            <div id="safari" class="wrapper">
+                <div class="title-bar">
+                    <div class="control">
+                        <a type="button" onclick="safariclose()"><span class="cred"></span></a>
+                        <span class="cyellow"></span>
+                        <span class="cgreen"></span>
+                    </div>
+                    <p id="urlbar">interactivedesignjournal.thanhhai.red</p>
+                    <a type="button" onclick="tabone()" id="tabone" class="tab selected" style="border-right: .5px solid #797979;">hai's interactive design journal</a><a type="button" onclick="tabtwo()" id="tabtwo" class="tab" style="border-left: .5px solid #797979;">hai's portfolio</a>
+                </div>
+                <iframe frameborder="0" src="http://interactivedesignjournal.thanhhai.red/" id="if"></iframe>
+            </div>
+        </div>
+        <!-- SVG BACKGROUND -->
+        <!-- svg id="bggradient">
+            <defs>
+                <linearGradient id="bggradientsvg" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop id="bggradientsvga" offset="0" stop-color="#6dffff" />
+                    <stop id="bggradientsvgb" offset="100%" stop-color="#ffa7fe" />
+                </linearGradient>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#bggradientsvg)" style="transition: all .5s ease;" />
+        </svg -->
+    </div>
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/gradientbg.js"></script>
+    <script type="text/javascript" src="js/screenfull.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script type="text/javascript" src="js/function.js"></script>
+</body>
+
+</html>
