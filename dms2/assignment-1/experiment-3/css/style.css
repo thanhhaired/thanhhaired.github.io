@@ -83,7 +83,7 @@ a {
 }
 
 .title-bar .tab {
-    width: calc((100vw - 400px) / 2);
+    width: calc((100vw - 400px) / 3);
     height: 25px;
     background: #eee;
     display: inline-block;
