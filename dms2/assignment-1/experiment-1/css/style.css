@@ -1,12 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
 
+html {
+    padding: 50px;
+    background: #292929;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
-    height: 100vh;
+    height: calc(100vh - 100px);
     transition: all .3s ease;
     /* background-color: #8795E8; */
     background-color: #d50f25;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
 }
 
 a {
@@ -22,8 +33,7 @@ a {
 
 .container {
     display: flex;
-    height: 100vh;
-
+    height: calc(100vh - 100px);
     align-items: center;
     justify-content: center;
 }
@@ -129,6 +139,7 @@ pre span.line:last-child:before {
 pre span.bracket {
     font-weight: 700;
 }
+
 
 
 
@@ -252,6 +263,7 @@ pre span.bracket {
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, .2);
     padding-left: 10px;
     top: 0;
+    border-radius: 5px 5px 0 0;
 }
 
 #taskbar .right {

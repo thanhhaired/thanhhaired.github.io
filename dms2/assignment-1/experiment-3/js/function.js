@@ -29,8 +29,8 @@ function tabthree() {
         tthree.className = "tab selected";
         tone.className = "tab";
         ttwo.className = "tab";
-        iframe.src = "../experiment-1";
-        urlbar.innerHTML = "experiment-1";
+        iframe.src = "empty.html";
+        urlbar.innerHTML = "empty.html";
     }
 }
 
