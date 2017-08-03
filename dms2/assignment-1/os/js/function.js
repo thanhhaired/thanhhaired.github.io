@@ -2,6 +2,8 @@ bodyonload();
 
 function bodyonload() {
     window.setTimeout(poweron, 2000);
+    window.setTimeout(batterylevel, 15000);
+
 }
 
 function poweron() {
@@ -10,6 +12,12 @@ function poweron() {
     document.getElementById("password").focus();
     document.getElementById("password").select();
 }
+
+function batterylevel() {
+    document.getElementById("batterylevel").innerHTML = (parseInt(document.getElementById("batterylevel").innerHTML) - 1);
+    window.setTimeout(batterylevel, 10000);
+}
+
 
 // make window draggable
 
@@ -312,11 +320,11 @@ function bfullscreen() {
 // replaced by gradientbg.js
 
 //function rancomhexcolora() {
-//	return '#' + Math.floor(Math.random() * 16777215).toString(16);
+//  return '#' + Math.floor(Math.random() * 16777215).toString(16);
 //}
 
 //function rancomhexcolorb() {
-//	return '#' + Math.floor(Math.random() * 16777215).toString(16);
+//  return '#' + Math.floor(Math.random() * 16777215).toString(16);
 //}
 
 // automatic loop random background
@@ -324,7 +332,7 @@ function bfullscreen() {
 //window.setTimeout(loopbga, 5000);
 
 //function loopbga() {
-//	document.getElementById("bggradientsvga").setAttribute("stop-color", rancomhexcolora());
-//	document.getElementById("bggradientsvgb").setAttribute("stop-color", rancomhexcolorb());
-//	window.setTimeout(loopbga, 5000);
+//  document.getElementById("bggradientsvga").setAttribute("stop-color", rancomhexcolora());
+//  document.getElementById("bggradientsvgb").setAttribute("stop-color", rancomhexcolorb());
+//  window.setTimeout(loopbga, 5000);
 //}
