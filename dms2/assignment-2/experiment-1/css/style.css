@@ -1,0 +1,228 @@
+@import url('ui.css');
+#videoplayer {
+    height: 100%;
+    width: 100%;
+    background: #fff;
+}
+
+#videoplayer #topbar {
+    background: white;
+    color: #000;
+	border: none;
+	height: 120px;
+}
+
+#topbar #titlebar {
+	width: 1200px;
+	height: 120px;
+	margin: 0 auto;
+	padding-top: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 2px solid #eee;
+}
+
+#topbar #titlebar .title-col p.title {
+	font-size: 40px;
+	font-weight: 700;
+	display: inline;
+}
+
+#topbar #titlebar .title-col a.menu {
+	color: #d50f25;
+	background: url('../images/arrow-down.png') right center no-repeat;
+	background-size: 10px 10px;
+	display: inline-block;
+	padding-right: 13px;
+	margin-left: 10px;
+}
+
+#topbar #titlebar .search {
+	height: 30px;
+	width: 300px;
+	background: #ECECEE;
+	border-radius: 5px;
+	line-height: 30px;
+	padding-left: 20px;
+	color: #a5a5a5;
+}
+
+#content {
+	display: block;
+	padding: 40px;
+	padding-right: 20px;
+	padding-top: 0;
+	width: 100%;
+}
+
+#main {
+    width: 900px;
+    height: 820px;
+    float: left;
+	padding-right: 20px;
+	padding-top: 20px;
+}
+
+#main #video {
+    width: 100%;
+    padding-bottom: 56.25%;
+    background-image: url('../images/overwatch/recall.jpg');
+	background-size: cover;
+	border-radius: 15px;
+	box-shadow: 0px 20px 30px -5px rgba(0, 0, 0, 0.3);
+}
+
+#main .video-info {
+	border-bottom: 2px solid #eee;
+	padding-bottom: 15px;
+	position: relative;
+}
+
+#main .video-info .video-title {
+	font-size: 30px;
+	font-weight: 700;
+	margin-top: 30px;
+}
+
+#main .video-info .video-views {
+	margin-top: 10px;
+	text-transform: uppercase;
+	color: #a5a5a5;
+	letter-spacing: 1px;
+}
+
+#main .video-info .video-like-dislike {
+	position: absolute;
+	bottom: -2px;
+	right: 0;
+	padding: 15px 10px;
+	border-bottom: 2px solid #d50f25;
+	font-weight: 600;
+	font-size: 14px;
+}
+
+#main .video-info .video-like-dislike .video-like {
+	background: url('../images/like.png') left center no-repeat;
+	background-size: 15px 15px;
+	display: inline-block;
+	padding-left: 25px;
+}
+
+#main .video-info .video-like-dislike .video-dislike {
+	background: url('../images/dislike.png') left center no-repeat;
+	background-size: 15px 15px;
+	display: inline-block;
+	padding-left: 25px;
+	margin-left: 20px;
+	color: #ccc;
+}
+
+#main .video-description {
+	display: flex;
+	margin-top: 20px;
+}
+
+#main .video-description .video-channel-logo-col .video-channel-logo {
+	width: 50px;
+	height: 50px;
+	background: url('../images/channel-logo.jpg') center center no-repeat;
+	background-size: 50px 50px;
+	border-radius: 50%;
+}
+
+#main .video-description .video-description-col {
+	padding-left: 15px;
+	padding-top: 5px;
+	width: 100%;
+}
+
+#main .video-description .video-description-col #video-subscribe {
+	display: block;
+	float: right;
+	background: #d50f25;
+	padding: 10px 20px;
+	color: white;
+	font-weight: 500;
+	text-transform: uppercase;
+	border-radius: 3px;
+	margin-top: -10px;
+
+}
+
+#main .video-description .video-description-col .video-channel-name {
+	font-weight: 600;
+	font-size: 18px;
+	background: url('../images/verified.png') right center no-repeat;
+	background-size: 13px 13px;
+	display: inline-block;
+	padding-right: 18px;
+}
+
+#main .video-description .video-description-col .video-upload {
+	color: #cccccc;
+	font-size: 14px;
+	margin-top: 4px;
+}
+
+#main .video-description .video-description-col #video-desc {
+	margin-top: 15px;
+	width: 650px;
+	line-height: 20px;
+	font-size: 14px;
+}
+
+#sidebar {
+    width: 320px;
+    height: 840px;
+    max-height: 880px;
+    float: left;
+	padding-top: 20px;
+	overflow-x: auto;
+	border-left: 2px solid #eee;
+	padding-left: 20px;
+}
+
+#playlist {
+}
+
+#playlist .item {
+	width: calc(100% - 20px);
+    padding-bottom: calc(56.25% - 11.25px);
+    background: url('../images/overwatch/recall.jpg');
+	background-size: cover;
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+#playlist .item .item-inner {
+	position: absolute;
+	text-align: right;
+	color: white;
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(0,0,0,0.75) 100%);
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: flex-end;
+	text-align: right;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding: 15px;
+}
+
+#playlist .item .item-inner .item-title {
+	margin-bottom: 10px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+#playlist .item .item-inner .item-time {
+	background: white;
+	color: black;
+	font-size: 12px;
+	font-weight: 600;
+	padding: 4px 8px;
+	border-radius: 4px;
+}

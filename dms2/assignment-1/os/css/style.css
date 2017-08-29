@@ -29,7 +29,20 @@ a {
     -khtml-user-select: none;
 }
 
-
+#no-battery {
+	background: black url('../images/no-battery.jpg') center center no-repeat;
+	background-size: 400px auto;
+	position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	cursor: none;
+}
 
 #container {
     position: relative;
@@ -183,15 +196,20 @@ stop {
     vertical-align: top;
 }
 
-#taskbar .battery {
+#taskbar #battery {
     height: 20px;
     line-height: 20px;
     padding-right: 25px;
-    background: url('../images/icon/battery.png') center right no-repeat;
+    background-position:  center right;
+	background-repeat: no-repeat;
+	background-image: url('../images/icon/battery.png');
     background-size: 20px 20px;
     display: inline-block;
     vertical-align: top;
     margin: 0 10px;
+	width: 60px;
+	box-sizing: border-box;
+	text-align: right;
 }
 
 #taskbar .search {
@@ -505,7 +523,6 @@ stop {
 }
 
 #vlc .title-bar {
-    height: 80px;
 }
 
 #vlc .video-wrapper {
