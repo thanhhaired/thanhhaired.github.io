@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>x | a s s i g n m e n t - 3</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div id="container">
+
+		<div class="iphone">
+			<div class="notch">
+				<div class="camera"></div>
+				<div class="speaker"></div>
+			</div>
+			<div class="iphone-top-bar"></div>
+			<div class="sleep"></div>
+			<div class="bottom-bar"></div>
+			<div class="volume"></div>
+			<div class="inner-shadow"></div>
+
+			<div class="screen">
+				<!-- Content goes here -->
+
+				<!-- SCREEN OFF -->
+				<div id="screen-off"></div>
+
+
+				<!-- CAMERA -->
+				<div id="camera" class="app">
+					<div id="top-bar" style="z-index: 7">
+						<div id="top-bar-clock">9:41</div>
+						<div>
+							<div class="topbar-signal"></div>
+							<div class="topbar-wifi"></div>
+							<div class="battery"><span id="battery-indicator" style="width: 60%;"></span></div>
+						</div>
+					</div>
+					<div class="home-bar"></div>
+					<div class="camera-top"></div>
+					<div class="camera-middle"></div>
+					<div class="camera-bottom">
+						<ul class="camera-menu">
+						</ul>
+						<div id="camera-shutter"></div>
+						<canvas id="camera-gallery" width="50" height="50"></canvas>
+						<div class="camera-switch"></div>
+					</div>
+					<video id="camera-webcam" width="375" height="812" autoplay></video>
+				</div>
+
+				<!-- MAP -->
+				<div id="maps" class="app">
+					<div id="top-bar" class="black" style="z-index: 7">
+						<div id="top-bar-clock">9:41</div>
+						<div>
+							<div class="topbar-signal"></div>
+							<div class="topbar-wifi"></div>
+							<div class="battery"><span id="battery-indicator" style="width: 60%;"></span></div>
+						</div>
+					</div>
+					<div class="home-bar"></div>
+					<div class="maps-float">
+						<div class="maps-info"></div>
+						<hr />
+						<div class="maps-location"></div>
+					</div>
+					<div class="maps-bottom">
+						<div class="maps-search">Search for a place or an address</div>
+					</div>
+					<iframe src="https://snazzymaps.com/embed/19157" width="375px" height="812px" style="border:none;"></iframe>
+				</div>
+
+				<!-- HOME SCREEN -->
+				<div id="home-screen">
+					<div id="top-bar" style="z-index: 2">
+						<div id="top-bar-clock">9:41</div>
+						<div>
+							<div class="topbar-signal"></div>
+							<div class="topbar-wifi"></div>
+							<div class="battery"><span id="battery-indicator" style="width: 60%;"></span></div>
+						</div>
+					</div>
+					<div id="app-screen">
+						<div id="app-page-one" class="app-page">
+							<div class="icons">
+								<div class="icon"><span onclick="openapp(maps)" class="icon-default"></span><span>App Name</span></div>
+								<div class="icon"><span onclick="openapp(camera)" class="icon-default"></span><span>App Name</span></div>
+								<div class="icon"><span class="icon-default"></span><span>App Name</span></div>
+								<div class="icon"><span class="icon-default"></span><span>App Name</span></div>
+								<div class="icon"><span class="icon-default"></span><span>App Name</span></div>
+								<div class="icon"><span class="icon-default"></span><span>App Name</span></div>
+							</div>
+						</div>
+						<div id="app-page-one" class="app-page">
+							<div class="icons">
+								<div class="icon"><span class="icon-default"></span><span>App Name</span></div>
+								<div class="icon"><span class="icon-default"></span><span>App Name</span></div>
+								<div class="icon"><span class="icon-default"></span><span>App Name</span></div>
+								<div class="icon"><span class="icon-default"></span><span>App Name</span></div>
+								<div class="icon"><span class="icon-default"></span><span>App Name</span></div>
+								<div class="icon"><span class="icon-default"></span><span>App Name</span></div>
+							</div>
+						</div>
+					</div>
+					<div id="app-page-indicator" class="app-page-one">
+						<span></span>
+						<span></span>
+					</div>
+					<div id="dock">
+						<div class="icons">
+							<div class="icon"><span class="icon-default"></span></div>
+							<div class="icon"><span class="icon-default"></span></div>
+							<div class="icon"><span class="icon-default"></span></div>
+							<div class="icon"><span class="icon-default"></span></div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+
+		</div>
+
+	</div>
+	<script src="js/jquery-custom.js"></script>
+	<script src="js/jquery.mobile.custom.js"></script>
+	<script src="js/touchswipe.js"></script>
+	<script src="js/function.js"></script>
+</body>
+
+</html>

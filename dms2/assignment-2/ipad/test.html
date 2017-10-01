@@ -8,25 +8,32 @@
 	<title>i p a d | a s s i g n m e n t - 2</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery-ui.css">
-	<link rel="stylesheet" href="css/floaty.css">
 	<link rel="stylesheet" href="css/ui.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style-2.css">
 </head>
 
 <body>
 	<!-- FUNCTION BUTTONS NAV -->
-	<nav id="function-buttons" class="floaty">
+	<nav id="function-buttons">
 		<a type="button" onclick="fbexpand()" id="fbexpand"></a>
 		<a type="button" onclick="fbclose()" id="fbclose"></a>
 		<a type="button" onclick="fbtiltleft()"></a>
 		<a type="button" onclick="fbtiltright()"></a>
 	</nav>
 	<!-- IPAD -->
-				<div id="assistive-touch" class="floaty"></div>
+	<div id="ipad-wrapper">
+		<div id="ipad">
+			<div id="screen">
+				<!-- ASSISTIVE TOUCH -->
+				<div id="assistive-touch"></div>
+			</div>
+		</div>
+	</div>
 	<!-- JAVASCRIPT -->
 	<script src="js/jquery.js" charset="utf-8"></script>
 	<script src="js/jquery-ui.js" charset="utf-8"></script>
-	<script src="js/floaty.js" charset="utf-8"></script>
+	<script src="js/jquery.mobile.custom.js" charset="utf-8"></script>
+	<script src="js/assistive-touch.js" charset="utf-8"></script>
 	<script src="js/function.js" charset="utf-8"></script>
 </body>
 

@@ -1,0 +1,20 @@
+ASSIGNMENT-3
+
+#iphone x
+
+#requirement:	- canvas
+				- api
+				- data import
+
+#idea:			- some basic apps using api: facebook, maps, instagram
+				- some basic apps using things learned in other assignments: imessage
+				- recreate retro games to utilize canvas: mario bros.
+
+#canvas:		- animated background
+				- animated character sprite in app
+
+#api:			- using api to get data from facebook, instagram to create freshly design apps with dynamic data
+				- using simple api from google maps, etc. to create freshly design apps.
+
+#data import:	- name input in games
+				- passcode screen

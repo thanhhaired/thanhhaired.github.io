@@ -1,0 +1,346 @@
+/* APPLICATION SCREEN */
+
+#app-screen {
+    white-space: nowrap;
+    float: left;
+    max-height: 820px;
+    width: 2560px;
+    z-index: 1;
+    transition: 1s ease;
+}
+
+#app-screen .app-page {
+	padding: 0 120px;
+    padding-top: 60px;
+    height: 960px;
+    width: 1280px;
+    display: inline-flex;
+    float: left;
+	align-items: flex-start;
+	align-content: flex-start;
+	flex-wrap: wrap;
+}
+
+#app-screen-indicator {
+	position: absolute;
+	bottom: 160px;
+	width: 100%;
+	text-align: center;
+}
+
+#app-screen-indicator span {
+	display: inline-block;
+	border-radius: 50%;
+	width: 8px;
+	height: 8px;
+	border: 2px solid #fff;
+	margin: 0 2px;
+}
+
+#app-screen-indicator.app-screen-indicator-first span:first-child {
+	background: #fff;
+}
+
+#app-screen-indicator.app-screen-indicator-last span:last-child {
+	background: #fff;
+}
+
+/* DOCK */
+
+#dock {
+    width: 100%;
+    height: 140px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url(../images/dock.jpg );
+	background-size: cover;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 200px;
+	z-index: 1;
+}
+
+#dock .icon {
+	width: auto;
+}
+
+#dock .icon:first-child > span:last-child {
+	text-transform: none;
+}
+
+/* HOME SCREEN ICON */
+
+.icon {
+	display: block;
+	width: 240px;
+	height: 185px;
+	text-align: center;
+	overflow: auto;
+}
+
+.icon:nth-child(5n+0) {
+	width: 80px;
+}
+
+.icon > span:first-child {
+    height: 80px;
+    width: 80px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 22%;
+    position: relative;
+	cursor: pointer;
+	display: block;
+}
+
+.icon > span:first-child:before {
+    height: 80px;
+    width: 80px;
+    background-color: rgba(0, 0, 0, 0.0);
+    border-radius: 22%;
+    content: '';
+    display: block;
+    transition: .5s ease background;
+	display: block;
+	margin-bottom: -80px;
+	z-index: 5;
+}
+
+.icon > span:first-child:hover:before {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.icon > span:last-child {
+	text-align: center;
+	width: 80px;
+	display: block;
+	margin-top: 10px;
+	font-size: 14px;
+	text-transform: capitalize;
+}
+
+.icon .icon-default {
+	background-image: url('../images/app/icon.png'), linear-gradient(to bottom, #04DCFD, #1A59F0);
+}
+
+.icon .icon-iMessage {
+	background-image: url('../images/app/iMessage.png');
+}
+
+.icon .icon-safari {
+	background-image: url('../images/app/safari.png');
+}
+
+.icon .icon-youtube {
+	background-image: url('../images/app/youtube.jpg');
+}
+
+.icon .icon-facetime {
+	background-image: url('../images/app/facetime.png');
+}
+
+.icon .icon-photos {
+	background-image: url('../images/app/photos.png');
+}
+
+.icon .icon-camera {
+	background-image: url('../images/app/camera.png');
+}
+
+.icon .icon-contacts {
+	background-image: url('../images/app/contact.png');
+}
+
+.icon .icon-maps {
+	background-image: url('../images/app/maps.png');
+}
+
+.icon .icon-reminders {
+	background-image: url('../images/app/reminders.png');
+}
+
+.icon .icon-notes {
+	background-image: url('../images/app/notes.png');
+}
+
+.icon .icon-weather {
+	background-image: url('../images/app/weather.png');
+}
+
+.icon .icon-music {
+	background-image: url('../images/app/music.png');
+}
+
+.icon .icon-instagram {
+	background-image: url('../images/app/instagram.png');
+}
+
+.icon .icon-facebook {
+	background-image: url('../images/app/facebook.png');
+}
+
+.icon .icon-overwatch {
+	background-image: url('../images/app/overwatch.jpg');
+}
+
+.icon .icon-calendar {
+	background-image: none;
+	background-color: white;
+}
+
+.icon .icon-calendar #icon-calendar-day {
+	display: block;
+	color: #d50f25;
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+.icon .icon-calendar #icon-calendar-date {
+	display: block;
+	color: #292929;
+	font-size: 50px;
+	font-weight: 300;
+	margin-top: 0px;
+}
+
+.icon .icon-clock {
+	background-image: none;
+	background-color: black;
+}
+
+#icon-clock {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: white;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+#icon-clock ul {
+    font-size: 8px;
+    font-family: Helvetica, Arial;
+}
+
+#icon-clock ul li {
+    list-style: none;
+    position: absolute;
+}
+
+#icon-clock ul li:nth-child(1) {
+    top: 12%;
+    left: 68%;
+}
+
+#icon-clock ul li:nth-child(2) {
+    top: 25%;
+    left: 80%;
+}
+
+#icon-clock ul li:nth-child(3) {
+    top: 45%;
+    left: 85%;
+}
+
+#icon-clock ul li:nth-child(4) {
+    top: 65%;
+    left: 80%;
+}
+
+#icon-clock ul li:nth-child(5) {
+    top: 78%;
+    left: 65%;
+}
+
+#icon-clock ul li:nth-child(6) {
+    top: 83%;
+    left: 47%;
+}
+
+#icon-clock ul li:nth-child(7) {
+    top: 78%;
+    left: 30%;
+}
+
+#icon-clock ul li:nth-child(8) {
+    top: 65%;
+    left: 15%;
+}
+
+#icon-clock ul li:nth-child(9) {
+    top: 45%;
+    left: 8%;
+}
+
+#icon-clock ul li:nth-child(10) {
+    top: 25%;
+    left: 10%;
+}
+
+#icon-clock ul li:nth-child(11) {
+    top: 12%;
+    left: 23%;
+}
+
+#icon-clock ul li:nth-child(12) {
+    top: 5%;
+    left: 44%;
+}
+
+#icon-clock .hand {
+    background: black;
+    bottom: 50%;
+    display: block;
+    left: 50%;
+    position: absolute;
+    transform-origin: bottom center;
+    border-radius: 200px;
+    min-width: 1px;
+}
+
+#icon-clock-hours {
+    height: 30%;
+    width: 1.4%;
+}
+
+#icon-clock-minutes {
+    height: 43%;
+    width: 1.4%;
+}
+
+#icon-clock-seconds {
+    height: 43%;
+    width: .6%;
+    background: red;
+    z-index: 2;
+}
+
+#icon-clock .icon-clock-black-circle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 5px;
+    height: 5px;
+    background: black;
+    border-radius: 50%;
+}
+
+#icon-clock .icon-clock-red-circle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 3px;
+    height: 3px;
+    background: red;
+    border-radius: 50%;
+}

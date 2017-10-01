@@ -1,0 +1,131 @@
+#home-screen {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: 375px;
+    height: 812px;
+    background: url('../images/homescreen/hss.png') center center, url('../images/homescreen/bg.gif') center center;
+    background-size: cover;
+}
+
+#app-screen {
+    padding-top: 75px;
+    width: 750px;
+	height: 600px;
+    display: flex;
+    flex-direction: row;
+	transition: 1s ease margin;
+}
+
+.app-page {
+    width: 375px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+	justify-content: center;
+}
+
+.icons {
+	width: 340px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+	justify-content: flex-start;
+}
+
+.icon {
+    width: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+}
+
+.icon>span:first-child {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 22%;
+	background-image: url('../images/app/icon.png'), linear-gradient(to bottom, #04DCFD, #1A59F0);
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	cursor: pointer;
+}
+
+.icon > span:first-child:before {
+    height: 60px;
+    width: 60px;
+    background-color: rgba(0, 0, 0, 0.0);
+    border-radius: 22%;
+    content: '';
+    display: block;
+    transition: .5s ease background;
+	display: block;
+	margin-bottom: -80px;
+	z-index: 5;
+}
+
+.icon > span:first-child:hover:before {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.icon>span:last-child {
+    color: white;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+.icon .icon-default {
+}
+
+
+#dock {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 355px;
+    height: 90px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.7);
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+}
+
+#dock .icon {
+	margin: 0;
+}
+
+#dock .icon>span:first-child {
+    margin: 0
+}
+
+#app-page-indicator {
+	width: 100%;
+	height: 7px;
+	position: absolute;
+	bottom: 120px;
+	text-align: center;
+}
+
+#app-page-indicator span {
+	width: 7px;
+	height: 7px;
+	display: inline-block;
+	border-radius: 50%;
+	margin: 0 3px;
+	background: rgba(255, 255, 255, 0.4);
+	transition: .5s all ease;
+}
+
+#app-page-indicator.app-page-one span:first-child {
+	background: rgba(255, 255, 255, 0.9);
+}
+
+
+#app-page-indicator.app-page-two span:last-child {
+	background: rgba(255, 255, 255, 0.9);
+}

@@ -1,0 +1,29 @@
+/* BASIC */
+
+* {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+	box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-family: "San Francisco";
+	font-weight: 400;
+	font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

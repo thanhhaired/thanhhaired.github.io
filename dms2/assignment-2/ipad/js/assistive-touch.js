@@ -1,3 +1,5 @@
+// ASSISTIVE TOUCH
+
 /* get window information */
 
 function getWindowInfo() {

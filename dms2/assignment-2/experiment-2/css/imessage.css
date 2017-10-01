@@ -1,0 +1,230 @@
+@import url('keyboard.css');
+
+
+#iMessage {
+}
+
+/*-- MAIN CONTENT */
+#iMessage>div:nth-child(1) {
+	width: 100%;
+	height: 560px;
+	overflow: hidden;
+	display: flex;
+}
+
+/*-- IMESSAGE COL 1 --*/
+#iMessage>div:nth-child(1)>div:nth-child(1) {
+    width: 400px;
+    height: 560px;
+    border-right: 1px solid #ccc;
+}
+
+/*-- IMESSAGE COL 1 - TITLE MESSAGE + SEARCH BAR --*/
+#iMessage>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) {
+    display: flex;
+    align-content: flex-end;
+    align-items: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 120px;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ccc;
+	background: #fcfcfc;
+}
+
+/*-- IMESSAGE COL 1 - MESSAGE --*/
+#iMessage>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>span:nth-child(1) {
+    display: inline;
+    display: block;
+    width: 370px;
+    background: url('../images/imessage/new.png') right center no-repeat;
+    background-size: 40px auto;
+    background-size: 20px 20px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/*-- IMESSAGE COL 1 - SEARCH --*/
+#iMessage>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>span:nth-child(2) {
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    padding-left: 20px;
+    color: #a5a5a5;
+    border-radius: 10px;
+    background: #ECECEE;
+    line-height: 30px;
+}
+
+/*-- IMESSAGE COL 1 - RECEIVED --*/
+#iMessage>div:nth-child(1)>div:nth-child(1)>div:nth-child(2)>div {
+	height: 80px;
+	border-bottom: 1px solid #ccc;
+	display: block;
+	width: 95%;
+	margin-left: 5%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+/*-- IMESSAGE COL 1 - RECEIVED P --*/
+#iMessage>div:nth-child(1)>div:nth-child(1)>div:nth-child(2)>div p {
+	font-weight: 600;
+	display: inline;
+}
+
+#iMessage>div:nth-child(1)>div:nth-child(1)>div:nth-child(2)>div p:before {
+	content: '';
+	width: 50px;
+	height: 50px;
+	background: url('../images/imessage/ex.png') center center no-repeat;
+	background-size: cover;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+/*-- IMESSAGE COL 2 --*/
+#iMessage>div:nth-child(1)>div:nth-child(2) {
+    width: 100%;
+	height: 560px;
+	position: relative;
+}
+
+/*-- IMESSAGE COL 2 - TITLE --*/
+#iMessage>div:nth-child(1)>div:nth-child(2)>div:nth-child(1) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 120px;
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+	background: #fcfcfc;
+}
+
+#iMessage>div:nth-child(1)>div:nth-child(2)>div:nth-child(1) span {
+    width: 100px;
+	text-align: center;
+}
+
+#iMessage>div:nth-child(1)>div:nth-child(2)>div:nth-child(1) span:before {
+    content: '';
+	width: 50px;
+	height: 50px;
+	background: url(../images/imessage/ex.png) center center no-repeat;
+	background-size: cover;
+	border-radius: 50%;
+	display: block;
+	margin-left: calc(50% - 25px);
+	margin-bottom: 5px;
+}
+
+#iMessage-input {
+	border: 1px solid #ccc;
+	width: calc(100% - 20px);
+	margin: 10px;
+	resize: none;
+	border-radius: 20px;
+	height: 40px;
+	line-height: 38px;
+	overflow: hidden;
+	padding-left: 15px;
+	position: absolute;
+	bottom: 0;
+	font-family: "San Francisco";
+}
+
+#iMessage-send {
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	background: #007AFF url(../images/iMessage/arrow-up.png) center center no-repeat;
+	background-size: 10px 10px;
+	display: block;
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+}
+
+#iMessage-text {
+	max-height: 380px;
+	overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* Messages baloon */
+
+.message {
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.message-text {
+    padding: 10px 20px;
+    float: right;
+    clear: both;
+    border-radius: 25px;
+    position: relative;
+    margin-bottom: 1px;
+}
+
+.message.left .message-text {
+    margin-right: 70px;
+    margin-left: 20px;
+    background-color: #e5e5ea;
+    float: left;
+}
+
+.message.right .message-text {
+    margin-left: 70px;
+    margin-right: 20px;
+    background-color: #36a9fc;
+    color: #fff;
+    float: right;
+}
+
+.message-text:last-child:before, .message-text:last-child:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 35px;
+    height: 25px;
+    z-index: -1;
+}
+
+.message.right .message-text:before, .message.right .message-text:after {
+    border-radius: 0 0 0 50%;
+}
+
+.message.right .message-text:before {
+    height: 20px;
+    right: -23px;
+    background-color: #36a9fc;
+}
+
+.message.right .message-text:after {
+    right: -35px;
+    bottom: -3px;
+    background-color: #fff;
+}
+
+.message.left .message-text:before, .message.left .message-text:after {
+    border-radius: 0 0 50% 0;
+}
+
+.message.left .message-text:before {
+    height: 20px;
+    left: -23px;
+    background-color: #e5e5ea;
+}
+
+.message.left .message-text:after {
+    left: -35px;
+    bottom: -3px;
+    background-color: #fff;
+}

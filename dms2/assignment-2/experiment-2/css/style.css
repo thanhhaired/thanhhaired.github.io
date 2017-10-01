@@ -1,0 +1,21 @@
+/** CSS IMPORT **/
+
+@import url('reset.css');
+@import url('san-francisco.css');
+@import url('basic.css');
+@import url('ui.css');
+@import url('other.css');
+@import url('imessage.css');
+
+/* APP */
+
+.app {
+	display: block;
+	width: 1280px;
+	height: 960px;
+	background: white;
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	overflow: hidden;
+}
