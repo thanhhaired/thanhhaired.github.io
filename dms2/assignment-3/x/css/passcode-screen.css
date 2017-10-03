@@ -1,0 +1,47 @@
+#passcode-screen {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    width: 375px;
+    height: 812px;
+	overflow: hidden;
+	border-radius: 40px;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.passcode-screen-bg {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/lockscreen/lockscreen.jpg');
+	background-position: center;
+    background-size: cover;
+    width: 475px;
+    height: 912px;
+    filter: blur(20px);
+    top: -50px;
+    left: -50px;
+    right: -50px;
+    bottom: -50px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.passcode-screen-main {
+	z-index: 11;
+	position: absolute;
+	top: 0;
+	width: 375px;
+	height: 812px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.passcode-ok {
+	width: 50px;
+	height: 50px;
+	background-color: rgba(0, 0, 0, 0.25);
+	background-size: 20px;
+	background-image: url('../images/lockscreen/padlock-unlock.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+}

@@ -1,0 +1,88 @@
+#facebook {
+	background: #f6f7f9;
+}
+
+.facebook-main {
+	max-height: 812px;
+	overflow-y: auto;
+	padding-top: 80px;
+	border-radius: 40px;
+}
+
+.facebook-feed {
+	overflow: hidden;
+	z-index: 5;
+}
+
+.facebook-feed iframe {
+	position: relative;
+	top: -70px;
+	position: relative;
+}
+
+.fb_iframe_widget {
+    display: inline-block;
+    position: relative;
+    pointer-events: none;
+	overflow: hidden;
+}
+
+.facebook-bottom {
+	width: 100%;
+	height: 70px;
+	position: absolute;
+	bottom: 0;
+	background: white url('../images/facebook/menu.png') center top no-repeat;
+	background-size: 100% auto;
+	border-top: 1px solid #ececec;
+	z-index: 6;
+}
+
+.facebook-top {
+	width: 100%;
+	height: 80px;
+	position: absolute;
+	top: 0;
+	background: #4267b2 url('../images/facebook/top.png') center bottom no-repeat;
+	background-size: 100% auto;
+	z-index: 6;
+}
+
+.facebook-info {
+	background: white;
+	border-bottom: 2px solid #e1e2e4;
+	margin-bottom: 10px;
+}
+
+.facebook-info img {
+	width: 100%;
+	height: auto;
+	margin-bottom: -4px;
+}
+
+.facebook-info p {
+	text-align: center;
+	font-size: 24px;
+	font-weight: 600;
+	margin: 5px auto;
+}
+
+.facebook-cover {
+	width: 100%;
+	height: 200px;
+	background: url('../images/facebook/cover.jpg') center center no-repeat;
+	background-size: cover;
+	z-index: 6;
+}
+
+.facebook-avatar {
+	display: block;
+	margin: 0 auto;
+	height: 120px;
+	width: 120px;
+	background: url('../images/facebook/logo.jpg') center center no-repeat;
+	background-size: cover;
+	border-radius: 50%;
+	border: 5px solid white;
+	margin-top: -60px;
+}

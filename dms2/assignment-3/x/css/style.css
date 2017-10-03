@@ -2,9 +2,79 @@
 
 @import url('reset.css');
 @import url('san-francisco.css');
+@import url('devices.css');
 @import url('basic.css');
 @import url('ui.css');
-@import url('devices.css');
+@import url('lock-screen.css');
+@import url('passcode-screen.css');
 @import url('home-screen.css');
 @import url('app-camera.css');
 @import url('app-maps.css');
+@import url('app-instagram.css');
+@import url('app-facebook.css');
+@import url('app-others.css');
+
+#loading {
+	background: #fafafa url('../images/loading.gif') center center no-repeat;
+	display: block;
+	position: absolute;
+	z-index: 200;
+	width: 100%;
+	height: 100vh;
+	background-size: 100px;
+	overflow: hidden;
+}
+
+.flashlight {
+	transition: .5s ease opacity;
+	background: yellow;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	z-index: 0;
+	left: calc(50% + 150px);
+	top: calc(50% - 350px);
+	border-radius: 50%;
+	box-shadow: 0 0 500px 200px yellow;
+	opacity: 0;
+}
+
+.flashlight.active {
+	opacity: 0.5;
+}
+
+.container-notch {
+	position: absolute;
+	width: 300px;
+	height: 30px;
+	bottom: 10px;
+	z-index: 3;
+	background: #0b0b0b;
+	border-top-left-radius: 24px;
+	border-top-right-radius: 24px;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+	font-size: 12px;
+	letter-spacing: 2px;
+	padding-top: 5px;
+}
+
+.container-notch:before, .container-notch:after {
+    content: '';
+    height: 8px;
+    position: absolute;
+    bottom: 0;
+    width: 8px;
+	transform: scaleY(-1);
+}
+
+.container-notch:after {
+    background: radial-gradient(circle at bottom left, transparent 0, transparent 70%, black 70%, black 100%);
+    left: -8px;
+}
+
+.container-notch:before {
+    background: radial-gradient(circle at bottom right, transparent 0, transparent 70%, black 70%, black 100%);
+    right: -8px;
+}

@@ -1,3 +1,14 @@
+.home-screen-overlay {
+	position: absolute;
+    z-index: 3;
+    top: 0;
+    width: 375px;
+    height: 812px;
+	background: rgba(0, 0, 0, 0.7);
+	pointer-events: none;
+	display: none;
+}
+
 #home-screen {
     position: absolute;
     z-index: 1;
@@ -47,7 +58,6 @@
     width: 60px;
     height: 60px;
     border-radius: 22%;
-	background-image: url('../images/app/icon.png'), linear-gradient(to bottom, #04DCFD, #1A59F0);
 	background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -78,7 +88,37 @@
 }
 
 .icon .icon-default {
+	background-image: url('../images/app/icon.png'), linear-gradient(to bottom, #04DCFD, #1A59F0);
 }
+
+.icon .icon-phone {
+
+}
+
+.icon-safari {background-image: url('../images/app/safari.png');}
+.icon-mail {background-image: url('../images/app/mail.png');}
+.icon-music {background-image: url('../images/app/music.png');}
+.icon-messages {background-image: url('../images/app/messages.png');}
+.icon-camera {background-image: url('../images/app/camera.png');}
+.icon-maps {background-image: url('../images/app/maps.png');}
+.icon-settings {background-image: url('../images/app/settings.png');}
+.icon-notes {background-image: url('../images/app/notes.png');}
+.icon-photos {background-image: url('../images/app/photos.png');}
+.icon-facebook {background-image: url('../images/app/facebook.png');}
+.icon-messenger {background-image: url('../images/app/messenger.png');}
+.icon-instagram {background-image: url('../images/app/instagram.png');}
+.icon-calendar {background-image: url('../images/app/calendar.png');}
+.icon-phone {background-image: url('../images/app/phone.png');}
+.icon-weather {background-image: url('../images/app/weather.png');}
+.icon-clock {background-image: url('../images/app/clock.png');}
+.icon-news {background-image: url('../images/app/news.png');}
+.icon-wallet {background-image: url('../images/app/wallet.png');}
+.icon-stock {background-image: url('../images/app/stock.png');}
+.icon-appstore {background-image: url('../images/app/appstore.png');}
+.icon-itunes {background-image: url('../images/app/itunes.png');}
+.icon-health {background-image: url('../images/app/health.png');}
+.icon-books {background-image: url('../images/app/books.png');}
+.icon-reminder {background-image: url('../images/app/reminder.png');}
 
 
 #dock {
@@ -91,7 +131,7 @@
     background: rgba(255, 255, 255, 0.7);
 	display: flex;
 	flex-wrap: wrap;
-	align-content: center;
+	align-items: center;
 	justify-content: center;
 }
 

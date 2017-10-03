@@ -10,7 +10,10 @@
 </head>
 
 <body>
+	<div id="loading"></div>
 	<div id="container">
+
+		<div class="container-notch">thanhhai.red</div>
 
 		<div class="iphone">
 			<div class="notch">
@@ -29,17 +32,30 @@
 				<!-- SCREEN OFF -->
 				<div id="screen-off"></div>
 
+				<!-- LOCK SCREEN -->
+				<div id="lock-screen">
+					<div class="top-bar" style="z-index: 16"></div>
+					<div class="home-bar"></div>
+					<div class="lock-screen-faceid"></div>
+					<div class="lock-screen-data">
+						<div class="lock-screen-clock">9:41</div>
+						<div class="lock-screen-date">Thursday, October 5</div>
+					</div>
+					<div class="lock-screen-circle lock-screen-light" onclick="lockscreenlight()"></div>
+					<div class="lock-screen-circle lock-screen-camera" onclick="lockscreenfaceid()"></div>
+				</div>
+
+				<!-- PASSCODE SCREEN -->
+				<div id="passcode-screen">
+					<div class="passcode-screen-main">
+						<div class="passcode-ok" onclick="passcodeok()"></div>
+					</div>
+					<div class="passcode-screen-bg"></div>
+				</div>
 
 				<!-- CAMERA -->
 				<div id="camera" class="app">
-					<div id="top-bar" style="z-index: 7">
-						<div id="top-bar-clock">9:41</div>
-						<div>
-							<div class="topbar-signal"></div>
-							<div class="topbar-wifi"></div>
-							<div class="battery"><span id="battery-indicator" style="width: 60%;"></span></div>
-						</div>
-					</div>
+					<div class="top-bar" style="z-index: 7"></div>
 					<div class="home-bar"></div>
 					<div class="camera-top"></div>
 					<div class="camera-middle"></div>
@@ -55,14 +71,7 @@
 
 				<!-- MAP -->
 				<div id="maps" class="app">
-					<div id="top-bar" class="black" style="z-index: 7">
-						<div id="top-bar-clock">9:41</div>
-						<div>
-							<div class="topbar-signal"></div>
-							<div class="topbar-wifi"></div>
-							<div class="battery"><span id="battery-indicator" style="width: 60%;"></span></div>
-						</div>
-					</div>
+					<div class="top-bar black" style="z-index: 7"></div>
 					<div class="home-bar"></div>
 					<div class="maps-float">
 						<div class="maps-info"></div>
@@ -72,35 +81,106 @@
 					<div class="maps-bottom">
 						<div class="maps-search">Search for a place or an address</div>
 					</div>
-					<iframe src="https://snazzymaps.com/embed/19157" width="375px" height="812px" style="border:none;"></iframe>
+					<iframe id="iframe-maps" src="https://snazzymaps.com/embed/19157" width="375px" height="812px" style="border:none;"></iframe>
 				</div>
 
-				<!-- HOME SCREEN -->
-				<div id="home-screen">
-					<div id="top-bar" style="z-index: 2">
-						<div id="top-bar-clock">9:41</div>
-						<div>
-							<div class="topbar-signal"></div>
-							<div class="topbar-wifi"></div>
-							<div class="battery"><span id="battery-indicator" style="width: 60%;"></span></div>
+				<!-- MAP -->
+				<div id="draw" class="app">
+					<div class="top-bar black" style="z-index: 7"></div>
+					<div class="home-bar black"></div>
+					<iframe id="iframe-draw" src="pages/draw/index.html" frameborder="0" width="375" height="812"></iframe>
+				</div>
+
+				<!-- INSTAGRAM -->
+				<div id="instagram" class="app">
+					<div class="top-bar black" style="z-index: 7"></div>
+					<div class="home-bar black"></div>
+					<div class="instagram-header">dostudio.red</div>
+					<div class="instagram-menu"></div>
+					<div class="instagram-main">
+						<div class="instagram-logo">dostudio.red</div>
+						<div class="instagram-info">
+							<div class="instagram-avatar"></div>
+							<div class="instagram-data">
+								<p>18<span>posts</span></p>
+								<p>20<span>followers</span></p>
+								<p>4<span>followings</span></p>
+								<div class="instagram-button">Edit Profile</div>
+							</div>
+						</div>
+						<div class="instagram-desc">
+							<p>đ ỏ - s t u d i o</p>
+							<p>design studio based in hcmc.</p>
+							<p>dostudio.red</p>
+						</div>
+						<img src="images/instagram/tab.png" class="instagram-tab" />
+						<div id="instafeed"></div>
+					</div>
+				</div>
+
+				<!-- FACEBOOK -->
+				<div id="facebook" class="app">
+					<div class="top-bar" style="z-index: 7"></div>
+					<div class="home-bar black"></div>
+					<div class="facebook-top"></div>
+					<div class="facebook-bottom"></div>
+					<div class="facebook-main">
+						<div class="facebook-info">
+							<div class="facebook-cover"></div>
+							<div class="facebook-avatar"></div>
+							<p>RMIT University</p>
+							<img src="images/facebook/info.png" alt="">
+						</div>
+						<div class="facebook-feed">
+							<div class="fb-page" data-href="https://www.facebook.com/RMITuniversity/" data-tabs="timeline" data-width="375" data-height="3000" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false">
+								<blockquote cite="https://www.facebook.com/RMITuniversity/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/RMITuniversity/">RMIT University</a></blockquote>
+							</div>
 						</div>
 					</div>
+				</div>
+				<div id="fb-root"></div>
+				<script>
+					(function(d, s, id) {
+						var js, fjs = d.getElementsByTagName(s)[0];
+						if (d.getElementById(id)) return;
+						js = d.createElement(s);
+						js.id = id;
+						js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+						fjs.parentNode.insertBefore(js, fjs);
+					}(document, 'script', 'facebook-jssdk'));
+				</script>
+
+				<!-- HOME SCREEN -->
+				<div class="home-screen-overlay"></div>
+				<div id="home-screen">
+					<div class="top-bar" style="z-index: 2"></div>
 					<div id="app-screen">
 						<div id="app-page-one" class="app-page">
 							<div class="icons">
-								<div class="icon"><span onclick="openapp(maps)" class="icon-default"></span><span>App Name</span></div>
-								<div class="icon"><span onclick="openapp(camera)" class="icon-default"></span><span>App Name</span></div>
-								<div class="icon"><span class="icon-default"></span><span>App Name</span></div>
-								<div class="icon"><span class="icon-default"></span><span>App Name</span></div>
-								<div class="icon"><span class="icon-default"></span><span>App Name</span></div>
-								<div class="icon"><span class="icon-default"></span><span>App Name</span></div>
+								<div class="icon"><span class="icon-messages"></span><span>Messages</span></div>
+								<div class="icon"><span class="icon-calendar"></span><span>Calendar</span></div>
+								<div class="icon"><span class="icon-photos"></span><span>Photos</span></div>
+								<div class="icon"><span onclick="openapp(camera)" class="icon-camera"></span><span>Camera</span></div>
+								<div class="icon"><span class="icon-weather"></span><span>Weather</span></div>
+								<div class="icon"><span class="icon-clock"></span><span>Clock</span></div>
+								<div class="icon"><span onclick="openapp(maps)" class="icon-maps"></span><span>Maps</span></div>
+								<div class="icon"><span class="icon-news"></span><span>News</span></div>
+								<div class="icon"><span class="icon-wallet"></span><span>Wallet</span></div>
+								<div class="icon"><span onclick="openapp(draw)" class="icon-notes"></span><span>Notes</span></div>
+								<div class="icon"><span class="icon-reminder"></span><span>Reminder</span></div>
+								<div class="icon"><span class="icon-stock"></span><span>Stock</span></div>
+								<div class="icon"><span class="icon-itunes"></span><span>iTunes Store</span></div>
+								<div class="icon"><span class="icon-appstore"></span><span>App Store</span></div>
+								<div class="icon"><span class="icon-books"></span><span>Books</span></div>
+								<div class="icon"><span class="icon-health"></span><span>Health</span></div>
+								<div class="icon"><span class="icon-settings"></span><span>Settings</span></div>
 							</div>
 						</div>
 						<div id="app-page-one" class="app-page">
 							<div class="icons">
-								<div class="icon"><span class="icon-default"></span><span>App Name</span></div>
-								<div class="icon"><span class="icon-default"></span><span>App Name</span></div>
-								<div class="icon"><span class="icon-default"></span><span>App Name</span></div>
+								<div class="icon"><span onclick="openapp(facebook)" class="icon-facebook"></span><span>Facebook</span></div>
+								<div class="icon"><span class="icon-messenger"></span><span>Messenger</span></div>
+								<div class="icon"><span onclick="openapp(instagram)" class="icon-instagram"></span><span>Instagram</span></div>
 								<div class="icon"><span class="icon-default"></span><span>App Name</span></div>
 								<div class="icon"><span class="icon-default"></span><span>App Name</span></div>
 								<div class="icon"><span class="icon-default"></span><span>App Name</span></div>
@@ -113,10 +193,10 @@
 					</div>
 					<div id="dock">
 						<div class="icons">
-							<div class="icon"><span class="icon-default"></span></div>
-							<div class="icon"><span class="icon-default"></span></div>
-							<div class="icon"><span class="icon-default"></span></div>
-							<div class="icon"><span class="icon-default"></span></div>
+							<div class="icon"><span class="icon-phone"></span></div>
+							<div class="icon"><span class="icon-safari"></span></div>
+							<div class="icon"><span class="icon-mail"></span></div>
+							<div class="icon"><span class="icon-music"></span></div>
 						</div>
 					</div>
 				</div>
@@ -125,11 +205,12 @@
 			</div>
 
 		</div>
+		<div class="flashlight"></div>
 
 	</div>
 	<script src="js/jquery-custom.js"></script>
 	<script src="js/jquery.mobile.custom.js"></script>
-	<script src="js/touchswipe.js"></script>
+	<script src="js/instafeed.js"></script>
 	<script src="js/function.js"></script>
 </body>
 

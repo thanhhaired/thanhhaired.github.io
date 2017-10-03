@@ -12,7 +12,7 @@
 
 /** TOP BAR **/
 
-#top-bar {
+.top-bar {
 	position: absolute;
 	top: 15px;
 	display: flex;
@@ -29,11 +29,11 @@
 	height: 20px;
 }
 
-#top-bar #top-bar-clock {
+.top-bar .top-bar-clock {
 	letter-spacing: 1px
 }
 
-#top-bar .battery {
+.top-bar .battery {
     height: 20px;
     width: 30px;
     background-image: url('../images/icon/battery.png');
@@ -46,14 +46,14 @@
     padding-right: 5px;
 }
 
-#top-bar .battery #battery-indicator {
+.top-bar .battery #battery-indicator {
     width: 100%;
     background: white;
     height: 6.5px;
     display: block;
 }
 
-#top-bar .topbar-signal {
+.top-bar .topbar-signal {
     height: 20px;
     width: 20px;
     background-image: url('../images/icon/signal.png');
@@ -61,11 +61,10 @@
     background-repeat: no-repeat;
     background-size: 20px;
     display: inline-block;
-	margin-right: -2px;
 }
 
 
-#top-bar .topbar-wifi {
+.top-bar .topbar-wifi {
     height: 20px;
     width: 20px;
     background-image: url('../images/icon/wifi.png');
@@ -73,27 +72,26 @@
     background-repeat: no-repeat;
     background-size: 24px;
     display: inline-block;
-	margin-right: -2px;
 }
 
-#top-bar.black {
+.top-bar.black {
 	color: black;
 }
 
-#top-bar.black .battery {
+.top-bar.black .battery {
 	background-image: url('../images/icon/black-battery.png');
 }
 
-#top-bar.black .battery #battery-indicator {
+.top-bar.black .battery #battery-indicator {
     background: black;
 }
 
-#top-bar.black .topbar-signal {
+.top-bar.black .topbar-signal {
     background-image: url('../images/icon/black-signal.png');
 }
 
 
-#top-bar.black .topbar-wifi {
+.top-bar.black .topbar-wifi {
     background-image: url('../images/icon/black-wifi.png');
 }
 
@@ -133,6 +131,14 @@
     border-radius: 2px;
     background-color: white;
 	opacity: 0.7;
+}
+
+.home-bar:hover::before {
+    opacity: 0.9;
+}
+
+.home-bar.black::before {
+    background-color: #292929;
 }
 
 .home-bar:hover::before {
