@@ -1,8 +1,9 @@
 // LOADING
 
 $(window).load(function() {
+	$(".iphone").css("display", "block");
     setTimeout(function() {
-        $('#loading').fadeOut();
+        $('#loading').hide('fade', 1000);
     }, 1000);
 });
 
@@ -18,6 +19,11 @@ $('.top-bar').html("<div id='top-bar-clock'>9:41</div><div><div class='topbar-si
 function openapp(openappname) {
     $(openappname).show('fade', 400, homescreenoverlay);
 };
+
+function openfireworks() {
+	document.getElementById("iframe-fireworks").src = "pages/fireworks/index.html";
+	$("#fireworks").show('fade', 400, homescreenoverlay);
+}
 
 function homescreenoverlay() {
     $('.home-screen-overlay').show();
@@ -35,7 +41,7 @@ $('.app').draggable({
     drag: function(event, ui) {
         if (ui.position.top > startPosition)
             ui.position.top = startPosition;
-        if (ui.position.top < -120) {
+        if (ui.position.top < -100) {
             $('.home-screen-overlay').hide('fade', 1000);
             $('#maps').hide('slide', {
                 direction: 'up'
@@ -52,35 +58,18 @@ $('.app').draggable({
             $('#draw').hide('slide', {
                 direction: 'up'
             }, 1000);
+            $('#fireworks').hide('slide', {
+                direction: 'up'
+            }, 1000, hidefireworks);
         }
         startPosition = ui.position.top;
     }
 });
 
-//// SLEEP BUTTON
-
-$('.sleep').click(function() {
-    if ($('#screen-off').is(':visible') == true) {
-        $('#screen-off').hide('fade', 750);
-    } else {
-        $('#screen-off').show('fade', 250, appcheck);
-    }
-});
-
-function appcheck() {
-	$('#lock-screen').show();
-	faceid = false;
-	faceidcheck();
-	console.log("sleep check " + faceid);
-	if ($('.lock-screen-faceid').hasClass("active") == false) {
-		$('#passcode-screen').show();
-	} else {
-		$('#passcode-screen').hide();
-	}
-	// if ($('.app').is(':visible') == true) {
-    //     $('.app').hide();
-    // }
+function hidefireworks() {
+	document.getElementById("iframe-fireworks").src = "";
 }
+
 
 // LOCK SCREEN
 
@@ -97,6 +86,7 @@ $('#lock-screen').draggable({
         if (ui.position.top > startPosition)
             ui.position.top = startPosition;
         if (ui.position.top < -120) {
+			$('.home-screen-overlay').hide('fade', 1000);
             $('#lock-screen').hide('slide', {
                 direction: 'up'
             }, 1000);
@@ -110,6 +100,8 @@ $('#lock-screen').draggable({
 function lockscreenlight() {
 	$(".lock-screen-light").toggleClass('active');
 	$(".flashlight").toggleClass('active');
+	$(".flash-light-overlay").toggleClass('active');
+	$("#container").toggleClass('container-flashlight');
 };
 
 function passcodeok() {
@@ -119,6 +111,9 @@ function passcodeok() {
 //// FACE ID
 
 var faceid = false;
+
+console.log("load check " + faceid);
+
 
 function lockscreenfaceid() {
 	faceid = !faceid;
@@ -131,6 +126,42 @@ function faceidcheck() {
 	$(".lock-screen-faceid").toggleClass('active');
 	$('#passcode-screen').toggle();
 	console.log("post check " + faceid);
+}
+
+
+//// SLEEP BUTTON
+
+$('.sleep').click(function() {
+    if ($('#screen-off').is(':visible') == true) {
+		console.log("wake check " + faceid);
+        $('#screen-off').hide('fade', 750);
+    } else {
+		faceid = false;
+        $('#screen-off').show('fade', 250, appcheck);
+    }
+});
+
+$('#screen-off').dblclick(function() {
+    if ($('#screen-off').is(':visible') == true) {
+		console.log("wake check " + faceid);
+        $('#screen-off').hide('fade', 750);
+    }
+});
+
+
+function appcheck() {
+	$('#lock-screen').show();
+	$('.home-screen-overlay').show();
+	faceidcheck();
+	console.log("sleep check " + faceid);
+	if ($('.lock-screen-faceid').hasClass("active") == false) {
+		$('#passcode-screen').show();
+	} else {
+		$('#passcode-screen').hide();
+	}
+	// if ($('.app').is(':visible') == true) {
+    //     $('.app').hide();
+    // }
 }
 
 // HOME SCREEN
@@ -206,4 +237,80 @@ userFeed.run();
 $('.instagram-main').on("scroll", function() {
 	var fromTop = $('.instagram-main').scrollTop();
 	$(".instagram-header").toggleClass("active", (fromTop > 10));
+});
+
+
+// passcode
+
+(function() {
+    var input = '',
+        correct = '1234';
+    var dots = document.querySelectorAll('.dot'),
+        numbers = document.querySelectorAll('.number');
+    dots = Array.prototype.slice.call(dots);
+    numbers = Array.prototype.slice.call(numbers);
+    numbers.forEach(function(number, index) {
+        number.addEventListener('click', function() {
+            number.className += ' grow';
+            input += index + 1;
+            dots[input.length - 1].className += ' active';
+            if (input.length >= 4) {
+                if (input !== correct) {
+                    $("#dots").effect("shake", 500);
+                } else {
+					$('#passcode-screen').hide('fade', 750);
+                }
+                setTimeout(function() {
+                    dots.forEach(function(dot, index) {
+                        dot.className = 'dot';
+                    });
+                    input = '';
+                }, 900);
+                setTimeout(function() {
+                    document.body.className = '';
+                }, 1000);
+            }
+            setTimeout(function() {
+                number.className = 'number';
+            }, 1000);
+        });
+    });
+}());
+
+
+
+// CHANGE BG
+
+function changebg() {
+	$("#home-screen").toggleClass('changebg');
+	$("#lock-screen").toggleClass('changebg');
+	$(".passcode-screen-bg").toggleClass('changebg');
+}
+
+// CONTROL CENTER
+
+$('.cc-swipe').on('click', function() {
+	$('#control-center').show('slide', {
+		direction: 'up'
+	}, 1000);
+	$('.cc-overlay').show('fade', 1000);
+});
+
+$('#control-center').draggable({
+    axis: 'y',
+    revert: true,
+    start: function(event, ui) {
+        startPosition = ui.position.top;
+    },
+    drag: function(event, ui) {
+        if (ui.position.top > startPosition)
+            ui.position.top = startPosition;
+        if (ui.position.top < -120) {
+            $('.cc-overlay').hide('fade', 1000);
+            $('#control-center').hide('slide', {
+                direction: 'up'
+            }, 1000);
+        }
+        startPosition = ui.position.top;
+    }
 });

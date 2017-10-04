@@ -6,7 +6,6 @@
     height: 812px;
 	background: rgba(0, 0, 0, 0.7);
 	pointer-events: none;
-	display: none;
 }
 
 #home-screen {
@@ -15,8 +14,14 @@
     top: 0;
     width: 375px;
     height: 812px;
-    background: url('../images/homescreen/hss.png') center center, url('../images/homescreen/bg.gif') center center;
+    background-image: url('../images/homescreen/bg.jpg');
+	background-position: center;
     background-size: cover;
+	transition: 1s ease background-image;
+}
+
+#home-screen.changebg {
+	background-image: url('../images/homescreen/bg.gif');
 }
 
 #app-screen {
@@ -119,6 +124,7 @@
 .icon-health {background-image: url('../images/app/health.png');}
 .icon-books {background-image: url('../images/app/books.png');}
 .icon-reminder {background-image: url('../images/app/reminder.png');}
+.icon-fireworks {background-image: url('../images/app/fireworks.jpg');}
 
 
 #dock {

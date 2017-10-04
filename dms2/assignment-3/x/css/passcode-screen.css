@@ -24,6 +24,10 @@
     position: absolute;
 }
 
+.passcode-screen-bg.changebg {
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/homescreen/bg.gif');
+}
+
 .passcode-screen-main {
 	z-index: 11;
 	position: absolute;
@@ -44,4 +48,81 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	border-radius: 50%;
+}
+
+
+
+.pin-wrap {
+    width: 1280px;
+    height: 960px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pin {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    color: rgba(255, 255, 255, 1);
+}
+
+#dots {
+    width: 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding: 1em;
+    padding-top: 3em;
+}
+
+.dot {
+    position: relative;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    border: 1px solid white
+}
+
+.dot.active {
+    background: white;
+}
+
+#pin p {
+    font-size: 15px;
+}
+
+.numbers {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: 300px;
+}
+
+.number {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    transition: all .5s ease;
+    background: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    color: white;
+    line-height: 80px;
+}
+
+.number:hover {
+    background: rgba(255, 255, 255, 0.6);
 }

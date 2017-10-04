@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>a s s i g n m e n t - 3</title>
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" href="../x/css/reset.css">
+	<style>
+
+		body {
+			font-family: 'Inconsolata', monospace;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		}
+
+		#container {
+			width: 750px;
+			margin: 40px auto;
+			font-size: 16px;
+		}
+
+		a {
+			text-decoration: none;
+			color: #d50f25;
+			text-align: center;
+			display: block;
+			cursor: pointer;
+		}
+
+		h2 {
+			color: #a2a2a2;
+			text-align: center;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+		}
+
+		h1 {
+			font-size: 140px;
+			font-weight: 700;
+			display: inline;
+		}
+
+		p {
+			line-height: 35px;
+			width: 90%;
+			margin: 20px auto;
+		}
+
+		strong {
+			border-bottom: 1px solid black;
+			margin-bottom: 15px;
+			margin-left: -30px;
+		}
+
+		img {
+			border-radius: 10px;
+			max-width: 60%;
+			margin: 20px auto;
+			display: block;
+		}
+
+		.bgtext {
+			background: url('../x/images/homescreen/bg.gif') center top;
+			background-clip: text;
+			color: transparent;
+			display: block;
+			margin: 0 auto;
+			text-align: center;
+			background-size: cover;
+			margin-bottom: 50px;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="container">
+		<h2>assignment-3</h2>
+		<div class="bgtext">
+			<h1>iPhone X</h1>
+		</div>
+		<p>
+			<strong>why i choose to make this:</strong><br / /> # inspire by Apple's upcoming iPhone X and the just-release iOS 11<br /> # continue the theme of the first and second assignment<br /> # making any other project other than this will make it become
+			the odd one out :(
+		</p>
+		<p>
+			<strong>the task:</strong> canvas, api & input<br />
+		</p>
+		<p>
+			<strong>what i want:</strong><br / /> # replicating the iphone x with css<br /> # mimicking ios 11 on the iphone x<br /> # recreating basic gestures of the iphone x<br /> # making at least 5 apps that suit the requirements of the task
+		</p>
+		<p>
+			<a onclick="x()">[ x ]</a>
+		</p>
+	</div>
+	<script type="text/javascript" src="../x/js/jquery-custom.js"></script>
+	<script type="text/javascript">
+		function x() {
+			$('#container').hide('fade', 1000, redirect);
+		}
+
+		function redirect() {
+			window.location.href = "../x/index.html";
+		}
+	</script>
+</body>
+
+</html>

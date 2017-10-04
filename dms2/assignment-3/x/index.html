@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>x | a s s i g n m e n t - 3</title>
+	<title>a s s i g n m e n t - 3 | i p h o n e - x</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -13,9 +13,11 @@
 	<div id="loading"></div>
 	<div id="container">
 
-		<div class="container-notch">thanhhai.red</div>
+		<div class="flash-light-overlay"></div>
 
-		<div class="iphone">
+		<!-- <div class="container-notch">thanhhai.red</div> -->
+
+		<div class="iphone" style="display: none;">
 			<div class="notch">
 				<div class="camera"></div>
 				<div class="speaker"></div>
@@ -31,6 +33,13 @@
 
 				<!-- SCREEN OFF -->
 				<div id="screen-off"></div>
+
+				<!-- CONTROL CONTENT -->
+				<div class="cc-swipe"></div>
+				<div id="control-center">
+					<div class="home-bar black"></div>
+				</div>
+				<div class="cc-overlay"></div>
 
 				<!-- LOCK SCREEN -->
 				<div id="lock-screen">
@@ -48,8 +57,31 @@
 				<!-- PASSCODE SCREEN -->
 				<div id="passcode-screen">
 					<div class="passcode-screen-main">
-						<div class="passcode-ok" onclick="passcodeok()"></div>
-					</div>
+						<div class="pin-wrap">
+							<div id="pin">
+								<p>
+									Touch ID or Enter Passcode
+								</p>
+								<div id="dots">
+									<div class="dot"></div>
+									<div class="dot"></div>
+									<div class="dot"></div>
+									<div class="dot"></div>
+								</div>
+								<div class="numbers">
+									<div class="number">1</div>
+									<div class="number">2</div>
+									<div class="number">3</div>
+									<div class="number">4</div>
+									<div class="number">5</div>
+									<div class="number">6</div>
+									<div class="number">7</div>
+									<div class="number">8</div>
+									<div class="number">9</div>
+									<div class="number">0</div>
+								</div>
+							</div>
+						</div>					</div>
 					<div class="passcode-screen-bg"></div>
 				</div>
 
@@ -84,11 +116,18 @@
 					<iframe id="iframe-maps" src="https://snazzymaps.com/embed/19157" width="375px" height="812px" style="border:none;"></iframe>
 				</div>
 
-				<!-- MAP -->
+				<!-- DRAW -->
 				<div id="draw" class="app">
 					<div class="top-bar black" style="z-index: 7"></div>
 					<div class="home-bar black"></div>
 					<iframe id="iframe-draw" src="pages/draw/index.html" frameborder="0" width="375" height="812"></iframe>
+				</div>
+
+				<!-- FIREWORKS -->
+				<div id="fireworks" class="app">
+					<div class="top-bar" style="z-index: 7"></div>
+					<div class="home-bar"></div>
+					<iframe id="iframe-fireworks" src="" frameborder="0" width="375" height="812"></iframe>
 				</div>
 
 				<!-- INSTAGRAM -->
@@ -173,7 +212,7 @@
 								<div class="icon"><span class="icon-appstore"></span><span>App Store</span></div>
 								<div class="icon"><span class="icon-books"></span><span>Books</span></div>
 								<div class="icon"><span class="icon-health"></span><span>Health</span></div>
-								<div class="icon"><span class="icon-settings"></span><span>Settings</span></div>
+								<div class="icon"><span onclick="changebg()" class="icon-settings"></span><span>Settings</span></div>
 							</div>
 						</div>
 						<div id="app-page-one" class="app-page">
@@ -181,9 +220,7 @@
 								<div class="icon"><span onclick="openapp(facebook)" class="icon-facebook"></span><span>Facebook</span></div>
 								<div class="icon"><span class="icon-messenger"></span><span>Messenger</span></div>
 								<div class="icon"><span onclick="openapp(instagram)" class="icon-instagram"></span><span>Instagram</span></div>
-								<div class="icon"><span class="icon-default"></span><span>App Name</span></div>
-								<div class="icon"><span class="icon-default"></span><span>App Name</span></div>
-								<div class="icon"><span class="icon-default"></span><span>App Name</span></div>
+								<div class="icon"><span onclick="openfireworks()" class="icon-fireworks"></span><span>Fireworks</span></div>
 							</div>
 						</div>
 					</div>
