@@ -1,0 +1,38 @@
+@import url('./normlize.css');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600');
+body {
+    font-family: 'Source Code Pro', monospace;
+    background: black;
+    color: white;
+    font-size: 12px;
+}
+
+ul#header-nav {
+    margin: 80px auto;
+    text-align: center;
+}
+
+ul#header-nav li {
+    display: inline;
+    margin: 0 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.container {
+    margin: 80px auto;
+    width: 800px;
+    text-align: center;
+}
+
+.logo {
+    background:
+}
+
+#footer {
+    text-align: center;
+    color: #b3b3b3;
+    margin: 80px auto;
+}

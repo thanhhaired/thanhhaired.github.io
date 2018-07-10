@@ -1,0 +1,129 @@
+/* General */
+
+body {
+    font-family: "Inconsolata", sans-serif;
+    font-size: 14px;
+    line-height: 2;
+    color: #333333;
+    background: #fff;
+}
+
+body.about {
+    background: url('../images/orn-dino.png') no-repeat scroll, url('../images/logo-mini.svg') no-repeat fixed;
+    background-size: 200px auto, 500px auto;
+    background-position: right 50px bottom 50px, left -100px top -50px;
+}
+
+body.contact {
+    background: url('../images/orn-swan.png') no-repeat scroll, url('../images/logo-mini.svg') no-repeat fixed;
+    background-size: 300px auto, 600px auto;
+    background-position: left 100px top 100px, right -100px bottom -50px;
+}
+
+a {
+    color: #d50f25;
+}
+
+a:hover,
+a:active {
+    color: #333333;
+}
+
+.container {
+    margin: 120px auto;
+}
+
+h3 {
+    letter-spacing: 2px;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+p {}
+
+.hashtag {
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.divider {
+    height: 4px;
+    width: 50px;
+    background: #CECECE;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.form-control:focus {
+    border-color: #cccccc;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Navigation */
+
+.nav_container {
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: none;
+    color: #333333;
+    font-family: 'Inconsolata';
+    letter-spacing: 3px;
+}
+
+.nav_container a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.nav_container a:hover {
+    text-decoration: underline;
+}
+
+.about_link {
+    left: 30px;
+    position: fixed;
+    text-align: center;
+    top: 50vh;
+    transform: rotate(-90deg);
+    line-height: 1;
+    width: 100px;
+    text-align: center;
+}
+
+.contact_link {
+    right: 20px;
+    position: fixed;
+    text-align: center;
+    top: 50vh;
+    transform: rotate(90deg);
+    line-height: 1;
+    width: 100px;
+    text-align: center;
+}
+
+ul.social {
+    padding: 0;
+}
+
+ul.social li {
+    display: inline;
+    padding-right: 10px;
+}
+
+ul.social li a {
+    color: #333333;
+}
+
+.social_facebook:hover {
+    color: #3b5998;
+}
+
+.social_twitter:hover {
+    color: #4099FF;
+}
+
+.social_instagram:hover {
+    color: #9b6954;
+}

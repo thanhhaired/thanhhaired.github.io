@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>a s s i g n m e n t - 3</title>
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" href="assignment-3/x/css/reset.css">
+	<style>
+		body {
+			font-family: 'Inconsolata', monospace;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			flex-direction: column;
+		}
+
+		#container {
+			margin: 40px auto;
+			font-size: 16px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		a {
+			text-decoration: none;
+			color: #d50f25;
+			text-align: center;
+			display: block;
+			cursor: pointer;
+		}
+
+		h2 {
+			text-align: center;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			margin: 0;
+			font-size: 35px;
+			font-weight: 700;
+		}
+
+		h1 {
+			font-size: 70px;
+			font-weight: 700;
+			display: block;
+			margin: 0;
+		}
+
+		p {
+			font-weight: 700;
+		}
+
+		.bgtext {
+			background: url('assignment-3/x/images/homescreen/bg.gif') center top;
+			background-clip: text;
+			color: transparent;
+			display: block;
+			margin: 0 auto 100px;
+			text-align: center;
+			background-size: cover;
+			text-transform: uppercase;
+
+		}
+
+		.assignment {
+			width: 250px;
+			height: 350px;
+			background: #eee;
+			margin: 0 50px;
+			border-radius: 10px;
+			box-shadow: 0 45px 100px rgba(0, 0, 0, 0.4);
+			transition: 1s ease;
+			font-family: "Helvetica";
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: url('assignment-3/x/images/homescreen/bg.gif') center top;
+			background-clip: text;
+			color: transparent;
+			font-size: 40px;
+			font-weight: 600;
+			background-attachment: fixed;
+
+		}
+
+		.assignment:first-child {}
+
+		.assignment:hover {
+			transform: scale(1.2);
+		}
+	</style>
+</head>
+
+<body>
+	<div class="bgtext">
+		<h2>Digital Media Specialization 2</h2>
+		<h1>Interactive Design</h1>
+	</div>
+	<div id="container">
+		<div onclick="mac()" class="assignment">macOS</div>
+		<div onclick="ipad()" class="assignment">iPad</div>
+		<div onclick="x()" class="assignment">iPhone X</div>
+	</div>
+	<div class="bgtext" style="margin: 100px auto 0;">
+		<p>PHAN THANH HAI - S3516553</p>
+	</div>
+	<script type="text/javascript" src="assignment-3/x/js/jquery-custom.js"></script>
+	<script type="text/javascript">
+		function mac() {
+			$('body').hide('fade', 1000, redirectmac);
+		}
+
+		function ipad() {
+			$('body').hide('fade', 1000, redirectipad);
+		}
+
+		function x() {
+			$('body').hide('fade', 1000, redirectx);
+		}
+
+		function redirectmac() {
+			window.location.href = "assignment-1/macos/index.html";
+		}
+
+		function redirectipad() {
+			window.location.href = "assignment-2/ipad/index.html";
+		}
+
+		function redirectx() {
+			window.location.href = "assignment-3/index.html";
+		}
+	</script>
+</body>
+
+</html>

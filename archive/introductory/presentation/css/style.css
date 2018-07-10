@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,700,800&subset=latin-ext');
+
+/*-- GENRAL --*/
+
+body {
+    overflow: hidden;
+    background: white;
+    font-family: 'Inconsolata', monospace;
+}
+
+* {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.overlay {
+	background: url('../images/overlay.jpg') center top repeat-y;
+	background-size: 100% auto;
+	mix-blend-mode: multiply;
+	display: block;
+	position: absolute;
+	z-index: 200;
+	width: 100%;
+	top: 0;
+	pointer-events: none;
+}
+
+#menu {
+	position: fixed;
+	top: 0;
+	z-index: 5;
+	width: 100%;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#menu a {
+	display: block;
+	margin: 0 40px;
+	color: #f1838b;
+	font-weight: 700;
+	position: relative;
+	font-size: 20px;
+	transition: .5s ease color;
+}
+
+#menu a.active, #menu a:hover {
+	color: #355088;
+}
+
+#menu a:before {
+	content: '[';
+	color: #f1838b;
+	margin-right: 5px;
+}
+
+#menu a:after {
+	content: ']';
+	color: #f1838b;
+	margin-left: 5px;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	flex-direction: column;
+	align-content: center;
+	flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+	position: relative;
+}
+
+#intro {
+}
+
+#intro p:first-child {
+	color: #355088;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+
+#intro p:last-child {
+	color: #f1838b;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+
+#intro p.hi {
+    margin: 0;
+    color: transparent;
+    background: -webkit-linear-gradient(top left, #355088 0%, #f1838b 100%);
+    background: -o-linear-gradient(top left, #355088 0%, #f1838b 100%);
+    background: linear-gradient(to bottom right, #355088 0%, #f1838b 100%);
+    -webkit-background-clip: text;
+    background-size: cover;
+    font-family: 'Dosis', sans-serif;
+    font-size: 150px;
+    font-weight: 700;
+}
+
+#introductory-media h1 {
+	position: absolute;
+	top: 20vh;
+	background: -webkit-linear-gradient(top left, #355088 0%, #f1838b 100%);
+    background: -o-linear-gradient(top left, #355088 0%, #f1838b 100%);
+    background: linear-gradient(to bottom right, #355088 0%, #f1838b 100%);
+	z-index: 6;
+	color: white;
+	font-size: 50px;
+	padding: 20px 40px;
+	left: calc(50% - 600px);
+	letter-spacing: 5px;
+}
+
+#introductory-media .safari {
+	width: 1000px;
+	height: 70vh;
+	overflow-y: auto;
+	border-radius: 10px;
+	box-shadow: 0 0 50px rgba(241,131,139,.5);
+	position: relative;
+}
+
+#introductory-media .safari-wrapper {
+	width: 1000px;
+	max-height: 70vh;
+	overflow-y: auto;
+	border-radius: 10px;
+	position: absolute;
+	top: 0;
+	z-index: 4;
+}
+
+#networking .content {
+	width: auto;
+	text-align: left;
+}
+
+#networking h2 {
+	font-size: 35px;
+	font-weight: 700;
+	color: #355088;
+	border-bottom: 4px solid #f1838b;
+	display: inline-block;
+	padding-right: 40px;
+}
+
+#networking .item {
+	display: inline-block;
+	width: 250px;
+	height: 180px;
+	border-radius: 5px;
+	background-color: white;
+	background-size: cover;
+	background-position: center;
+	margin: 20px;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0 0 50px rgba(241,131,139,.5);
+}
+
+#networking .item span {
+	position: absolute;
+	bottom: 0;
+	border: 0;
+	background: #355088;
+	color: white;
+	width: 100%;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: -60px;
+	transition: 2s ease;
+	text-align: center;
+}
+
+#networking .item:hover span {
+	margin-bottom: 0;
+	transition: .5s ease;
+}
+
+#networking .item .collab {
+	position: absolute;
+	bottom: 0;
+	border: 0;
+	background: #355088;
+	color: white;
+	width: 100%;
+	height: 180px;
+	margin-bottom: -180px;
+	transition: 2s ease;
+	text-align: center;
+}
+
+#networking .item:hover .collab {
+	margin-bottom: 0;
+	transition: .5s ease;
+}
+
+#networking .item .collab .title {
+	width: 100%;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	border-bottom: 1px solid white;
+}
+
+#networking .item .collab .links {
+	width: 100%;
+	height: 120px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+#networking .item .collab .links a {
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin: 5px auto;
+}
+
+
+#portfolio h1 {
+	position: absolute;
+	top: calc(50% - 100px);
+	background: -webkit-linear-gradient(top left, #355088 0%, #f1838b 100%);
+    background: -o-linear-gradient(top left, #355088 0%, #f1838b 100%);
+    background: linear-gradient(to bottom right, #355088 0%, #f1838b 100%);
+	z-index: 6;
+	color: white;
+	font-size: 50px;
+	padding: 20px 40px;
+	left: calc(50% - 700px);
+	letter-spacing: 5px;
+}
+
+
+#portfolio img {
+	border-radius: 10px;
+	box-shadow: 0 0 50px rgba(241,131,139, 1);
+	position: relative;
+}

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta content="What's on in Melbourne">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>What's on | WITNESS</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+	<div class="popup-overlay" style="display: none;">
+		<div class="popup">
+			<div class="popup-inner">
+				<div class="book">Book now</div>
+				<div class="info">
+					<p class="author">Lorem ipsum</p>
+					<p><span class="name">Lorem ipsum</span><span class="theatre">Dolor sit amet</span></p>
+					<p><span class="time">11am - 1pm</span><span style="opacity: .25;"> / </span><span class="duration">180 minutes</span></p>
+					<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pelesque in felis eget luctus.</p>
+				</div>
+			</div>
+		</div>
+		<div class="popup-bg"></div>
+	</div>
+
+	<div id="container">
+		<div class="breadcumb">WITNESS / <span>WHAT'S ON</span></div>
+		<div id="filter">
+			<div class="search">
+				<span>Search terms</span>
+				<span>Search</span>
+			</div>
+			<div class="filter">
+				<div>Change to <div class="link-toggle-grid"><span>grid view</span></div><div class="link-toggle-list" style="display: none;"><span>list view</span></div> .Filter search results by
+					<div class="list"><span class="placeholder">all theatres</span>
+						<ul class="list__ul">
+							<li><a>all theatres</a></li>
+							<li><a>Lorem Ipsum Theatre</a></li>
+							<li><a>Dolor Sit Amet Art Centre</a></li>
+							<li><a>Consectetur Theatre</a></li>
+							<li><a>Adipiscing Elit Art House</a></li>
+						</ul>
+					</div>.</div>
+				<p>Go to <span><input type="text" id="datepicker" placeholder="26-10-2017"></span>.</p>
+			</div>
+		</div>
+		<div class="toggle-list">
+			<div id="nav">
+				<div class="prev">Previous 7 days<span class="tooltip">October 16 - October 22</span></div>
+				<div class="current">October 23 - October 29</div>
+				<div class="next">Next 7 days<span class="tooltip">October 30 - November 5</span></div>
+			</div>
+			<div class="nav-divider"></div>
+			<div id="listview">
+				<h2>Monday, October 23</h2>
+				<div class="play">
+					<div class="book">Book now</div>
+					<div class="info">
+						<p class="author">Lorem ipsum</p>
+						<p><span class="name">Lorem ipsum</span><span class="theatre">Dolor sit amet</span></p>
+						<p><span class="time">11am - 1pm</span><span style="opacity: .25;"> / </span><span class="duration">180 minutes</span></p>
+						<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pelesque in felis eget luctus.</p>
+					</div>
+				</div>
+				<div class="play">
+					<div class="book">Book now</div>
+					<div class="info">
+						<p class="author">Lorem ipsum</p>
+						<p><span class="name">Lorem ipsum</span><span class="theatre">Dolor sit amet</span></p>
+						<p><span class="time">11am - 1pm</span><span style="opacity: .25;"> / </span><span class="duration">180 minutes</span></p>
+						<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pelesque in felis eget luctus.</p>
+					</div>
+				</div>
+				<div class="play">
+					<div class="book">Book now</div>
+					<div class="info">
+						<p class="author">Lorem ipsum</p>
+						<p><span class="name">Lorem ipsum</span><span class="theatre">Dolor sit amet</span></p>
+						<p><span class="time">11am - 1pm</span><span style="opacity: .25;"> / </span><span class="duration">180 minutes</span></p>
+						<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pelesque in felis eget luctus.</p>
+					</div>
+				</div>
+				<div class="play">
+					<div class="book">Book now</div>
+					<div class="info">
+						<p class="author">Lorem ipsum</p>
+						<p><span class="name">Lorem ipsum</span><span class="theatre">Dolor sit amet</span></p>
+						<p><span class="time">11am - 1pm</span><span style="opacity: .25;"> / </span><span class="duration">180 minutes</span></p>
+						<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pelesque in felis eget luctus.</p>
+					</div>
+				</div>
+				<h2>Wednesday, October 25</h2>
+				<div class="play">
+					<div class="book">Book now</div>
+					<div class="info">
+						<p class="author">Lorem ipsum</p>
+						<p><span class="name">Lorem ipsum</span><span class="theatre">Dolor sit amet</span></p>
+						<p><span class="time">11am - 1pm</span><span style="opacity: .25;"> / </span><span class="duration">180 minutes</span></p>
+						<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pelesque in felis eget luctus.</p>
+					</div>
+				</div>
+				<div class="play">
+					<div class="book">Book now</div>
+					<div class="info">
+						<p class="author">Lorem ipsum</p>
+						<p><span class="name">Lorem ipsum</span><span class="theatre">Dolor sit amet</span></p>
+						<p><span class="time">11am - 1pm</span><span style="opacity: .25;"> / </span><span class="duration">180 minutes</span></p>
+						<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pelesque in felis eget luctus.</p>
+					</div>
+				</div>
+				<h2>Thursday, October 26</h2>
+				<div class="play">
+					<div class="book">Book now</div>
+					<div class="info">
+						<p class="author">Lorem ipsum</p>
+						<p><span class="name">Lorem ipsum</span><span class="theatre">Dolor sit amet</span></p>
+						<p><span class="time">11am - 1pm</span><span style="opacity: .25;"> / </span><span class="duration">180 minutes</span></p>
+						<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pelesque in felis eget luctus.</p>
+					</div>
+				</div>
+				<div class="play">
+					<div class="book">Book now</div>
+					<div class="info">
+						<p class="author">Lorem ipsum</p>
+						<p><span class="name">Lorem ipsum</span><span class="theatre">Dolor sit amet</span></p>
+						<p><span class="time">11am - 1pm</span><span style="opacity: .25;"> / </span><span class="duration">180 minutes</span></p>
+						<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pelesque in felis eget luctus.</p>
+					</div>
+				</div>
+				<div class="play">
+					<div class="book">Book now</div>
+					<div class="info">
+						<p class="author">Lorem ipsum</p>
+						<p><span class="name">Lorem ipsum</span><span class="theatre">Dolor sit amet</span></p>
+						<p><span class="time">11am - 1pm</span><span style="opacity: .25;"> / </span><span class="duration">180 minutes</span></p>
+						<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pelesque in felis eget luctus.</p>
+					</div>
+				</div>
+				<h2>Saturday, October 28</h2>
+				<div class="play">
+					<div class="book">Book now</div>
+					<div class="info">
+						<p class="author">Lorem ipsum</p>
+						<p><span class="name">Lorem ipsum</span><span class="theatre">Dolor sit amet</span></p>
+						<p><span class="time">11am - 1pm</span><span style="opacity: .25;"> / </span><span class="duration">180 minutes</span></p>
+						<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pelesque in felis eget luctus.</p>
+					</div>
+				</div>
+				<div class="play">
+					<div class="book">Book now</div>
+					<div class="info">
+						<p class="author">Lorem ipsum</p>
+						<p><span class="name">Lorem ipsum</span><span class="theatre">Dolor sit amet</span></p>
+						<p><span class="time">11am - 1pm</span><span style="opacity: .25;"> / </span><span class="duration">180 minutes</span></p>
+						<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pelesque in felis eget luctus.</p>
+					</div>
+				</div>
+				<div class="play">
+					<div class="book">Book now</div>
+					<div class="info">
+						<p class="author">Lorem ipsum</p>
+						<p><span class="name">Lorem ipsum</span><span class="theatre">Dolor sit amet</span></p>
+						<p><span class="time">11am - 1pm</span><span style="opacity: .25;"> / </span><span class="duration">180 minutes</span></p>
+						<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pelesque in felis eget luctus.</p>
+					</div>
+				</div>
+				<h2>Sunday, October 29</h2>
+				<div class="play">
+					<div class="book">Book now</div>
+					<div class="info">
+						<p class="author">Lorem ipsum</p>
+						<p><span class="name">Lorem ipsum</span><span class="theatre">Dolor sit amet</span></p>
+						<p><span class="time">11am - 1pm</span><span style="opacity: .25;"> / </span><span class="duration">180 minutes</span></p>
+						<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pelesque in felis eget luctus.</p>
+					</div>
+				</div>
+				<div class="play">
+					<div class="book">Book now</div>
+					<div class="info">
+						<p class="author">Lorem ipsum</p>
+						<p><span class="name">Lorem ipsum</span><span class="theatre">Dolor sit amet</span></p>
+						<p><span class="time">11am - 1pm</span><span style="opacity: .25;"> / </span><span class="duration">180 minutes</span></p>
+						<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pelesque in felis eget luctus.</p>
+					</div>
+				</div>
+				<div class="play">
+					<div class="book">Book now</div>
+					<div class="info">
+						<p class="author">Lorem ipsum</p>
+						<p><span class="name">Lorem ipsum</span><span class="theatre">Dolor sit amet</span></p>
+						<p><span class="time">11am - 1pm</span><span style="opacity: .25;"> / </span><span class="duration">180 minutes</span></p>
+						<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pelesque in felis eget luctus.</p>
+					</div>
+				</div>
+				<div class="play">
+					<div class="book">Book now</div>
+					<div class="info">
+						<p class="author">Lorem ipsum</p>
+						<p><span class="name">Lorem ipsum</span><span class="theatre">Dolor sit amet</span></p>
+						<p><span class="time">11am - 1pm</span><span style="opacity: .25;"> / </span><span class="duration">180 minutes</span></p>
+						<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pelesque in felis eget luctus.</p>
+					</div>
+				</div>
+				<div class="play">
+					<div class="book">Book now</div>
+					<div class="info">
+						<p class="author">Lorem ipsum</p>
+						<p><span class="name">Lorem ipsum</span><span class="theatre">Dolor sit amet</span></p>
+						<p><span class="time">11am - 1pm</span><span style="opacity: .25;"> / </span><span class="duration">180 minutes</span></p>
+						<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pelesque in felis eget luctus.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="toggle-grid" style="display: none;">
+			<div id="nav">
+				<div class="prev">September</div>
+				<div class="current">October</div>
+				<div class="next">November</div>
+			</div>
+			<div class="nav-divider"></div>
+			<div id="gridview">
+				<div id="calendar">
+					<div class="weekday">Mon</div>
+					<div class="weekday">Tue</div>
+					<div class="weekday">Wed</div>
+					<div class="weekday">Thu</div>
+					<div class="weekday">Fre</div>
+					<div class="weekday">Sat</div>
+					<div class="weekday">Sun</div>
+					<div class="day lastmonth"></div>
+					<div class="day lastmonth"></div>
+					<div class="day lastmonth"></div>
+					<div class="day lastmonth"></div>
+					<div class="day lastmonth"></div>
+					<div class="day lastmonth"></div>
+					<div class="day">
+						<span class="date">1</span>
+						<span class="play">Lorem Ipsum</span>
+						<span class="play">Dolor Sit Amet</span>
+						<span class="play">Consectetur Adipiscing</span>
+						<span class="play">Elit Donec tincidunt</span>
+						<span class="plus">and 5 more</span>
+					</div>
+					<div class="day"><span class="date">2</span></div>
+					<div class="day">
+						<span class="date">3</span>
+						<span class="play">Lorem Ipsum</span>
+						<span class="play">Dolor Sit Amet</span>
+						<span class="play">Consectetur Adipiscing</span>
+					</div>
+					<div class="day">
+						<span class="date">4</span>
+						<span class="play">Lorem Ipsum</span>
+						<span class="play">Dolor Sit Amet</span>
+						<span class="play">Consectetur Adipiscing</span>
+						<span class="play">Elit Donec tincidunt</span>
+						<span class="plus">and 2 more</span>
+					</div>
+					<div class="day">
+						<span class="date">5</span>
+						<span class="play">Lorem Ipsum</span>
+						<span class="play">Dolor Sit Amet</span>
+						<span class="play">Consectetur Adipiscing</span>
+						<span class="play">Elit Donec tincidunt</span>
+						<span class="plus">and 9 more</span>
+					</div>
+					<div class="day"><span class="date">6</span></div>
+					<div class="day">
+						<span class="date">7</span>
+						<span class="play">Lorem Ipsum</span>
+						<span class="play">Dolor Sit Amet</span>
+						<span class="play">Consectetur Adipiscing</span>
+						<span class="play">Elit Donec tincidunt</span>
+						<span class="plus">and 5 more</span>
+					</div>
+					<div class="day"><span class="date">8</span></div>
+					<div class="day">
+						<span class="date">9</span>
+						<span class="play">Lorem Ipsum</span>
+						<span class="play">Dolor Sit Amet</span>
+					</div>
+					<div class="day">
+						<span class="date">10</span>
+						<span class="play">Lorem Ipsum</span>
+						<span class="play">Dolor Sit Amet</span>
+						<span class="play">Consectetur Adipiscing</span>
+						<span class="play">Elit Donec tincidunt</span>
+						<span class="plus">and 1 more</span>
+					</div>
+					<div class="day"><span class="date">11</span></div>
+					<div class="day"><span class="date">12</span></div>
+					<div class="day">
+						<span class="date">13</span>
+						<span class="play">Lorem Ipsum</span>
+						<span class="play">Dolor Sit Amet</span>
+						<span class="play">Consectetur Adipiscing</span>
+						<span class="play">Elit Donec tincidunt</span>
+						<span class="plus">and 5 more</span>
+					</div>
+					<div class="day"><span class="date">14</span></div>
+					<div class="day">
+						<span class="date">15</span>
+						<span class="play">Lorem Ipsum</span>
+						<span class="play">Dolor Sit Amet</span>
+						<span class="play">Consectetur Adipiscing</span>
+					</div>
+					<div class="day"><span class="date">16</span></div>
+					<div class="day">
+						<span class="date">17</span>
+						<span class="play">Lorem Ipsum</span>
+						<span class="play">Dolor Sit Amet</span>
+						<span class="play">Consectetur Adipiscing</span>
+					</div>
+					<div class="day">
+						<span class="date">18</span>
+						<span class="play">Lorem Ipsum</span>
+						<span class="play">Dolor Sit Amet</span>
+						<span class="play">Consectetur Adipiscing</span>
+					</div>
+					<div class="day">
+						<span class="date">19</span>
+						<span class="play">Lorem Ipsum</span>
+						<span class="play">Dolor Sit Amet</span>
+					</div>
+					<div class="day"><span class="date">20</span></div>
+					<div class="day">
+						<span class="date">21</span>
+						<span class="play">Lorem Ipsum</span>
+						<span class="play">Dolor Sit Amet</span>
+						<span class="play">Consectetur Adipiscing</span>
+						<span class="play">Elit Donec tincidunt</span>
+						<span class="plus">and 1 more</span>
+					</div>
+					<div class="day"><span class="date">22</span></div>
+					<div class="day">
+						<span class="date">23</span>
+						<span class="play">Lorem Ipsum</span>
+						<span class="play">Dolor Sit Amet</span>
+						<span class="play">Consectetur Adipiscing</span>
+					</div>
+					<div class="day">
+						<span class="date">24</span>
+						<span class="play">Lorem Ipsum</span>
+					</div>
+					<div class="day"><span class="date">25</span></div>
+					<div class="day active">
+						<span class="date">26</span>
+						<span class="play">Lorem Ipsum</span>
+						<span class="play">Dolor Sit Amet</span>
+						<span class="play">Consectetur Adipiscing</span>
+						<span class="play">Elit Donec tincidunt</span>
+						<span class="plus">and 5 more</span>
+					</div>
+					<div class="day"><span class="date">27</span></div>
+					<div class="day"><span class="date">28</span></div>
+					<div class="day">
+						<span class="date">29</span>
+						<span class="play">Lorem Ipsum</span>
+						<span class="play">Dolor Sit Amet</span>
+						<span class="play">Consectetur Adipiscing</span>
+						<span class="play">Elit Donec tincidunt</span>
+						<span class="plus">and 2 more</span></div>
+					<div class="day">
+						<span class="date">30</span>
+						<span class="play">Lorem Ipsum</span>
+						<span class="play">Dolor Sit Amet</span>
+						<span class="play">Consectetur Adipiscing</span>
+						<span class="play">Elit Donec tincidunt</span>
+						<span class="plus">and 3 more</span>
+					</div>
+					<div class="day">
+						<span class="date">31</span>
+						<span class="play">Lorem Ipsum</span>
+						<span class="play">Dolor Sit Amet</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="footer">
+			<p class="copyright">copyright &copy; 2017 thanhhai.red | witness</p>
+			<p class="links"><a href="#">about</a><a href="#">contact</a></p>
+		</div>
+	</div>
+
+	<script src="./js/jquery-custom.js" charset="utf-8"></script>
+	<script src="./js/function.js" charset="utf-8"></script>
+
+</body>
+
+</html>

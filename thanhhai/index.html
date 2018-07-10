@@ -1,62 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>thanhhai.red // designer / illustrator / risk-taker</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <base target="_parent">
-    <!-- STYLESCHEET -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="icon" type="image/png" href="favicon.ico">
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- CSS -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+	<link rel="stylesheet" href="./css/bootstrap.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<title>thanhhai.red</title>
 </head>
 
 <body>
-    <!-- HEADER -->
-    <div id="header">
-        <div class="container">
-            <div class="row">
-                <!-- HEADER LOGO -->
-                <div class="col-sm-7">
-                    <div class="logo"><img src="images/logo.svg"></div>
-                </div>
-                <!-- HEADER MENU -->
-                <div class="col-sm-5">
-                    <ul class="menu">
-                        <li><a href="works.html">my-works</a></li>
-                        <li><a href="about.html">about-me</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- SLIDER  -->
-    <div id="featured" class="full">
-        <iframe src="slider.html" width="100%" height="100%" frameBorder="0"></iframe>
-    </div>
-    <!-- FOOTER -->
-    <div id="footer" class="full">
-        <div class="container">
-            <div class="row">
-                <div class="copyright col-xs-5">
-                    <p>2017 © thanhhai・red</p>
-                </div>
-                <div class="logo col-xs-2">
-                    <img src="images/logo-mini.svg">
-                </div>
-                <div class="social col-xs-5">
-                    <ul>
-                        <li><a href="http://facebook.com/dostudio.red/">#facebook</a></li>
-                        <li><a href="http://facebook.com/dostudio.red/">#instagram</a></li>
-                        <li><a href="http://behance.com/thanhhaired/">#behance</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- JAVASCRIPT -->
-    <script src="js/jquery.js"></script>
-    <script src="js/function.js"></script>
+	<div id="nav">
+		<div class="container">
+			<div class="big-logo white"></div>
+			<div class="logo" data-toggle="tooltip" data-placement="right"  data-html="true" title="from <strong>untitled-3</strong>">thanhhai - red</div>
+			<ul class="nav-links">
+				<li><a href="#works">works</a></li>
+				<li><a href="#about">about</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+
+	<section id="hero" data-section-name="home">
+		<div class="slides">
+			<div class="slide">
+				<div class="container">
+					<div class="category">#branding</div>
+					<div class="caption">ẤU - WALL CALENDAR</div>
+				</div>
+				<div class="slideimage" style="background-image: url(../images/demo-1.jpg);"></div>
+			</div>
+			<div class="slide">
+				<div class="container">
+					<div class="category">#print</div>
+					<div class="caption">KYOTO - TRAVEL WEBSITE</div>
+				</div>
+				<div class="slideimage" style="background-image: url(../images/demo-2.jpg);"></div>
+			</div>
+			<div class="slide">
+				<div class="container">
+					<div class="category">#branding</div>
+					<div class="caption">REGYPT - ILLUSTRATION SERIES</div>
+				</div>
+				<div class="slideimage" style="background-image: url(../images/demo-3.jpg);"></div>
+			</div>
+			<div class="slidenavs container">
+				<div class="dots">
+					<span class="dot" onclick="currentDiv(1)"></span>
+					<span class="dot" onclick="currentDiv(2)"></span>
+					<span class="dot" onclick="currentDiv(3)"></span>
+				</div>
+				<div class="navigation">
+					<div class="prev" onclick="plusDivs(-1)"></div>
+					<div class="next" onclick="plusDivs(1)"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="container">
+				<div class="social">
+					<a href="#contact">facebook</a> - <a href="#contact">instagram</a>
+				</div>
+				<a href="#contact">contact</a>
+			</div>
+		</div>
+	</section>
+
+	<section id="works" data-section-name="works">
+		<div class="intro">
+			<div class="container">
+				hi, it’s hai!<br /> multidisciplinary
+				<br /> -designer.
+			</div>
+		</div>
+		<div style="height: 2500px;"></div>
+	</section>
+
+
+
+
+
+	<div id="footer">
+		<div class="container">
+			<div class="social">
+				<a href="#contact">facebook</a> - <a href="#contact">instagram</a>
+			</div>
+			<a href="#contact">contact</a>
+		</div>
+	</div>
+
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="./js/bootstrap.js" charset="utf-8"></script>
+	<script src="./js/jquery.scrollify.js"></script>
+	<script src="./js/function.js" charset="utf-8"></script>
 </body>
 
 </html>
