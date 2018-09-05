@@ -1,0 +1,47 @@
+body {
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Gotham Pro';
+  font-size: 12px;
+}
+
+body.landing {
+  background-color: black;
+  background-image: url('./../images/background.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+.section {
+  width: 100%;
+}
+
+.landing .section {
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.landing .section .content {
+  margin-left: 10vw;
+}
+
+.landing .section .content h1 {
+  font-size: 5vw;
+  text-transform: uppercase;
+}
+
+.landing .section .content h3 {
+  font-size: 1vw;
+  text-transform: uppercase;
+  letter-spacing: 1em;
+  word-spacing: 100vw;
+  line-height: 1.5em;
+}
+
+.landing .section .content p {
+  line-height: 1.5em;
+}
